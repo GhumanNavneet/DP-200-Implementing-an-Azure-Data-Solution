@@ -1,5 +1,5 @@
 ﻿# DP 200 - Implementing a Data Platform Solution
-# Lab 2 - Working with Data Storage
+# Lab 1 - Working with Data Storage
 
 **Estimated Time**: 60 minutes
 
@@ -75,31 +75,7 @@ The main tasks for this exercise are as follows:
 
 1. Upload some graphics to the images container of the storage account.
 
-### Task 1: Create and configure a resource group.
-
-1. From the lab virtual machine, start Microsoft Edge, browse to the Azure portal at [**http://portal.azure.com**](http://portal.azure.com) and sign in by using the account that has been assigned to you for the course.
-
-1. In the Azure portal, click on the **Resource groups** icon.
-
-1. In the **Resource groups** screen, click on **+ Add** to create the first resource group with the following settings:
-
-    - **Subscription**: the name of the subscription you are using in this lab
-    
-    - **Resource group name**: **awrgstudxx**, where **xx** are your initials.
-
-    - **Resource group location**: the name of the Azure region which is closest to the lab location and where you can provision Azure VMs.
-
-      > **Note**: To identify Azure regions available in your subscription, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
-
-        ![Creating a Resource Group in the Azure portal](Linked_Image_Files/M02-E02-T01-img01.png)
-
-1. In the Create a resource group screen, click on **Review + Create**.
-
-1. In the Create a resource group screen, click on **Create**.
-
-> **Note**: it will take approximately 30 seconds to create a resource group. You can check the notifications area to check when the creation in complete.
-
-### Task 2: Create and configure a storage account.
+### Task 1: Create and configure a storage account.
 
 1. In the Azure portal, at the top left of the screen, click on the **Home** hyperlink
 
@@ -115,11 +91,11 @@ The main tasks for this exercise are as follows:
 
         - **Subscription**: the name of the subscription you are using in this lab
     
-        - **Resource group**: **awrgstudxx**, where **xx** are your initials.
+        - **Resource group**: select existing resource group with name **awrgstud-DeploymentId**.
 
     - Under the instance details, specify the following settings:
     
-        - **Storage account name**: **awsastudxx**, where **xx** are your initials.
+        - **Storage account name**: **awsastudxxxxxx**,  where **xxxxxx** is the deployment ID and you can find it from the environment details tab.
 
         - **Location**: the name of the Azure region which is closest to the lab location and where you can provision Azure VMs.
 
@@ -139,13 +115,13 @@ The main tasks for this exercise are as follows:
 
    > **Note**: The creation of the storage account will take approximately 90 seconds while it provisions the disks and the configuration of the disks as per the settings you have defined.
 
-### Task 3: Create and configure a container within the storage account.
+### Task 2: Create and configure a container within the storage account.
 
 1. In the Azure portal, a message states that _Your deployment is complete_, click on the button **Go to resource**.
 
-1. In the **awsastudxx** screen, where **xx** are your initials, under the **Blob Service** click **Containers**.
+1. In the **awsastud(deploymentID)** screen,  under the **Blob Service** click **Containers**.
 
-1. In the **awsastudxx - Containers** screen, at the top left, click on the  **+ Container** button.
+1. In the **awsastud(deploymentID) - Containers** screen, at the top left, click on the  **+ Container** button.
 
 1. From the **New Container*** screen, create a container with the following settings:
 
@@ -157,7 +133,7 @@ The main tasks for this exercise are as follows:
 
 1. In the **New Container** screen, click **Create**.
 
-   > **Note**: The creation of the container is immediate and will appear in the list of the **awrgstudxx - Containers** screen.
+   > **Note**: The creation of the container is immediate and will appear in the list of the **awrgstud(deploymentID) - Containers** screen.
 
 1. Repeat steps 4 -5 to create a container named **phonecalls** with the public access level of **Private (no anonymous access)**
 
@@ -165,9 +141,9 @@ The main tasks for this exercise are as follows:
 
     ![List of Containers in the Azure portal](Linked_Image_Files/M02-E02-T03-img02.png)
 
-### Task 4: Upload some graphics to the images container of the storage account.
+### Task 3: Upload some graphics to the images container of the storage account.
 
-1. In the Azure portal, in the **awsastudxx - Containers** screen, click on the **images** item in the list.
+1. In the Azure portal, in the **awsastud(deploymentID) - Containers** screen, click on the **images** item in the list.
 
 1. In the **images** screen, click on the **Upload** button.
 
@@ -189,7 +165,7 @@ The main tasks for this exercise are as follows:
 
 1. Close the **Upload blob** screen, and close the **images** screen.
 
-1. Close the **awsastudxx - Containers** screen, and in the Azure portal, navigate to the **Home** screen. 
+1. Close the **awsastud(deploymentID) - Containers** screen, and in the Azure portal, navigate to the **Home** screen. 
 
    > **Note**: The upload of the files will take approximately 5 seconds. Once completed, they will appear in a list in the upload blobs screen.
 
@@ -203,10 +179,9 @@ Individual exercise
   
 The main tasks for this exercise are as follows:
 
-1. Create and configure a storage account named **awdlsstudxx** as a Data Lake Store Gen2 storage type in the region closest to the lab location, within the resource group awrgstudxx, where **xx** are your initials.
+1. Create and configure a storage account named **awdlsstudxxxxxx** as a Data Lake Store Gen2 storage type in the region closest to the lab location, within the resource group awrgstudxx, where **xxxxxx** is the deployment ID .
 
 1. Create containers named **logs** and **data** within the awdlsstudxx storage account.
-
 
 ### Task 1: Create and configure a storage account as a Data Lake Store Gen II store.
 
@@ -220,13 +195,13 @@ The main tasks for this exercise are as follows:
 
     - Under the project details, specify the following settings:
 
-        - **Subscription**: the name of the subscription you are using in this lab
+        - **Subscription**: the name of the subscription you are using in this lab.
     
-        - **Resource group name**: **awrgstudxx**, where **xx** are your initials.
+        - **Resource group name**: select existing resource group with name **awrgstud-DeploymentId**.
 
     - Under the instance details, specify the following settings:
 
-        - **Storage account name**: **awdlsstudxx**, where **xx** are your initials.
+        - **Storage account name**: **awdlsstudxxxxxx**, where **xxxxxx** is the deployment ID 
 
         - **Location**: the name of the Azure region which is closest to the lab location and where you can provision Azure VMs.
 
@@ -254,9 +229,9 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, a message states that _Your deployment is complete_, click on the button **Go to resource**.
 
-1. In the **awdlsstudxx** screen, where **xx** are your initials, click **Containers**.
+1. In the **awdlsstud(deploymentID)** screen,  click **Containers**.
 
-1. In the **awrgstudxx - Containers** screen, at the top left, click on the  **+ Containers** button.
+1. In the **awrgstud(deploymentID) - Containers** screen, at the top left, click on the  **+ Containers** button.
 
 1. From the **New** screen, create two containers with the following name:
 
@@ -266,7 +241,7 @@ The main tasks for this exercise are as follows:
 
 1. In the **New Containers** screen, click **Create**.
 
-   > **Note**: The creation of the file system is immediate and will appear in the list of the **awdlsstudxx - Containers** screen as follows.
+   > **Note**: The creation of the file system is immediate and will appear in the list of the **awdlsstud(deploymentID) - Containers** screen as follows.
 
     ![File Systems listed in the Azure portal](Linked_Image_Files/M02-E03-T02-img01.png)
 
@@ -286,7 +261,7 @@ The main task for this exercise are as follows:
 
 ### Task 1: Install Storage Explorer.
 
-1. In the Azure portal, in the **awdlsstudxx - Containers** screen, click on the **data** item in the list.
+1. In the Azure portal, in the **awdlsstud(deploymentID) - Containers** screen, click on the **data** item in the list.
 
 1. Click on **Overview**, then click **Open in Explorer**, and  then click on the **Download Azure Storage Explorer** hyperlink.
 
@@ -304,7 +279,7 @@ The main task for this exercise are as follows:
 
 1. In Storage Explorer, select **Manage Accounts** to go to the **Account Management Panel**.
 
-1. The left pane now displays all the Azure accounts you've signed in to. To connect to another account, select **Add an account**
+1. The left pane now displays all the Azure accounts you've signed in to. To connect to another account, select **Add an account**.
 
 1. If you want to sign into a national cloud or an Azure Stack, click on the Azure environment dropdown to select which Azure cloud you want to use. Once you have chosen your environment, click the **Sign in...** button.
 
@@ -316,7 +291,7 @@ The main task for this exercise are as follows:
 
 1. In Azure Storage Explorer, click on the arrow to expand your subscription.
 
-1. Under **Storage Accounts**, search for the storage account **awdlsstudxx (ADLS Gen2)**, and click on the arrow to expand it.
+1. Under **Storage Accounts**, search for the storage account **awdlsstud(deploymentID) (ADLS Gen2)**, and click on the arrow to expand it.
 
 1. Under **Blob Containers**, click on the arrow to expand it and show the **logs** file system. Click on the **logs** file system.
 
