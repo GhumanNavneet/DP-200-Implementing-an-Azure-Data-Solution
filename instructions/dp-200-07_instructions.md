@@ -99,7 +99,7 @@ The main tasks for this exercise are as follows:
 
 1. On the deployment successful message, click on the button **Go to resource**.
 
-1. In the xx-data-factory screen, in the middle of the screen, click on the button, **Author & Monitor**
+1. In the data-factory-deploymentId screen, in the middle of the screen, click on the button, **Author & Monitor**
 
 1. **Open the authoring canvas** If coming from the ADF homepage, click on the **pencil icon** on the left sidebar or the **create pipeline button** to open the authoring canvas.
 
