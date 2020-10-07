@@ -5,7 +5,7 @@
 
 **Pre-requisites**: It is assumed that the case study for this lab has already been read.
 
-**Lab files**: The files for this lab are located in the _Allfiles\Labfiles\Starter\DP-200.3_ folder.
+**Lab files**: The files for this lab are located in the C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter folder inside the virtual machine.
 
 ## Lab overview
 
@@ -166,7 +166,9 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Collect the Azure Data Lake Store Gen2 account name
 
-1. In Microsoft Edge, click on the  Azure portal tab, click **Resource groups**, and then click **awrgstudxx**, and then click on **awdlsstudxx**, where **xx** are your initials.
+1. In Microsoft Edge, click on the  Azure portal tab, click **Resource groups**, and then click **awrgstud-DeploymentID**, and then click on **awdlsstudxx**, where **xx** are your initials.
+
+1. Click Containers -> logs then click on the Upload button and upload the `preferences.json` file from `C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.2\logs folder`.
 
 1. In the **awdlsstudxx** screen, under settings, click on **Access keys**, and then click on the copy icon next to the **Storage account name** and paste it into Notepad.
 
