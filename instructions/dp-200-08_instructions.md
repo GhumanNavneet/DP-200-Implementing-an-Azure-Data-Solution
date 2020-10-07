@@ -1,5 +1,5 @@
 ﻿# DP 200 - Implementing a Data Platform Solution
-# Lab 8 - Securing Azure Data Platforms
+# Lab 7 - Securing Azure Data Platforms
 
 **Estimated Time**: 75 minutes
 
@@ -27,7 +27,7 @@ As a senior data engineer within AdventureWorks, you are responsible for ensurin
 
 You have also been asked to tighten up the security of the SQL Database DeptDatabasesxx and have been asked to setup auditing against the database so that you can monitor access to the database. Furthermore, you have learned that that the Manage permission for your event hub is not restrictive enough, and you want to remove this permission.
 
-At the end of this lad, you will have:
+At the end of this lab, you will have:
 
 1. Explained Security
 1. Described key security components
@@ -128,9 +128,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Enabling Auditing
 
-1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstudxx**, and then click on **awdlsstudxx**, where **xx** are your initials
-
-1. In the Azure portal, in the blade, click Resource groups, and then click awrgstudxx, and then click on **AdventureWorksLT**.
+1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstud-deploymentID**, and then click on **AdventureWorksLT**.
 
 1. In the deptdatabasesxx (sqlservicexx/AdventureWorksLT) screen, click on the **Auditing** blade.
 
@@ -155,9 +153,9 @@ The main tasks for this exercise are as follows:
 1. On the windows desktop, click on the **Start**, and type **"SQL Server"** and then click on **MIcrosoft SQL Server Management Studio 17**
 
 1. In the **Connect to Server** dialog box, fill in the following details
-    - Server Name: **sqlservicexx.database.windows.net**
+    - Server Name: **sqlservice-deploymentID.database.windows.net**
     - Authentication: **SQL Server Authentication**
-    - Username: **xxsqladmin**
+    - Username: **sqladmin**
     - Password: **P@ssw0r**
 
 1. In the **Connect to Server** dialog box, click **Connect** 
@@ -172,7 +170,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: View the Audit Log
 
-1. Return to the Azure Portal. In the AdventureWorksLT (sqlservicexx/AdventureWorksLT) - Auditing screen, click on **View Audit Logs**
+1. Return to the Azure Portal. In the AdventureWorksLT (sqlservice-deploymentID/AdventureWorksLT) - Auditing screen, click on **View Audit Logs**
 
 1. Note in the **Audit records** log file the **Failed Authentication** record. Close down the **Audit records** screen
 
@@ -192,13 +190,13 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Changing Event Hub Permissions
 
-1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstudxx**, and then click on **xx-phoneanalysis-ehn**, where **xx** are your initials
+1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstud-deploymentID**, and then click on **phoneanalysis-ehn-deploymentID**.
 
-1. In the Azure portal, in the **xx-phoneanalysis-ehn**, where **xx** are your initials. Scroll to the bottom of the window, and click on **xx-phoneanalysis-eh** event hub.
+1. In the Azure portal, in the **phoneanalysis-ehn-deploymentID**. Scroll to the bottom of the window, and click on **phoneanalysis-eh-deploymentID** event hub.
 
 1. To grant access to the event hub, click **Shared access policies**.
 
-1. Under the **xx-phoneanalysis-eh - Shared access policies** screen, click on **phoneanalysis-eh-sap**.
+1. Under the **phoneanalysis-eh-deploymentID - Shared access policies** screen, click on **phoneanalysis-eh-sap**.
 
 1. Click on the checkbox next to the **Manage** permissions to remove it, and then click **Save**.
 
