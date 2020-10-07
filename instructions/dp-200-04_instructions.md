@@ -3,7 +3,7 @@
 
 **Estimated Time**: 60 minutes
 
-**Pre-requisites**: It is assumed that the case study for this lab has already been read. It is assumed that the content and lab for module 1: Azure for the Data Engineer has also been completed
+**Pre-requisites**: It is assumed that the case study for this lab has already been read. 
 
 **Lab files**: The files for this lab are located in the _Allfiles\Labfiles\Starter\DP-200.4_ folder.
 
@@ -45,6 +45,8 @@ The main task for this exercise are as follows:
 
 ### Task 1: Create an Azure Cosmos DB instance
 
+1. Before starting just to familiarize, we will be using deployment id for naming convention where xxxxxx will be asked to replace with deployment id and it can be found from the environment details tab from the right side of your environment.
+
 1. In the Azure portal, if neccesary click on the **Home** hyperlink.
 
 1. Navigate to the **+ Create a resource** icon.
@@ -59,11 +61,11 @@ The main task for this exercise are as follows:
     
         - **Subscription**: the name of the subscription you are using in this lab
 
-        - **Resource group**: **awrgstudxx**, where **xx** are your initials
+        - **Resource group**: select the existing resource group with name **awrgstud-deploymentId**
 
     - In the Instance details of the screen, type in the following information
 
-        - **Account name**: **awcdbstudxx**, where **xx** are your initials.
+        - **Account name**: **awcdbstud-xxxxxx**, where **xxxxxx** is the deployment id and you can find it from the environment details tab.
 
         - **API**: **Core(SQL)**
 
@@ -107,7 +109,7 @@ The main tasks for this exercise are as follows:
 
 1. In the Cosmos DB screen,  click on the **Overview** link.
 
-1. In the **awcdbstudxx** screen, click **+ Add Container**. This opens up the **awcdbstudxx Data Explorer** screen with the **Add Container** blade.
+1. In the **awcdbstud-deploymentId** screen, click **+ Add Container**. This opens up the **awcdbstud-deploymentId Data Explorer** screen with the **Add Container** blade.
 
 1. In the **Add Container** blade, create a Products database with a container named Clothing with the following settings:
 
@@ -409,11 +411,11 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Replicate Data to Multiple Regions
 
-1. In Microsoft Edge, click on the tab that states **awcdbstudxx - Data Explorer..**.
+1. In Microsoft Edge, click on the tab that states **awcdbstud-deploymentId - Data Explorer..**.
 
 1. If a message appears that states "Connection error", click on the button **Refresh**.
 
-1. In the **awcdbstudxx - Data Explorer** window, in the blade,  click on **Replicate data globally**.
+1. In the **awcdbstud-deploymentId - Data Explorer** window, in the blade,  click on **Replicate data globally**.
 
     ![Global replication of Cosmos DB in the Azure portal](Linked_Image_Files/M04-E03-T01-img01.png)
 
@@ -423,7 +425,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Managing Failover.
 
-1. In the **awcdbstudxx - Replicate data globally** window, click on **Manual Failover**.
+1. In the **awcdbstud-deploymentId - Replicate data globally** window, click on **Manual Failover**.
 
 1. Click on the **Read Region** datacenter location, then click on the check box next to "I understand and agree to trigger a failover on my current Write Region.", and then click on **OK**.
 
@@ -431,7 +433,7 @@ The main tasks for this exercise are as follows:
 
 ![Manual Failover of Cosmos DB in the Azure portal](Linked_Image_Files/M04-E03-T02-img1.png)
 
-1. In the **awcdbstudxx - Replicate data globally** window, click on **Automatic Failover**
+1. In the **awcdbstud-deploymentId - Replicate data globally** window, click on **Automatic Failover**
 
 1. In the "Automatic Failover" screen, click on the **ON** button, and then click on **OK**.
 
