@@ -1,7 +1,7 @@
 ﻿# DP 200 - Implementing a Data Platform Solution
 # Lab 2 - Enabling Team Based Data Science with Azure Databricks
 
-**Estimated Time**: 75 minutes
+**Estimated Time**: 60 minutes
 
 **Pre-requisites**: It is assumed that the case study for this lab has already been read.
 
