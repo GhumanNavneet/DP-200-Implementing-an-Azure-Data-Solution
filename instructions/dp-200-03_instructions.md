@@ -106,7 +106,7 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, navigate to the **Resource group** screen.
 
-1. In the Resource groups screen, click on the ****awrgstud-deploymentID** resource group.
+1. In the Resource groups screen, click on the **awrgstud-deploymentID** resource group.
 
 1. In the **awrgstudxx** screen, click **awdbwsstudxx**, where **xx** are your initials to open Azure Databricks. This will open your Azure Databricks service.
 
@@ -128,7 +128,7 @@ The main tasks for this exercise are as follows:
 
     - **Pool**: **None**
 
-    - **Databricks Runtime Version**: **Runtime: 6.4 (Scala 2.11, Spark 2.4.4)**
+    - **Databricks Runtime Version**: **Runtime: 6.4 (Scala 2.11, Spark 2.4.5)**
 
     - Make sure you select the **Terminate after 60** minutes of inactivity check box. If the cluster isn't being used, provide a duration (in minutes) to terminate the cluster.
 
@@ -168,7 +168,7 @@ The main tasks for this exercise are as follows:
 
 1. In Microsoft Edge, click on the  Azure portal tab, click **Resource groups**, and then click **awrgstud-DeploymentID**, and then click on **awdlsstudxx**, where **xx** are your initials.
 
-1. Click Containers -> logs then click on the Upload button and upload the `preferences.json` file from `C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.2\logs folder`.
+1. Click on **Containers** -> **logs** then click on the Upload button and upload the **preferences.json** file from `C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.2\logs` folder.
 
 1. In the **awdlsstudxx** screen, under settings, click on **Access keys**, and then click on the copy icon next to the **Storage account name** and paste it into Notepad.
 
