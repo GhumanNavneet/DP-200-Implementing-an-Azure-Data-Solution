@@ -199,7 +199,9 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Install SQL Server Management Studio and connect to a SQL Data Warehouse instance.
 
-1. In the Azure Portal, in the **dwhservice-deploymentID - Firewalls and virtual networks**, in the blade, click on **Properties**
+1. In the Azure portal, in the blade, click **Resource groups**, select **awrgstud-deploymentID**, and then click on **dwhservice-deploymentID**.
+
+1. From the left navigation menu  under **Settings** select **Properties**.
 
 1. Copy the **"Server name"** and paste it into Notepad.
 
