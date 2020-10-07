@@ -258,7 +258,7 @@ The main tasks for this exercise are as follows:
 
 1. In **SQL Server Management Studio**, in SQL Editor toolbar, in **Available Databases**, click on **DWDB**.
 
-1. Create a table named **dbo.Products** with a **clustered columnstore** index with a distribution of **round robin** with the following columns:
+1. Create a table named **dbo.Products** with a **clustered columnstore** index with a distribution of **ROUND_ROBIN** with the following columns:
 
     | column name | data type | Nullability|
     |-------------|-----------|------------|
@@ -279,7 +279,7 @@ The main tasks for this exercise are as follows:
 
 1. In **SQL Server Management Studio**, in SQL Editor toolbar, in **Available Databases**, click on **DWDB**.
 
-1. Create a table named **dbo.FactSales** with a **clustered columnstore** index with a distribution of **Hash** on the **SalesUnit** with the following columns:
+1. Create a table named **dbo.FactSales** with a **clustered columnstore** index with a distribution of **Hash** on the **SalesUnit**  i.e **Hash([SalesUnit])** with the following columns:
 
     | column name | data type | Nullability|
     |-------------|-----------|------------|
