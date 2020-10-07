@@ -1,9 +1,9 @@
 ﻿# DP 200 - Implementing a Data Platform Solution
-# Lab 3 - Enabling Team Based Data Science with Azure Databricks
+# Lab 2 - Enabling Team Based Data Science with Azure Databricks
 
 **Estimated Time**: 75 minutes
 
-**Pre-requisites**: It is assumed that the case study for this lab has already been read. It is assumed that the content and lab for module 1: Azure for the Data Engineer has also been completed
+**Pre-requisites**: It is assumed that the case study for this lab has already been read.
 
 **Lab files**: The files for this lab are located in the _Allfiles\Labfiles\Starter\DP-200.3_ folder.
 
@@ -55,11 +55,6 @@ The main task for this exercise are as follows:
 
 1. Spend **10 minutes** documenting the digital transformation requirement and candidate data source as outlined in the case study and the scenario of this lab.
 
-### Task 2: Discuss the findings with the Instructor
-
-1. The instructor will stop the group to discuss the findings.
-
-> **Result**: After you completed this exercise, you have created a Microsoft Word document that identifies the digital transformation requirement that Azure Databricks will meet and a candidate data source.
 
 ## Exercise 2: Work with Azure Databricks
   
@@ -91,7 +86,7 @@ The main tasks for this exercise are as follows:
 
     - **Subscription**: the name of the subscription you are using in this lab
 
-    - **Resource group**: **awrgstudxx**, where **xx** are your initials.
+    - **Resource group**: use existing resource group with name **awrgstud-deploymentID**.
 
     - **Location**: the name of the Azure region which is closest to the lab location and where you can provision Azure VMs.
 
@@ -111,7 +106,7 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, navigate to the **Resource group** screen.
 
-1. In the Resource groups screen, click on the ****awrgstudxx** resource group, where **xx** are your initials.
+1. In the Resource groups screen, click on the ****awrgstud-deploymentID** resource group.
 
 1. In the **awrgstudxx** screen, click **awdbwsstudxx**, where **xx** are your initials to open Azure Databricks. This will open your Azure Databricks service.
 
@@ -133,13 +128,13 @@ The main tasks for this exercise are as follows:
 
     - **Pool**: **None**
 
-    - **Databricks Runtime Version**: **Runtime: 6.3 (Scala 2.11, Spark 2.4.4)**
+    - **Databricks Runtime Version**: **Runtime: 6.4 (Scala 2.11, Spark 2.4.4)**
 
     - Make sure you select the **Terminate after 60** minutes of inactivity check box. If the cluster isn't being used, provide a duration (in minutes) to terminate the cluster.
 
     - Leave all the remaining options to their current settings.
 
-        ![Creating an Azure Databricks Cluster in the Azure portal](Linked_Image_Files/M03-E02-T03-img01.png)
+        ![Creating an Azure Databricks Cluster in the Azure portal](Linked_Image_Files/cluster.png)
 
 1. In the **Create Cluster** screen, click on **Create Cluster** and leave the Microsoft Edge screen open.
 
