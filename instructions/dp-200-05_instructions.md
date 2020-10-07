@@ -335,7 +335,7 @@ The main tasks for this exercise are as follows:
     IDENTITY = 'MOCID',
     SECRET = 'Your storage account key'
 ;
-    ```
+    
 
 1. In **SQL Server Management Studio**, highlight both statements and then click on **Execute**.
 
