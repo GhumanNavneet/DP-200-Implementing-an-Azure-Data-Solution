@@ -3,7 +3,7 @@
 
 **Estimated Time**: 70 minutes
 
-**Pre-requisites**: It is assumed that the case study for this lab has already been read. It is assumed that the content and lab for module 1: Azure for the Data Engineer has also been completed
+**Pre-requisites**: It is assumed that the case study for this lab has already been read.
 
 * **Azure subscription**: If you don't have an Azure subscription, create
     a [free account](https://azure.microsoft.com/free/) before you begin.
@@ -55,6 +55,8 @@ The main task for this exercise are as follows:
 
 1. Setup Azure Data Factory
 
+1. Before starting just to familiarize, we will be using deployment id for naming convention where xxxxxx will be asked to replace with deployment id and it can be found from the environment details tab from the right side of your environment.
+
 ### Task 1: Setting up Azure Data Factory.
 
 Create your data factory: Use the [Azure Portal](https://portal.azure.com) to create your Data Factory. 
@@ -62,10 +64,10 @@ Create your data factory: Use the [Azure Portal](https://portal.azure.com) to cr
 1. In Microsoft Edge, go to the Azure portal tab, click on the **+ Create a resource** icon, type **factory**, and then click **Data Factory** from the resulting search, and then click **Create**.
 
 1. In the New Data Factory screen, create a new Data Factory with the following options, then click **Create**:
-    - **Name**: xx-data-factory, where xx are your initials
+    - **Name**: data-factory-xxxxxx, where xxxxxx is the deployment id 
     - **Version**: V2
     - **Subscription**: Your subscription
-    - **Resource group**: awrgstudxx
+    - **Resource group**: awrgstud-deploymentI
     - **Location**: select the location closest to you
     - **Enable GIT**: unchecked
     - Leave other options to their default settings
@@ -146,7 +148,7 @@ The main tasks for this exercise are as follows:
 
 1. In Set Properties blade, give your dataset an understandable name such as **ADLSG2** and click on the **Linked Service** dropdown. If you have not created your ADLS Linked Service, select **New**.
 
-1. In the New linked service (Azure Data Lake Storage Gen2) blade, select your authentication method as **Account key**, select your **Azure Subscription** and select your Storage account name of **awdlsstudxx**. You will see a screen as follows:
+1. In the New linked service (Azure Data Lake Storage Gen2) blade, select your authentication method as **Account key**, select your **Azure Subscription** and select your Storage account name of **awdlsstudxxxxxx**. You will see a screen as follows:
 
    ![Create a Sink in Azure Data Factory in the Azure Portal](Linked_Image_Files/M07-E02-T03-img01.png)
 
@@ -366,11 +368,11 @@ The main tasks for this exercise are as follows:
 
 1. In the **New Linked Service (Azure Databricks)** screen, fill in the following details and click on **Finish**
     - **Name**: xx_dbls, where xx are your initials
-    - **Databricks Workspace**: awdbwsstudxx, where xx are your initials
+    - **Databricks Workspace**: awdbwsstudxxxxxx, where xxxxxx is the deployment id
     - **Select cluster**: use existing
     - **Domain/ Region**: should be populated
     - **Access Token**: Copy the access token from Notepad and paste into this field
-    - **Choose from existing cluster**: awdbclstudxx, where xx are your initials
+    - **Choose from existing cluster**: awdbclstudxxxxxx, where xxxxxx is the deployment id
     - Leave other options to their default settings
 
     > **Note**: When you click on finish, you are returned to the **Author & Monitor** screen where the xx_dbls has been created, with the other linked services created in the previous exercize.
