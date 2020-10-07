@@ -370,7 +370,7 @@ The main tasks for this exercise are as follows:
 1. In the **New Linked Service (Azure Databricks)** screen, fill in the following details and click on **Finish**
     - **Name**: xx_dbls, where xx are your initials
     - **Databricks Workspace**: awdbwsstudxxxxxx, where xxxxxx is the deployment id
-    - **Select cluster**: use existing
+    - **Select cluster**: Existing interactive cluster
     - **Domain/ Region**: should be populated
     - **Access Token**: Copy the access token from Notepad and paste into this field
     - **Choose from existing cluster**: awdbclstudxxxxxx, where xxxxxx is the deployment id
