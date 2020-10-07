@@ -73,7 +73,7 @@ The main task for this exercise are as follows:
 
         - **Location**: the name of the Azure region which is closest to the lab location and where you can provision Azure VMs.
 
-        - Leave the remaining options to the default settings
+        - Leave the remaining options to the default settings, change Apply Free Tier Discount to Do not Apply
 
             ![Creating Azure Cosmos DB in the Azure portal](Linked_Image_Files/M04-E01-T01-img01.png)
 
