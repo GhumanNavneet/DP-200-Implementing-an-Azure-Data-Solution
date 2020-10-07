@@ -1,5 +1,5 @@
 # DP 200 - Implementing a Data Platform Solution
-# Lab 2 - Performing Real-Time Analytics with Stream Analytics
+# Lab 5 - Performing Real-Time Analytics with Stream Analytics
 
 **Estimated Time**: 60 minutes
 
