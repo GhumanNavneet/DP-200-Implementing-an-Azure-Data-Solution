@@ -279,7 +279,7 @@ The main task for this exercise are as follows:
 
 1. In Storage Explorer, select **Manage Accounts** to go to the **Account Management Panel**.
 
-1. The left pane now displays all the Azure accounts you've signed in to. To connect to another account, select **Add an account**
+1. The left pane now displays all the Azure accounts you've signed in to. To connect to another account, select **Add an account**.
 
 1. If you want to sign into a national cloud or an Azure Stack, click on the Azure environment dropdown to select which Azure cloud you want to use. Once you have chosen your environment, click the **Sign in...** button.
 
