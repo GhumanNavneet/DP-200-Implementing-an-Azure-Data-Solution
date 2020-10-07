@@ -159,9 +159,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Configure the Server Firewall
 
-1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstud-deploymentID**, and then click on **awdlsstud-deploymentID**.
-
-1. Click on **dwhservice-deploymentID**
+1. In the Azure portal, in the blade, click **Resource groups**, select **awrgstud-deploymentID**, and then click on **dwhservice-deploymentID**.
 
 1. In the **dwhservice-deploymentID** screen, click on **Firewalls and virtual networks**.
 
