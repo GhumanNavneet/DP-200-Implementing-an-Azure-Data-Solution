@@ -3,9 +3,9 @@
 
 **Estimated Time**: 60 minutes
 
-**Pre-requisites**: It is assumed that the case study for this lab has already been read. It is assumed that the content and lab for module 1: Azure for the Data Engineer has also been completed
+**Pre-requisites**: It is assumed that the case study for this lab has already been read.
 
-**Lab files**: The files for this lab are located in the _Allfiles\Labfiles\Starter\DP-200.6_ folder.
+**Lab files**: The files for this lab are located in the `C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter` folder inside the virtual machine.
 
 ## Lab overview
 
@@ -83,7 +83,7 @@ The main tasks for this exercise are as follows:
     - **Name**: **xx-phoneanalysis-ehn**, where xx are your initials
     - **Pricing Tier**: **Standard**
     - **Subscription**: **Your subscription**
-    - **Resource group**: **awrgstudxx**
+    - **Resource group**: use the existing resource group **awrgstud-DeploymentID***
     - **Location**: select the location closest to you
     - **Throughput Units**: **20**
     - Leave other options to their default settings
@@ -98,7 +98,7 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, click on the **Home** hyperlink at the top left of the screen.
 
-1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstudxx**, where **xx** are your initials
+1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstud-DeploymentID**
 
 1. Click on **xx-phoneanalysis-ehn**, where **xx** are your initials.
 
@@ -220,7 +220,7 @@ The main tasks for this exercise are as follows:
 1. In the **New Stream Analytics job** screen, fill out the following details and then click on **Create**:
     - **Job name**: phoneanalysis-asa-job.
     - **Subscription**: select your subscription
-    - **Resource group**: awrgstudxx
+    - **Resource group**: awrgstud-DeploymentID
     - **Location**: choose a location nearest to you.
     - Leave other options to their default settings
 
@@ -230,7 +230,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Specify the a Stream Analytics job input.
 
-1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstudxx**,  where **xx** are your initials.
+1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstud-DeploymentID***.
 
 1. Click on **phoneanalysis-asa-job**.
 
@@ -339,7 +339,7 @@ The main tasks for this exercise are as follows:
 
 ## Close down
 
-1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstudxx**, and then click on **phoneanalysis-asa-job**.
+1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstud-DeploymentID**, and then click on **phoneanalysis-asa-job**.
 
 1. In the **phoneanalysis-asa-job** screen, click on **Stop**. In the **Stop Streaming job** dialog box, click on **Yes**.
 
