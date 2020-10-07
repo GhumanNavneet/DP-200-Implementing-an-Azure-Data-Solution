@@ -1,5 +1,5 @@
 ﻿# DP 200 - Implementing a Data Platform Solution
-# Lab 5 - Working with Relational Data Stores in the Cloud
+# Lab 4 - Working with Relational Data Stores in the Cloud
 
 **Estimated Time**: 75 minutes
 
@@ -26,11 +26,11 @@ You are the senior data engineer at AdventureWorks, and you are working with you
 
 You will then provision Azure Synapse Analytics server and test that the provisioning of the server is successful by testing a sample database with a series of queries. You will then use PolyBase to load a dimension table from Azure Blob to test that the integration of this data platform technology with Azure Synapse Analytics.
 
-At the end of this lad, you will have:
+At the end of this lab, you will have:
 
 1. Used Azure SQL Database
 1. Described Azure Synapse Analytics 
-1. Created and queryied Azure Synapse Analytics 
+1. Created and queried Azure Synapse Analytics 
 1. Used PolyBase to doad data into Azure Synapse Analytics 
 
 > **IMPORTANT**: As you go through this lab, make a note of any issue(s) that you have encountered in any provisioning or configuration tasks and log it in the table in the document located at _\Labfiles\DP-200-Issues-Doc.docx_. Document the Lab number, note the technology, Describe the issue, and what was the resolution. Save this document as you will refer back to it in a later module.
@@ -57,9 +57,9 @@ The main task for this exercise are as follows:
 
     - In the Project details section, type in the following information
     
-        - **Subscription**: the name of the subscription you are using in this lab
+        - **Subscription**: the name of the subscription you are using in this lab.
 
-        - **Resource group**: **awrgstudxx**, where **xx** are your initials.
+        - **Resource group**: select existing resource group **awrgstudxxxxxx**
 
     - Click on the  **Additional setting** tab, click **Sample** . The AdventureworksLT sample database is selected automatically. 
     
@@ -70,8 +70,8 @@ The main task for this exercise are as follows:
         - Database name: type in **AdventureworksLT**
      
         - Server: Create a new server by clicking **Create new** with the following settings and click on **OK**:
-            - **Server name**: **sqlservicexx**, where **xx** are your initials
-            - **Server admin login**: **xxsqladmin**, where **xx** are your initials
+            - **Server name**: **sqlservicexxxxxx**, where **xxxxxx** is the deployment ID.
+            - **Server admin login**: **sqladmin**
             - **Password**: **Pa55w.rd**
             - **Confirm Password**: **Pa55w.rd**
             - **Location**: choose a **location** near to you.
@@ -122,7 +122,7 @@ The main tasks for this exercise are as follows:
 
         - **Subscription**: the name of the subscription you are using in this lab
 
-        - **Resource group**: **awrgstudxx**, where **xx** are your initials.
+        - **Resource group**: 
 
     - In **Additional setting** tab, under data source, click **Sample**.
 
