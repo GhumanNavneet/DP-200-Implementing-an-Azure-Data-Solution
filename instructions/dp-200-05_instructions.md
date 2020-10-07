@@ -221,7 +221,7 @@ The main tasks for this exercise are as follows:
 
 1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservice-deploymentID.database.windows.net** and click on **New Query**. 
 
-1. In the query window, create a DataWarehouse database named **DWDB**, with a service objective of DW100 and a maximum size of 1024GB.
+1. In the query window, create a DataWarehouse database named **DWDB**, with a service objective of DW100 and a maximum size of 1024GB. Click on **Execute**.
 
     ```SQL
     CREATE DATABASE DWDB COLLATE SQL_Latin1_General_CP1_CI_AS
