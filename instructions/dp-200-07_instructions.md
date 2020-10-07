@@ -359,11 +359,11 @@ The main tasks for this exercise are as follows:
 
 1. In Microsoft Edge, click on the tab for the portal In the Azure portal, and return to Azure Data Factory.
 
-1. In the **xx-data-factory** screen, click on **Author & Monitor**. Another tab opens up to author an Azure Data Factory solution.
+1. In the **data-factory-deploymentId** screen, click on **Author & Monitor**. Another tab opens up to author an Azure Data Factory solution.
 
-1. On the left hand side of the screen, click on the **Author** icon. This opens up the Data Factory designer.
+1. On the left hand side of the screen, click on the **Manage** icon. This opens Connections section.
 
-1. At the bottom of the screen, click on **Connections**, and then click on **+ New**.
+1. Under **Connections**, u can find linked services and then click on **+ New**.
 
 1. In the **New Linked Service**, at the top of the screen, click on **Compute**, and then click on **Azure Databricks**, and then click on **Continue**.
 
@@ -392,7 +392,7 @@ The main tasks for this exercise are as follows:
 
 1. In the properties for the **Notebook1** window at the bottom, complete the following steps:
     - Switch to the **Azure Databricks** tab.
-    - Select **xx_dbls** which you created in the previous procedure.
+    - Select **dbls** which you created in the previous procedure.
 
     - Switch to the **Settings** tab, and put **/adftutorial/mynotebook** in Notebook path.
     - Expand **Base Parameters**, and then click on **+ New**
