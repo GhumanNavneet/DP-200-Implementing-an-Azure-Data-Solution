@@ -122,7 +122,7 @@ The main tasks for this exercise are as follows:
 
         - **Subscription**: the name of the subscription you are using in this lab
 
-        - **Resource group**: **awrgstudxx**, where **xx** are your initials.
+        - **Resource group**: select existing resource group with name **awrgstud-DeploymentId**.
 
     - In **Additional setting** tab, under data source, click **Sample**.
 
@@ -130,7 +130,7 @@ The main tasks for this exercise are as follows:
     
     - In the Database details section, type in the following information
 
-        - **Database warehouse name**: **Warehousexx**, where **xx** are your initials.
+        - **Database warehouse name**: **Warehousexxxxxx**, where **xxxxxx** is the deployment ID.
 
         - **Server**: Create a new server by clicking **Create new** with the following settings and click on **OK**:
             - **Server name**: **dwhservicexxxxxx**, where **xxxxxx** is the deployment ID and you can find it from the environment details tab.
@@ -159,11 +159,11 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Configure the Server Firewall
 
-1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstudxx**, and then click on **awdlsstudxx**, where **xx** are your initials
+1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstud-deploymentID**, and then click on **awdlsstud-deploymentID**.
 
-1. Click on **dwhservice(deploymentID)**
+1. Click on **dwhservice-deploymentID**
 
-1. In the **dwhservice(deploymentID)** screen, click on **Firewalls and virtual networks**.
+1. In the **dwhservice-deploymentID** screen, click on **Firewalls and virtual networks**.
 
 1. In the dwhservicexx - Firewalls and virtual networks screen, click on the option **+ Add client IP**, and then click on **Save**. On the success screen click **OK**.
 
@@ -177,9 +177,9 @@ The main tasks for this exercise are as follows:
 
 ### Task 3: Pause the Warehousexx database
 
-1. Click on **Warehouse(deploymentID)**.
+1. Click on **Warehouse-deploymentID**.
 
-1. In the **Warehouse(deploymentID) (dwhservice(deploymentID)/WarehousedeploymentID)** screen, click on **Pause**.
+1. In the **Warehouse-deploymentID (dwhservice-deploymentID/WarehousedeploymentID** screen, click on **Pause**.
 
 1. In the Pause Warehousexx screen, click **Yes**
 
@@ -201,7 +201,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Install SQL Server Management Studio and connect to a SQL Data Warehouse instance.
 
-1. In the Azure Portal, in the **dwhservice(deploymentID) - Firewalls and virtual networks**, in the blade, click on **Properties**
+1. In the Azure Portal, in the **dwhservice-deploymentID - Firewalls and virtual networks**, in the blade, click on **Properties**
 
 1. Copy the **"Server name"** and paste it into Notepad.
 
@@ -210,7 +210,7 @@ The main tasks for this exercise are as follows:
 1. On the windows desktop, click on the **Start**, and type **"SQL Server"** and then click on **MIcrosoft SQL Server Management Studio 17**
 
 1. In the **Connect to Server** dialog box, fill in the following details
-    - Server Name: **dwhservice(deploymentID).database.windows.net**
+    - Server Name: **dwhservice-deploymentID.database.windows.net**
     - Authentication: **SQL Server Authentication**
     - Username: **sqladmin**
     - Password: **Pa55w.rd**
@@ -219,7 +219,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Create a SQL Data Warehouse database.
 
-1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservice(deploymentID).database.windows.net** and click on **New Query**. 
+1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservice-deploymentID.database.windows.net** and click on **New Query**. 
 
 1. In the query window, create a DataWarehouse database named **DWDB**, with a service objective of DW100 and a maximum size of 1024GB.
 
