@@ -1,5 +1,5 @@
 ﻿# DP 200 - Implementing a Data Platform Solution
-# Lab 4 - Building Globally Distributed Databases with Cosmos DB
+# Lab 3 - Building Globally Distributed Databases with Cosmos DB
 
 **Estimated Time**: 60 minutes
 
