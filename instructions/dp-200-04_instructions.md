@@ -59,7 +59,7 @@ The main task for this exercise are as follows:
     
         - **Subscription**: the name of the subscription you are using in this lab
 
-        - **Resource group**: select the existing resource group with name **awrgstud-deploymentId**
+        - **Resource group**: select the existing resource group with name **awrgstud-{deploymentId}**
 
     - In the Instance details of the screen, type in the following information
 
@@ -107,7 +107,7 @@ The main tasks for this exercise are as follows:
 
 1. In the Cosmos DB screen,  click on the **Overview** link.
 
-1. In the **awcdbstud-deploymentId** screen, click **+ Add Container**. This opens up the **awcdbstud-deploymentId Data Explorer** screen with the **Add Container** blade.
+1. In the **awcdbstud-{deploymentId}** screen, click **+ Add Container**. This opens up the **awcdbstud-{deploymentId} Data Explorer** screen with the **Add Container** blade.
 
 1. In the **Add Container** blade, create a Products database with a container named Clothing with the following settings:
 
