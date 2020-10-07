@@ -5,7 +5,7 @@
 
 **Pre-requisites**: It is assumed that the case study for this lab has already been read.
 
-**Lab files**: The files for this lab are located in the C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter folder inside the virtual machine.
+**Lab files**: The files for this lab are located in the `C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter` folder inside the virtual machine.
 
 ## Lab overview
 
