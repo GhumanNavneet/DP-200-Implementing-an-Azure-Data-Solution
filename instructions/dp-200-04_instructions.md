@@ -3,8 +3,6 @@
 
 **Estimated Time**: 60 minutes
 
-**Pre-requisites**: It is assumed that the case study for this lab has already been read. 
-
 **Lab files**: The files for this lab are located in the _Allfiles\Labfiles\Starter\DP-200.4_ folder.
 
 ## Lab overview
