@@ -1,5 +1,5 @@
 ﻿# DP 200 - Implementing a Data Platform Solution
-# Lab 2 - Working with Data Storage
+# Lab 1 - Working with Data Storage
 
 **Estimated Time**: 60 minutes
 
