@@ -67,7 +67,7 @@ Create your data factory: Use the [Azure Portal](https://portal.azure.com) to cr
     - **Name**: data-factory-xxxxxx, where xxxxxx is the deployment id 
     - **Version**: V2
     - **Subscription**: Your subscription
-    - **Resource group**: awrgstud-deploymentI
+    - **Resource group**: awrgstud-deploymentId
     - **Location**: select the location closest to you
     - **Enable GIT**: unchecked
     - Leave other options to their default settings
