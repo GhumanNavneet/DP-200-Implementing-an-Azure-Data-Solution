@@ -26,11 +26,11 @@ You are the senior data engineer at AdventureWorks, and you are working with you
 
 You will then provision Azure Synapse Analytics server and test that the provisioning of the server is successful by testing a sample database with a series of queries. You will then use PolyBase to load a dimension table from Azure Blob to test that the integration of this data platform technology with Azure Synapse Analytics.
 
-At the end of this lad, you will have:
+At the end of this lab, you will have:
 
 1. Used Azure SQL Database
 1. Described Azure Synapse Analytics 
-1. Created and queryied Azure Synapse Analytics 
+1. Created and queried Azure Synapse Analytics 
 1. Used PolyBase to doad data into Azure Synapse Analytics 
 
 > **IMPORTANT**: As you go through this lab, make a note of any issue(s) that you have encountered in any provisioning or configuration tasks and log it in the table in the document located at _\Labfiles\DP-200-Issues-Doc.docx_. Document the Lab number, note the technology, Describe the issue, and what was the resolution. Save this document as you will refer back to it in a later module.
@@ -59,7 +59,7 @@ The main task for this exercise are as follows:
     
         - **Subscription**: the name of the subscription you are using in this lab
 
-        - **Resource group**: **awrgstudxx**, where **xx** are your initials.
+        - **Resource group**: select existing resource group with name **awrgstud-DeploymentId**.
 
     - Click on the  **Additional setting** tab, click **Sample** . The AdventureworksLT sample database is selected automatically. 
     
@@ -70,8 +70,8 @@ The main task for this exercise are as follows:
         - Database name: type in **AdventureworksLT**
      
         - Server: Create a new server by clicking **Create new** with the following settings and click on **OK**:
-            - **Server name**: **sqlservicexx**, where **xx** are your initials
-            - **Server admin login**: **xxsqladmin**, where **xx** are your initials
+            - **Server name**: **sqlservicexxxxx**, where **xxxxxx** is the deployment ID and you can find it from the environment details tab.
+            - **Server admin login**: **sqladmin**.
             - **Password**: **Pa55w.rd**
             - **Confirm Password**: **Pa55w.rd**
             - **Location**: choose a **location** near to you.
@@ -133,8 +133,8 @@ The main tasks for this exercise are as follows:
         - **Database warehouse name**: **Warehousexx**, where **xx** are your initials.
 
         - **Server**: Create a new server by clicking **Create new** with the following settings and click on **OK**:
-            - **Server name**: **dwhservicexx**, where **xx** are your initials
-            - **Server admin login**: **xxsqladmin**, where **xx** are your initials
+            - **Server name**: **dwhservicexxxxxx**, where **xxxxxx** is the deployment ID and you can find it from the environment details tab.
+            - **Server admin login**: **sqladmin**, where **xx** are your initials
             - **Password**: **Pa55w.rd**
             - **Confirm Password**: **Pa55w.rd**
             - **Location**: choose a **location** near to you.
@@ -161,9 +161,9 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstudxx**, and then click on **awdlsstudxx**, where **xx** are your initials
 
-1. Click on **dwhservicexx**, where **xx** are your initials.
+1. Click on **dwhservice(deploymentID)**
 
-1. In the **dwhservicexx** screen, click on **Firewalls and virtual networks**.
+1. In the **dwhservice(deploymentID)** screen, click on **Firewalls and virtual networks**.
 
 1. In the dwhservicexx - Firewalls and virtual networks screen, click on the option **+ Add client IP**, and then click on **Save**. On the success screen click **OK**.
 
@@ -177,13 +177,11 @@ The main tasks for this exercise are as follows:
 
 ### Task 3: Pause the Warehousexx database
 
-1. Click on **Warehousexx**, where **xx** are your initials.
+1. Click on **Warehouse(deploymentID)**.
 
-1. In the **Warehousexx (dwhservicexx/Warehousexx)** screen, click on **Pause**.
+1. In the **Warehouse(deploymentID) (dwhservice(deploymentID)/WarehousedeploymentID)** screen, click on **Pause**.
 
 1. In the Pause Warehousexx screen, click **Yes**
-
-
 
 ## Exercise 3: Creating an Azure Synapse Analytics database and tables
 
@@ -203,7 +201,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Install SQL Server Management Studio and connect to a SQL Data Warehouse instance.
 
-1. In the Azure Portal, in the **dwhservicexx - Firewalls and virtual networks**, in the blade, click on **Properties**
+1. In the Azure Portal, in the **dwhservice(deploymentID) - Firewalls and virtual networks**, in the blade, click on **Properties**
 
 1. Copy the **"Server name"** and paste it into Notepad.
 
@@ -212,16 +210,16 @@ The main tasks for this exercise are as follows:
 1. On the windows desktop, click on the **Start**, and type **"SQL Server"** and then click on **MIcrosoft SQL Server Management Studio 17**
 
 1. In the **Connect to Server** dialog box, fill in the following details
-    - Server Name: **dwhservicexx.database.windows.net**
+    - Server Name: **dwhservice(deploymentID).database.windows.net**
     - Authentication: **SQL Server Authentication**
-    - Username: **xxsqladmin**
+    - Username: **sqladmin**
     - Password: **Pa55w.rd**
 
 1. In the **Connect to Server** dialog box, click **Connect** 
 
 ### Task 2: Create a SQL Data Warehouse database.
 
-1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservicexx.database.windows.net** and click on **New Query**. 
+1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservice(deploymentID).database.windows.net** and click on **New Query**. 
 
 1. In the query window, create a DataWarehouse database named **DWDB**, with a service objective of DW100 and a maximum size of 1024GB.
 
@@ -239,7 +237,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 3: Create SQL Data Warehouse tables.
 
-1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservicexx.database.windows.net** and click on **New Query**.
+1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservice-deploymentID.database.windows.net** and click on **New Query**.
 
 1. In **SQL Server Management Studio**, in SQL Editor toolbar, in **Available Databases**, click on **DWDB**.
 
@@ -256,7 +254,7 @@ The main tasks for this exercise are as follows:
 
 1. In **SQL Server Management Studio**, click on **Execute**.
 
-1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservicexx.database.windows.net** and click on **New Query**.
+1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservice-deploymentID.database.windows.net** and click on **New Query**.
 
 1. In **SQL Server Management Studio**, in SQL Editor toolbar, in **Available Databases**, click on **DWDB**.
 
@@ -277,7 +275,7 @@ The main tasks for this exercise are as follows:
 
 1. In **SQL Server Management Studio**, click on **Execute**.
 
-1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservicexx.database.windows.net** and click on **New Query**.
+1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservice-deploymentID.database.windows.net** and click on **New Query**.
 
 1. In **SQL Server Management Studio**, in SQL Editor toolbar, in **Available Databases**, click on **DWDB**.
 
@@ -309,15 +307,15 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Collect Azure Blob account name and key details
 
-1. In the Azure portal, click on **Resource groups** and then click on **awrgstudxx**, and then click on **awdlsstudxx** where xx are the initials of your name.
+1. In the Azure portal, click on **Resource groups** and then click on **awrgstud-deploymentID**, and then click on **awdlsstudxxxxxx** where **xxxxxx** is the deployment ID .
 
-1. In the **awdlsstudxx** screen, click **Access keys**. Click on the icon next to the **Storage account name** and paste it into Notepad.
+1. In the **awdlsstud(deploymentID)** screen, click **Access keys**. Click on the icon next to the **Storage account name** and paste it into Notepad.
 
-1. In the **awdlsstudxx - Access keys** screen, under **key1**, Click on the icon next to the **Key** and paste it into Notepad.
+1. In the **awdlsstud(deploymentID) - Access keys** screen, under **key1**, Click on the icon next to the **Key** and paste it into Notepad.
 
 ### Task 2: Create a dbo.Dates table using PolyBase from Azure Blob
 
-1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservicexx.database.windows.net** and click on **New Query**.
+1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservice-deploymentID.database.windows.net** and click on **New Query**.
 
 1. In **SQL Server Management Studio**, in SQL Editor toolbar, in **Available Databases**, click on **DWDB**.
 
@@ -341,7 +339,7 @@ The main tasks for this exercise are as follows:
 
 1. In **SQL Server Management Studio**, highlight both statements and then click on **Execute**.
 
-1. In **SQL Server Management Studio**, in the Query window, type in code that will create an external data source named **AzureStorage** for the Blob storage account and data container created in with a type of **HADOOP** that makes use of the ****AzureStorageCredential**. Note that you should replace **awdlsstudxx** in the location key with your storage account with your initials 
+1. In **SQL Server Management Studio**, in the Query window, type in code that will create an external data source named **AzureStorage** for the Blob storage account and data container created in with a type of **HADOOP** that makes use of the ****AzureStorageCredential**. Note that you should replace **awdlsstud(deploymentID)** in the location key with your storage account with your initials 
 
     ```SQL
 	CREATE EXTERNAL DATA SOURCE AzureStorage
