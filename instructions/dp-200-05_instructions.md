@@ -128,7 +128,7 @@ The main tasks for this exercise are as follows:
     
     - In the Database details section, type in the following information
 
-        - **Database warehouse name**: **Warehousexxxxxx**, where **xxxxxx** is the deployment Id.
+        - **SQL pool name**: **Warehousexxxxxx**, where **xxxxxx** is the deployment Id.
 
         - **Server**: Create a new server by clicking **Create new** with the following settings and click on **OK**:
             - **Server name**: **dwhservice-xxxxxx**, where **xxxxxx** is the deployment Id and you can find it from the environment details tab.
