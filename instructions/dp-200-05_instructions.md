@@ -235,11 +235,11 @@ The main tasks for this exercise are as follows:
 
 ### Task 3: Create SQL Data Warehouse tables.
 
-1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservice-deploymentID.database.windows.net** and click on **New Query**.
+1. In **SQL Server Management Studio**, in Object Explorer, expand **dwhservice-deploymentID.database.windows.net**.
 
-1. In **SQL Server Management Studio**, in SQL Editor toolbar, in **Available Databases**, click on **DWDB**. 
+1. In **SQL Server Management Studio**, in SQL Editor toolbar, expand **Databases**, right click on **DWDB** and select **New Query**. 
 
-    >**Note**: If you are unfamiliar with Transact-SQL, there is a script in the Allfiles\Solution\DP-200.5\folder named **Exercise3 Task3Step2 script.sql**. It contains the bulk of the code required to create the tables, but you do have to complete the code by selecting the distribution type to use for each table 
+    >**Note**: If you are unfamiliar with Transact-SQL, there is a script in the Allfiles\Solution\DP-200.5\folder named **Exercise3 Task3 Step2 script.sql**. It contains the bulk of the code required to create the tables, but you do have to complete the code by selecting the distribution type to use for each table 
 
 1. Create a table named **dbo.Users** with a **clustered columnstore** index with a distribution of **replicate** with the following columns:
 
@@ -252,9 +252,9 @@ The main tasks for this exercise are as follows:
 
 1. In **SQL Server Management Studio**, click on **Execute**.
 
-1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservice-deploymentID.database.windows.net** and click on **New Query**.
+1. In **SQL Server Management Studio**, in Object Explorer, expand **dwhservice-deploymentID.database.windows.net**.
 
-1. In **SQL Server Management Studio**, in SQL Editor toolbar, in **Available Databases**, click on **DWDB**.
+1. In **SQL Server Management Studio**, in SQL Editor toolbar, expand **Databases**, right click on **DWDB** and select **New Query**.
 
 1. Create a table named **dbo.Products** with a **clustered columnstore** index with a distribution of **ROUND_ROBIN** with the following columns:
 
@@ -273,9 +273,9 @@ The main tasks for this exercise are as follows:
 
 1. In **SQL Server Management Studio**, click on **Execute**.
 
-1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservice-deploymentID.database.windows.net** and click on **New Query**.
+1. In **SQL Server Management Studio**, in Object Explorer, expand **dwhservice-deploymentID.database.windows.net**.
 
-1. In **SQL Server Management Studio**, in SQL Editor toolbar, in **Available Databases**, click on **DWDB**.
+1. In **SQL Server Management Studio**, in SQL Editor toolbar, expand **Databases**, right click on **DWDB** and select **New Query**.
 
 1. Create a table named **dbo.FactSales** with a **clustered columnstore** index with a distribution of **Hash** on the **SalesUnit**  i.e **Hash([SalesUnit])** with the following columns:
 
@@ -313,9 +313,9 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Create a dbo.Dates table using PolyBase from Azure Blob
 
-1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservice-deploymentID.database.windows.net** and click on **New Query**.
+1. In **SQL Server Management Studio**, in Object Explorer, expand **dwhservice-deploymentID.database.windows.net**.
 
-1. In **SQL Server Management Studio**, in SQL Editor toolbar, in **Available Databases**, click on **DWDB**.
+1. In **SQL Server Management Studio**, in SQL Editor toolbar, expand **Databases**, right click on **DWDB** and select **New Query**.
 
 1. Create a **master key** against the **DWDB** database. In the query editor, type in the following code:
 
