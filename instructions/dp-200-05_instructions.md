@@ -3,9 +3,7 @@
 
 **Estimated Time**: 75 minutes
 
-**Pre-requisites**: It is assumed that the case study for this lab has already been read. It is assumed that the content and lab for module 1: Azure for the Data Engineer has also been completed
-
-**Lab files**: The files for this lab are located in the _Allfiles\Labfiles\Starter\DP-200.5_ folder.
+**Lab files**: The files for this lab are located in the _C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.5_ folder.
 
 ## Lab overview
 
@@ -33,7 +31,7 @@ At the end of this lab, you will have:
 1. Created and queried Azure Synapse Analytics 
 1. Used PolyBase to doad data into Azure Synapse Analytics 
 
-> **IMPORTANT**: As you go through this lab, make a note of any issue(s) that you have encountered in any provisioning or configuration tasks and log it in the table in the document located at _\Labfiles\DP-200-Issues-Doc.docx_. Document the Lab number, note the technology, Describe the issue, and what was the resolution. Save this document as you will refer back to it in a later module.
+> **IMPORTANT**: As you go through this lab, make a note of any issue(s) that you have encountered in any provisioning or configuration tasks and log it in the table in the document located at _C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\DP-200-Issues-Doc.docx_. Document the Lab number, note the technology, Describe the issue, and what was the resolution. Save this document as you will refer back to it in a later module.
 
 ## Exercise 1: Use Azure SQL Database
 
@@ -70,7 +68,7 @@ The main task for this exercise are as follows:
         - Database name: type in **AdventureworksLT**
      
         - Server: Create a new server by clicking **Create new** with the following settings and click on **OK**:
-            - **Server name**: **sqlservicexxxxx**, where **xxxxxx** is the deployment ID and you can find it from the environment details tab.
+            - **Server name**: **sqlservice-xxxxx**, where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
             - **Server admin login**: **sqladmin**.
             - **Password**: **Pa55w.rd**
             - **Confirm Password**: **Pa55w.rd**
@@ -130,10 +128,10 @@ The main tasks for this exercise are as follows:
     
     - In the Database details section, type in the following information
 
-        - **Database warehouse name**: **Warehousexxxxxx**, where **xxxxxx** is the deployment ID.
+        - **Database warehouse name**: **Warehousexxxxxx**, where **xxxxxx** is the deployment Id.
 
         - **Server**: Create a new server by clicking **Create new** with the following settings and click on **OK**:
-            - **Server name**: **dwhservicexxxxxx**, where **xxxxxx** is the deployment ID and you can find it from the environment details tab.
+            - **Server name**: **dwhservice-xxxxxx**, where **xxxxxx** is the deployment Id and you can find it from the environment details tab.
             - **Server admin login**: **sqladmin**, where **xx** are your initials
             - **Password**: **Pa55w.rd**
             - **Confirm Password**: **Pa55w.rd**
@@ -159,11 +157,11 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Configure the Server Firewall
 
-1. In the Azure portal, in the blade, click **Resource groups**, select **awrgstud-deploymentID**, and then click on **dwhservice-deploymentID**.
+1. In the Azure portal, in the blade, click **Resource groups**, select **awrgstud-deploymentId**, and then click on **dwhservice-deploymentId**.
 
-1. In the **dwhservice-deploymentID** screen, click on **Firewalls and virtual networks**.
+1. In the **dwhservice-deploymentId** screen, click on **Firewalls and virtual networks**.
 
-1. In the dwhservicexx - Firewalls and virtual networks screen, click on the option **+ Add client IP**, and then click on **Save**. On the success screen click **OK**.
+1. In the dwhservice-deploymentId - Firewalls and virtual networks screen, click on the option **+ Add client IP**, and then click on **Save**. On the success screen click **OK**.
 
     ![Configuring Azure Synapse Analytics firewall settings in the Azure portal](Linked_Image_Files/M05-E02-T02-img01.png)
 
@@ -173,9 +171,9 @@ The main tasks for this exercise are as follows:
 
 > **Result**: After you completed this exercise, you have created an Azure  Synapse Analytics  instance and configures the server firewall to enable connections against it.
 
-### Task 3: Pause the Warehousexx database
+### Task 3: Pause the Warehouse-xxxxxx database
 
-1. Click on **Warehouse-deploymentID**.
+1. Click on **Warehouse-deploymentId**.
 
 1. In the **Warehouse-deploymentID (dwhservice-deploymentID/WarehousedeploymentID** screen, click on **Pause**.
 
