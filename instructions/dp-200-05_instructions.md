@@ -205,7 +205,7 @@ The main tasks for this exercise are as follows:
 
 1. Download [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) and install onto your machine
 
-1. On the windows desktop, click on the **Start**, and type **"SQL Server"** and then click on **MIcrosoft SQL Server Management Studio 18**
+1. On the windows desktop, click on the **Start**, and type **"SQL Server"** and then click on **Microsoft SQL Server Management Studio 18**
 
 1. In the **Connect to Server** dialog box, fill in the following details
     - Server Name: **dwhservice-deploymentID.database.windows.net**
