@@ -132,12 +132,12 @@ The main tasks for this exercise are as follows:
 
         - **Server**: Create a new server by clicking **Create new** with the following settings and click on **OK**:
             - **Server name**: **dwhservice-xxxxxx**, where **xxxxxx** is the deployment Id and you can find it from the environment details tab.
-            - **Server admin login**: **sqladmin**, where **xx** are your initials
-            - **Password**: **Pa55w.rd**
-            - **Confirm Password**: **Pa55w.rd**
+            - **Server admin login**: **sqladmin**.
+            - **Password**: **Pa55w.rd**.
+            - **Confirm Password**: **Pa55w.rd**.
             - **Location**: choose a **location** near to you.
-            - Select the checkbox to Allow Azure services to access server
-            - click on **OK**
+            - Select the checkbox to Allow Azure services to access server.
+            - click on **OK**.
 
                 ![Creating a server instance in the Azure portal](Linked_Image_Files/M05-E02-T01-img01.png)
 
