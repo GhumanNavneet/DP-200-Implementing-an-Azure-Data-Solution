@@ -128,7 +128,7 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstud-deploymentID**, and then click on **AdventureWorksLT**.
 
-1. In the deptdatabasesxx (sqlservice-deploymentId/AdventureWorksLT) screen, click on the **Auditing** blade.
+1. In the **sqlservice-deploymentId/AdventureWorksLT** database screen, click on the **Auditing** blade.
 
 1. Under **Auditing**, click on the **ON** button.
 
