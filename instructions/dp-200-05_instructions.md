@@ -173,11 +173,11 @@ The main tasks for this exercise are as follows:
 
 ### Task 3: Pause the Warehouse-xxxxxx database
 
-1. Click on **Warehouse-deploymentId**.
+1. Navigate to the resource group awrgstud-deploymentId , Click on Synapse Sql Pool named Warehouse-deploymentID (dwhservice-deploymentID/WarehousedeploymentID).
 
-1. In the **Warehouse-deploymentID (dwhservice-deploymentID/WarehousedeploymentID** screen, click on **Pause**.
+1. In the **Warehouse-deploymentId (dwhservice-deploymentId/WarehousedeploymentID)** screen, click on **Pause**.
 
-1. In the Pause Warehousexx screen, click **Yes**
+1. In the Pause Warehouse-deploymentId screen, click **Yes**
 
 ## Exercise 3: Creating an Azure Synapse Analytics database and tables
 
