@@ -148,6 +148,10 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Query the database
 
+1. In the Azure portal, in the blade, click Resource groups, select awrgstud-deploymentID, and then click on sqlservice-deploymentId.
+
+1. From the left navigation menu under **Settings** select **Properties**. Copy the **"Server name"** and paste it into Notepad.
+
 1. On the windows desktop, click on the **Start**, and type **"SQL Server"** and then click on **Microsoft SQL Server Management Studio 17**
 
 1. In the **Connect to Server** dialog box, fill in the following details
