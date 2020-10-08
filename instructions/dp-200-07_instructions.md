@@ -1,5 +1,5 @@
 ﻿# DP 200 - Implementing a Data Platform Solution
-# Lab 7 - Orchestrating Data Movement with Azure Data Factory
+# Lab 6 - Orchestrating Data Movement with Azure Data Factory
 
 **Estimated Time**: 70 minutes
 
