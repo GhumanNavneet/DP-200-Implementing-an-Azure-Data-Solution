@@ -35,6 +35,8 @@ At the end of this lab, you will have:
 
 Estimated Time: 15 minutes
 
+### Task 1: Create a SQL Data Warehouse database
+
 1. On the windows desktop, click on the **Start**, and type **"SQL Server"** and then click on **MIcrosoft SQL Server Management Studio 18**
 
 1. In the **Connect to Server** dialog box, fill in the following details
@@ -65,7 +67,14 @@ Estimated Time: 15 minutes
     ```SQL
     CREATE MASTER KEY;
     ```
-  
+
+### Task 2: Pause the Warehouse-xxxxxx database
+
+1. Click on **Warehouse-deploymentId**.
+
+1. In the **Warehouse-deploymentID (dwhservice-deploymentID/WarehousedeploymentID** screen, click on **Pause**.
+
+1. In the Pause Warehousexx screen, click **Yes**
 ## Exercise 2: Setup Azure Data Factory
 
 Estimated Time: 15 minutes
