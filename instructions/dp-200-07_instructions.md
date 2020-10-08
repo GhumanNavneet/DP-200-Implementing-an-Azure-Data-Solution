@@ -37,10 +37,10 @@ Estimated Time: 15 minutes
 
 ### Task 1: Create a SQL Data Warehouse database
 
-1. On the windows desktop, click on the **Start**, and type **"SQL Server"** and then click on **MIcrosoft SQL Server Management Studio 18**
+1. On the windows desktop, click on the **Start**, and type **"SQL Server"** and then click on **Microsoft SQL Server Management Studio 18**
 
 1. In the **Connect to Server** dialog box, fill in the following details
-    - Server Name: **dwhservice-deploymentID.database.windows.net**
+    - Server Name: **dwhservice-deploymentID.database.windows.net** (navigate to resource group awrgstud-deploymentId and click on sql server dwhservice-deployment and from the overview copy the server name)
     - Authentication: **SQL Server Authentication**
     - Username: **sqladmin**
     - Password: **Pa55w.rd**
