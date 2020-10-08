@@ -148,7 +148,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Query the database
 
-1. In the Azure portal, in the blade, click Resource groups, select awrgstud-deploymentID, and then click on sqlservice-deploymentId.
+1. In the Azure portal, in the blade, click Resource groups, select **awrgstud-deploymentID**, and then click on **sqlservice-deploymentId**.
 
 1. From the left navigation menu under **Settings** select **Properties**. Copy the **"Server name"** and paste it into Notepad.
 
