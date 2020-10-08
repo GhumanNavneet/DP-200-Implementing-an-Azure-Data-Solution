@@ -208,7 +208,7 @@ The main tasks for this exercise are as follows:
 1. On the windows desktop, click on the **Start**, and type **"SQL Server"** and then click on **Microsoft SQL Server Management Studio 18**
 
 1. In the **Connect to Server** dialog box, fill in the following details
-    - Server Name: **dwhservice-deploymentID.database.windows.net**
+    - Server Name: **dwhservice-deploymentID.database.windows.net** (paste the value that you copied in the previous step).
     - Authentication: **SQL Server Authentication**
     - Username: **sqladmin**
     - Password: **Pa55w.rd**
