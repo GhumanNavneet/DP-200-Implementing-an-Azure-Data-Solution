@@ -1,5 +1,5 @@
 ﻿# DP 200 - Implementing a Data Platform Solution
-# Lab 5 - Working with Relational Data Stores in the Cloud
+# Lab 4 - Working with Relational Data Stores in the Cloud
 
 **Estimated Time**: 75 minutes
 
@@ -239,7 +239,7 @@ The main tasks for this exercise are as follows:
 
 1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservice-deploymentID.database.windows.net** and click on **New Query**.
 
-1. In **SQL Server Management Studio**, in SQL Editor toolbar, in **Available Databases**, click on **DWDB**.
+1. In **SQL Server Management Studio**, in SQL Editor toolbar, in **Available Databases**, click on **DWDB**. 
 
     >**Note**: If you are unfamiliar with Transact-SQL, there is a script in the Allfiles\Solution\DP-200.5\folder named **Exercise3 Task3Step2 script.sql**. It contains the bulk of the code required to create the tables, but you do have to complete the code by selecting the distribution type to use for each table 
 
@@ -307,7 +307,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Collect Azure Blob account name and key details
 
-1. In the Azure portal, click on **Resource groups** and then click on **awrgstud-deploymentID**, and then click on **awdlsstudxxxxxx** where **xxxxxx** is the deployment ID .
+1. In the Azure portal, click on **Resource groups**,  click on **awrgstud-deploymentID** resource group, and then click on **awdlsstudxxxxxx** storgae account where **xxxxxx** is the deployment ID .
 
 1. In the **awdlsstud(deploymentID)** screen, click **Access keys**. Click on the icon next to the **Storage account name** and paste it into Notepad.
 
