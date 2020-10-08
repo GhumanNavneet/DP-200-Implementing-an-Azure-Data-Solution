@@ -31,7 +31,42 @@ At the end of this lad, you will have:
 
 > **IMPORTANT**: As you go through this lab, make a note of any issue(s) that you have encountered in any provisioning or configuration tasks and log it in the table in the document located at _\Labfiles\DP-200-Issues-Doc.docx_. Document the Lab number, note the technology, Describe the issue, and what was the resolution. Save this document as you will refer back to it in a later module.
 
-## Exercise 1: Setup Azure Data Factory
+## Exercise 1: Prepare a SQL Data Warehouse database
+
+Estimated Time: 15 minutes
+
+1. On the windows desktop, click on the **Start**, and type **"SQL Server"** and then click on **MIcrosoft SQL Server Management Studio 18**
+
+1. In the **Connect to Server** dialog box, fill in the following details
+    - Server Name: **dwhservice-deploymentID.database.windows.net**
+    - Authentication: **SQL Server Authentication**
+    - Username: **sqladmin**
+    - Password: **Pa55w.rd**
+
+1. In the **Connect to Server** dialog box, click **Connect** 
+
+1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservice-deploymentID.database.windows.net** and click on **New Query**. 
+
+1. In the query window, create a DataWarehouse database named **DWDB**, with a service objective of DW100 and a maximum size of 1024GB. Click on **Execute**.
+
+    ```SQL
+    CREATE DATABASE DWDB COLLATE SQL_Latin1_General_CP1_CI_AS
+    (
+        EDITION             = 'DataWarehouse'
+    ,   SERVICE_OBJECTIVE   = 'DW100C'
+    ,   MAXSIZE             = 1024 GB
+    );
+    ```
+
+    > **Note**: The creation of the database takes approximately 2 minutes.
+
+1. Create a **master key** against the **DWDB** database. In the query editor, type in the following code and Click on **Execute**.
+
+    ```SQL
+    CREATE MASTER KEY;
+    ```
+  
+## Exercise 2: Setup Azure Data Factory
 
 Estimated Time: 15 minutes
 
