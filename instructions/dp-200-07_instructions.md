@@ -62,7 +62,7 @@ Estimated Time: 15 minutes
 
     > **Note**: The creation of the database takes approximately 2 minutes.
 
-1. Create a **master key** against the **DWDB** database. In the query editor, type in the following code and Click on **Execute**.
+1. Create a **master key** against the **DWDB** database. Expand dwhservice-deploymentID.database.windows.net in Object explorer , click databases and then right click on DWDB , select **NEW QUERY**. In the query editor, type in the following code and Click on **Execute**.
 
     ```SQL
     CREATE MASTER KEY;
