@@ -22,7 +22,7 @@ You are assessing the tooling that can help with the extraction, load and transf
 
 In addition, the Data Scientists have asked to confirm if Azure Databricks can be called from Azure Data Factory. To that end, you will create a simple proof of concept Data Factory pipeline that calls Azure Databricks as a compute resource.
 
-At the end of this lad, you will have:
+At the end of this lab, you will have:
 
 1. Setup Azure Data Factory
 1. Ingested data using the Copy Activity
