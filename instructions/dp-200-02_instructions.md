@@ -3,9 +3,8 @@
 
 **Estimated Time**: 60 minutes
 
-**Pre-requisites**: It is assumed that the case study for this lab has already been read. It is assumed that the content and lab for module 1: Azure for the Data Engineer has also been completed
+**Lab files**: The files for this lab are located in the _C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.2
 
-**Lab files**: The files for this lab are located in the _Allfiles\Labfiles\Starter\DP-200.2_ folder.
 
 ## Lab overview
 
@@ -33,7 +32,8 @@ At the end of this work, you will have:
 3. Explained Azure Data Lake Storage
 4. Uploaded data into Azure Data Lake
 
-> **IMPORTANT**: As you go through this lab, make a note of any issue(s) that you have encountered in any provisioning or configuration tasks and log it in the table in the document located at _\Labfiles\DP-200-Issues-Doc.docx_. Document the Lab number, note the technology, Describe the issue, and what was the resolution. Save this document as you will refer back to it in a later module.
+> **IMPORTANT**: As you go through this lab, make a note of any issue(s) that you have encountered in any provisioning or configuration tasks and log it in the table in the document located at _C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\DP-200-Issues-Doc.docx
+_. Document the Lab number, note the technology, Describe the issue, and what was the resolution. Save this document as you will refer back to it in a later module.
 
 ## Exercise 1: Choose a data storage approach in Azure
 
@@ -47,9 +47,11 @@ The main task for this exercise are as follows:
 
 1. The instructor will discuss the findings with the group.
 
+1. **Note** : Before starting just to familiarize, we will be using deployment id for naming convention where xxxxxx will be asked to replace with deployment id and it can be found from the environment details tab from the right side of your environment.
+
 ### Task 1: Identify the data storage requirements and structures of AdventureWorks.
 
-1. From the lab virtual machine, start **Microsoft Word**, and open up the file **DP-200-Lab02-Ex01.docx** from the **Allfiles\Labfiles\Starter\DP-200.2** folder.
+1. From the lab virtual machine, start **Microsoft Word**, and open up the file **DP-200-Lab02-Ex01.docx** from the **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.2** folder.
 
 1. Spend **10 minutes** documenting the data storage requirements as outlined in the scenario of this lab. You can also use the case study document for additional reference.
 
@@ -67,11 +69,9 @@ Individual exercise
   
 The main tasks for this exercise are as follows:
 
-1. Create Azure resource group named **awrgstudxx** in the region closest to the lab location, where **xx** are your initials.
+1. Create and configure a storage account named **awsastudxxxxxx** in the region closest to the lab location within the resource group awrgstudxxxxxx, where **xxxxxx**  is the deployment ID.
 
-1. Create and configure a storage account named **awsastudxx** in the region closest to the lab location within the resource group awrgstudxx, where **xx** are your initials.
-
-1. Create a container named **images**, **phonecalls** and **tweets** within the awsastudxx storage account.
+1. Create a container named **images**, **phonecalls** and **tweets** within the awsastud(deploymentId) sxtorage account.
 
 1. Upload some graphics to the images container of the storage account.
 
@@ -149,7 +149,7 @@ The main tasks for this exercise are as follows:
 
 1. In the **Upload blob** screen, in the Files text box, click on the **folder** icon to the right of the text box.
 
-1. In the **Open** dialog box, browse to  **Labfiles\Starter\DP-200.2\website graphics** folder. Highlight the following files:
+1. In the **Open** dialog box, browse to  **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.2\website graphics** folder. Highlight the following files:
 
     - one.png
 
@@ -169,7 +169,7 @@ The main tasks for this exercise are as follows:
 
    > **Note**: The upload of the files will take approximately 5 seconds. Once completed, they will appear in a list in the upload blobs screen.
 
-> **Result**: After you completed this exercise, you have created a Storage account named awsastudxx that has a container named images that contains four graphics files that are ready to be used on the AdventureWorks website.
+> **Result**: After you completed this exercise, you have created a Storage account named awsastudxxxxxx that has a container named images that contains four graphics files that are ready to be used on the AdventureWorks website.
 
 ## Exercise 3: Explain Azure Data Lake Storage
   
@@ -179,9 +179,9 @@ Individual exercise
   
 The main tasks for this exercise are as follows:
 
-1. Create and configure a storage account named **awdlsstudxxxxxx** as a Data Lake Store Gen2 storage type in the region closest to the lab location, within the resource group awrgstudxx, where **xxxxxx** is the deployment ID .
+1. Create and configure a storage account named **awdlsstudxxxxxx** as a Data Lake Store Gen2 storage type in the region closest to the lab location, within the resource group awrgstudxxxxxx, where **xxxxxx** is the deployment ID .
 
-1. Create containers named **logs** and **data** within the awdlsstudxx storage account.
+1. Create containers named **logs** and **data** within the awdlsstud(deploymentId) storage account.
 
 ### Task 1: Create and configure a storage account as a Data Lake Store Gen II store.
 
@@ -265,7 +265,7 @@ The main task for this exercise are as follows:
 
 1. Click on **Overview**, then click **Open in Explorer**, and  then click on the **Download Azure Storage Explorer** hyperlink.
 
-1. You are taken to the following web page for [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) where there is a button that states **Download now**. click on this button.
+1. You are taken to the following web page for **Azure Storage Explorer** where there is a button that states **Download now**. click on this button.
 
 1. In the Microsoft Edge dialog box click **Save**, when the download is complete, click on **View downloads**, in the download screen in Microsoft Edge, click on **Open folder**. This will open the Downloads folder.
 
@@ -299,7 +299,7 @@ The main task for this exercise are as follows:
 
 1. In Upload Files dialog box, click on the ellipsis next to the **Selected files** text box.
 
-1. In the **Choose files to upload** dialog box, browse to **Labfiles\Starter\DP-200.2\logs** folder. Highlight the following files:
+1. In the **Choose files to upload** dialog box, browse to **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.2\logs** folder. Highlight the following files:
 
     - weblogsQ1.log
 
@@ -319,7 +319,7 @@ The main task for this exercise are as follows:
 
 1. In Upload Files dialog box, click on the ellipsis next to the **Selected files** text box.
 
-1. In the **Choose files to upload** dialog box, browse to **Labfiles\Starter\DP-200.2\Static Files** folder. Highlight the following files:
+1. In the **Choose files to upload** dialog box, browse to **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.2Labfiles\Static Files** folder. Highlight the following files:
 
     - DimDate2.txt
 
@@ -327,7 +327,7 @@ The main task for this exercise are as follows:
 
 1. In the **Upload Files** screen, click on the **Upload** button.
 
-1. Repeat the steps to upload the preferences.JSON file from the **Labfiles\Starter\DP-200.2\logs** folder to the **data** file system in the Data Lake Store gen2
+1. Repeat the steps to upload the preferences.JSON file from the **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.2\logs** folder to the **data** file system in the Data Lake Store gen2
 
    > **Note**: The upload of the files will take approximately 5 seconds. You will see a message in Azure Storage Explorer that states **Your view may be out of data. Do you want to refresh? Click Yes**. Once completed, all two files will appear in a list in the upload blobs screen.
 
