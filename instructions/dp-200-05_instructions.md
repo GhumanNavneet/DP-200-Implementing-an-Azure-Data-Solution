@@ -307,7 +307,11 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, click on **Resource groups**,  click on **awrgstud-deploymentID** resource group, and then click on **awdlsstudxxxxxx** storgae account where **xxxxxx** is the deployment ID .
 
-1. In the **awdlsstud(deploymentID)** screen, click **Access keys**. Click on the icon next to the **Storage account name** and paste it into Notepad.
+1. From the left hand menu under **Data Lake Storage**, select **Containers**. Click on **data** container and select **upload**, browse to C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.2Labfiles\Static Files folder select **DimDate2** file and click **Open**.
+
+1. In the Upload blob screen, click on the **Upload** button.
+
+1. Go back to **awdlsstud(deploymentID)** storage account screen, click **Access keys**. Click on the icon next to the **Storage account name** and paste it into Notepad.
 
 1. In the **awdlsstud(deploymentID) - Access keys** screen, under **key1**, Click on the icon next to the **Key** and paste it into Notepad.
 
