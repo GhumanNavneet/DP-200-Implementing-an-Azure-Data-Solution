@@ -335,7 +335,7 @@ The main tasks for this exercise are as follows:
     
 1. In **SQL Server Management Studio**, highlight both statements and then click on **Execute**.
 
-1. In **SQL Server Management Studio**, in the Query window, type in code that will create an external data source named **AzureStorage** for the Blob storage account and data container created in with a type of **HADOOP** that makes use of the ****AzureStorageCredential**. Note that you should replace **awdlsstud(xxxxxx)** in the location key with your storage account with your initials 
+1. In **SQL Server Management Studio**, in the Query window, type in code that will create an external data source named **AzureStorage** for the Blob storage account and data container created in with a type of **HADOOP** that makes use of the ****AzureStorageCredential**. Note that you should replace **awdlsstud(xxxxxx)** in the location key with your storage account with your deploymentId.
 
     ```SQL
 	CREATE EXTERNAL DATA SOURCE AzureStorage
