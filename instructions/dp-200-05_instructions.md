@@ -193,7 +193,7 @@ The main tasks for this exercise are as follows:
 
 1. Create SQL Data Warehouse tables
 
-    > **Note**: If you are not familiar with Transact-SQL, statements are available for the following labs in the following location **Allfiles\Labfiles\Starter\DP-200.5\SQL DW Files**
+    > **Note**: If you are not familiar with Transact-SQL, statements are available for the following labs in the following location **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.5\SQL DW Files**
 
 ### Task 1: Install SQL Server Management Studio and connect to a SQL Data Warehouse instance.
 
@@ -239,7 +239,7 @@ The main tasks for this exercise are as follows:
 
 1. In **SQL Server Management Studio**, in SQL Editor toolbar, expand **Databases**, right click on **DWDB** and select **New Query**. 
 
-    >**Note**: If you are unfamiliar with Transact-SQL, there is a script in the Allfiles\Solution\DP-200.5\folder named **Exercise3 Task3 Step2 script.sql**. It contains the bulk of the code required to create the tables, but you do have to complete the code by selecting the distribution type to use for each table 
+    >**Note**: If you are unfamiliar with Transact-SQL, there is a script in the C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Solution\DP-200.5\folder named **Exercise3 Task3 Step2 script.sql**. It contains the bulk of the code required to create the tables, but you do have to complete the code by selecting the distribution type to use for each table 
 
 1. Create a table named **dbo.Users** with a **clustered columnstore** index with a distribution of **replicate** with the following columns:
 
