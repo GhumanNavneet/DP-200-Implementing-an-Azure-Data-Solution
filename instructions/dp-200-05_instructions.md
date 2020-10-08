@@ -80,7 +80,7 @@ The main task for this exercise are as follows:
             - Leave the remaining settings to their defaults, and then click on **OK**
             
 
-    ![Creating a SQL Database in the Azure portal](Linked_Image_Files/M05-E01-T01-img02.png)
+                ![Creating a SQL Database in the Azure portal](Linked_Image_Files/M05-E01-T01-img02.png)
 
 1. In the **Create SQL Database** blade, click **Review + create**.
 
