@@ -70,13 +70,14 @@ Estimated Time: 15 minutes
     CREATE MASTER KEY;
     ```
 
-### Task 2: Pause the Warehouse-xxxxxx database
+### Task 2: Pause the Synapse SQL Pool (Data Warehouse)
 
-1. Click on **Warehouse-deploymentId**.
+1. Navigate to the resource group awrgstud-deploymentId , Click on Synapse Sql Pool named **DWDB (dwhservice-deploymentId/DWDB)**.
 
-1. In the **Warehouse-deploymentID (dwhservice-deploymentID/WarehousedeploymentID** screen, click on **Pause**.
+1. In the **DWDB (dwhservice-deploymentId/DWDB)** screen, On the Overview blade, click on **Pause**.
 
-1. In the Pause Warehousexx screen, click **Yes**
+1. In the Pause DWDB screen, click **Yes**
+
 ## Exercise 2: Setup Azure Data Factory
 
 Estimated Time: 15 minutes
