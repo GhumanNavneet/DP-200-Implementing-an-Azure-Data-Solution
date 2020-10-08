@@ -3,9 +3,7 @@
 
 **Estimated Time**: 75 minutes
 
-**Pre-requisites**: It is assumed that the case study for this lab has already been read. It is assumed that the content and lab for module 1 to module 7 has been completed.
-
-**Lab files**: The files for this lab are located in the _Allfiles\Labfiles\Starter\DP-200.8_ folder.
+**Lab files**: The files for this lab are located in the _C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.8_ folder.
 
 ## Lab overview
 
@@ -35,7 +33,7 @@ At the end of this lab, you will have:
 1. Secured Data Stores
 1. Secured Streaming Data
 
-> **IMPORTANT**: As you go through this lab, make a note of any issue(s) that you have encountered in any provisioning or configuration tasks and log it in the table in the document located at _\Labfiles\DP-200-Issues-Doc.docx_. Document the Lab number, note the technology, Describe the issue, and what was the resolution. Save this document as you will refer back to it in a later module.
+> **IMPORTANT**: As you go through this lab, make a note of any issue(s) that you have encountered in any provisioning or configuration tasks and log it in the table in the document located at _C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\DP-200-Issues-Doc.docx_. Document the Lab number, note the technology, Describe the issue, and what was the resolution. Save this document as you will refer back to it in a later module.
 
 ## Exercise 1: An introduction to security
 
@@ -51,7 +49,7 @@ The main task for this exercise are as follows:
 
 ### Task 1: Security as a layered approach.
 
-1. From the lab virtual machine, start **Microsoft Word**, and open up the file **DP-200-Lab08-Ex01.docx** from the **Allfiles\Labfiles\Starter\DP-200.8** folder.
+1. From the lab virtual machine, start **Microsoft Word**, and open up the file **DP-200-Lab08-Ex01.docx** from the **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.8** folder.
 
 1. From the course content, case study and the scenarios taken in the course so far, spend **10 minutes** in a group identifying the layers of security that you have impacted so far to secure AdventureWorks in the labs. Find three examples.
 
@@ -104,7 +102,7 @@ The main tasks for this exercise are as follows:
 
 1. You have been approached by your in-house web developer to help give access to a third party web design company to the web images that are in the awsastudxx storage account. As a senior data engineer within AdventureWorks, what steps would you need to take to ensure this can happen while applying the correct due diligence.
 
-1. From the lab virtual machine, start **Microsoft Word**, and open up the file **DP-200-Lab08-Ex03.docx** from the **Allfiles\Labfiles\Starter\DP-200.8** folder.
+1. From the lab virtual machine, start **Microsoft Word**, and open up the file **DP-200-Lab08-Ex03.docx** from the **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.8** folder.
 
 ### Task 2: Discuss the findings with the Instructor
 
@@ -130,7 +128,7 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstud-deploymentID**, and then click on **AdventureWorksLT**.
 
-1. In the deptdatabasesxx (sqlservicexx/AdventureWorksLT) screen, click on the **Auditing** blade.
+1. In the deptdatabasesxx (sqlservice-deploymentId/AdventureWorksLT) screen, click on the **Auditing** blade.
 
 1. Under **Auditing**, click on the **ON** button.
 
@@ -140,7 +138,7 @@ The main tasks for this exercise are as follows:
 
 1. In the **Storage Setting** screen, click **Subscription - change storage subscription**, and then click your subscription.
 
-1. In the **Storage Setting** screen, click **Storage Settings - Configure required settings**. In the **Choose storage account** screen, click **awsastudxx**
+1. In the **Storage Setting** screen, click **Storage Settings - Configure required settings**. In the **Choose storage account** screen, click **awsastud(deploymentId)**
 
 1. In the **Retention Days** text box, type **90**, and then click on **OK**.
 
@@ -150,7 +148,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Query the database
 
-1. On the windows desktop, click on the **Start**, and type **"SQL Server"** and then click on **MIcrosoft SQL Server Management Studio 17**
+1. On the windows desktop, click on the **Start**, and type **"SQL Server"** and then click on **Microsoft SQL Server Management Studio 17**
 
 1. In the **Connect to Server** dialog box, fill in the following details
     - Server Name: **sqlservice-deploymentID.database.windows.net**
