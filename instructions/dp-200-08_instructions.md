@@ -194,11 +194,11 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstud-deploymentID**, and then click on **phoneanalysis-ehn-deploymentID**.
 
-1. In the Azure portal, in the **phoneanalysis-ehn-deploymentID**. Scroll to the bottom of the window, and click on **phoneanalysis-eh-deploymentID** event hub.
+1. In the Azure portal, in the **phoneanalysis-ehn-deploymentID**. Scroll to the bottom of the window, and click on **co-phoneanalysis-eh-** event hub.
 
 1. To grant access to the event hub, click **Shared access policies**.
 
-1. Under the **phoneanalysis-eh-deploymentID - Shared access policies** screen, click on **phoneanalysis-eh-sap**.
+1. Under the **co-phoneanalysis-eh - Shared access policies** screen, click on **phoneanalysis-eh-sap**.
 
 1. Click on the checkbox next to the **Manage** permissions to remove it, and then click **Save**.
 
