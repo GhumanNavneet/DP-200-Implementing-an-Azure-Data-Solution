@@ -64,6 +64,8 @@ Estimated Time: 15 minutes
 
 1. Create a **master key** against the **DWDB** database. Expand dwhservice-deploymentID.database.windows.net in Object explorer , click databases and then right click on DWDB , select **NEW QUERY**. In the query editor, type in the following code and Click on **Execute**.
 
+>**Note:-** if a pop-up appears click **yes always**
+
     ```SQL
     CREATE MASTER KEY;
     ```
