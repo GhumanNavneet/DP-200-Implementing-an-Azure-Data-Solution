@@ -129,6 +129,8 @@ The main tasks for this exercise are as follows:
 
 1. In the **awcdbstud-{deploymentId} - Data Explorer** screen, on the Data Explorer toolbar, opposite the button for New Container, click on the **Open Full Screen** button. In the Open Full Screen dialog box, click **Open**. A new tab opens up in Microsoft Edge.
 
+      ![](Linked_Image_Files/cosmos_db_full_screen.jpg)
+
 1. In the **SQL API** pane, click in the refresh icon, and then expand **Products**, followed by **Clothing** and click on **Items**. 
 
 1. In the Documents pane, click on the icon for **New Item**. A new document appears with a sample JSON that you will now replace.
