@@ -59,32 +59,29 @@ The main task for this exercise are as follows:
 
 > **Result**: After you completed this exercise, you have created a Microsoft Word document that contains at least three examples of how you have implemented security at Adventureworks and which layer of security you have impacted.
 
-## Exercise 2: Key security components
+## Exercise 2: Securing Storage Accounts and Data Lake Storage
   
-Estimated Time: 10 minutes
+Estimated Time: 15 minutes
 
 Individual exercise
   
 The main tasks for this exercise are as follows:
 
-1. Assessing Data and Storage Security Hygiene
+1. Determining the appropriate security approach for Azure Blob
 
-### Task 1: Assessing Data and Storage Security Hygiene.
+1. Discuss the findings with the Instructor
 
-1. In the Azure portal tab, click **Security Center**.
+### Task 1: Determining the appropriate security approach for Azure Blob
 
-    ![Security Center in the Azure Portal](Linked_Image_Files/M08-E01-T01-img01.png)
+1. You have been approached by your in-house web developer to help give access to a third party web design company to the web images that are in the awsastudxx storage account. As a senior data engineer within AdventureWorks, what steps would you need to take to ensure this can happen while applying the correct due diligence.
 
-1. In the Security Center - Overview screen, under **Resource Security Hygiene**, click Data and Storage.
+1. From the lab virtual machine, start **Microsoft Word**, and open up the file **DP-200-Lab08-Ex03.docx** from the **Allfiles\Labfiles\Starter\DP-200.8** folder.
 
-    ![Security Center - Data Storage in the Azure Portal](Linked_Image_Files/M08-E01-T01-img02.png)
+### Task 2: Discuss the findings with the Instructor
 
-1. Identify the top two key data and storage components that require attention.
+1. The instructor will stop the group to discuss the findings.
 
-    1. __Answers may vary_____
-    1. __Answers may vary_____
-
-> **Result**: After you completed this exercise, you have learned where you can look to identify any data and storage security weaknesses that is in your Azure subscription.
+> **Result**: After you completed this exercise, you have created a Microsoft Word document that contains the steps that you would take to provide secure access to a Blob storage account to a third-party web development company.
 
 ## Exercise 3: Securing Data Stores
   
