@@ -368,6 +368,8 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Generate a Databricks Notebook
 
+1. Please ensure if the cluster is running. Click on **Clusters** from left navigation bar , select **awdbclstud** and click on start.
+
 1. On the left of the screen, click on the **Workspace** icon, then click on the arrow next to the word Workspace, and click on **Create** and then click on **Folder**. Name the folder **adftutorial**, and click on **Create Folder**. The adftutorial folder appears in the Workspace.
 
 1. Click on the drop down arrow next to adftutorial, and then click **Create**, and then click **Notebook**.
