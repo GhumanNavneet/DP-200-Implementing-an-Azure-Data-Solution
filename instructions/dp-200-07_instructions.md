@@ -352,7 +352,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Generate a Databricks Access Token.
 
-1. In the Azure portal, click on **Resource groups** and then click on **awrgstudxx**, and then click on **awdbwsstudxx** where xx are the initials of your name.
+1. In the Azure portal, click on **Resource groups** and then click on **awrgstudxx**, and then click on **xxxxxx** where xxxxxx is the deployment id.
 
 1. Click on **Launch Workspace**
 
@@ -406,7 +406,7 @@ The main tasks for this exercise are as follows:
     - **Select cluster**: Existing interactive cluster
     - **Domain/ Region**: should be populated
     - **Access Token**: Copy the access token from Notepad and paste into this field
-    - **Choose from existing cluster**: awdbclstudxxxxxx, where xxxxxx is the deployment id
+    - **Choose from existing cluster**: awdbclstud
     - Leave other options to their default settings
 
     > **Note**: When you click on finish, you are returned to the **Author & Monitor** screen where the xx_dbls has been created, with the other linked services created in the previous exercize.
@@ -458,4 +458,4 @@ No errors were found." Click on the >> to close the window.
 
 1. In the **Azure Databricks** workspace, click on **Clusters** and you can see the Job status as pending execution, running, or terminated.
 
-1. Click on the cluster **awdbclstudxx**, and then click on the **Event Log** to view the activities.
+1. Click on the cluster **awdbclstud**, and then click on the **Event Log** to view the activities.
