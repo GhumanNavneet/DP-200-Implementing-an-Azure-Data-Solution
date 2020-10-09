@@ -204,7 +204,7 @@ The main tasks for this exercise are as follows:
   
 ### Task 3: Using Mapping Data Flow transformation
 
-1. Please read the instructions carefully and if any doubts u can also refer the images.
+1. Please read the instructions carefully and if any doubts, you can also refer the images.
 
 1. **Add a Select transformation to rename and drop a column** In the preview of the data, you may have noticed that the "Rotton Tomatoes" column is misspelled. To correctly name it and drop the unused Rating column, you can add a [Select transformation](https://docs.microsoft.com/azure/data-factory/data-flow-select) by clicking on the + icon next to your ADLS source node and choosing Select under Schema modifier.
     
