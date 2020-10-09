@@ -346,6 +346,8 @@ The following result is returned
 
 1. In the Azure portal, in the Data Explorer full screen, click on the drop down button for **New Stored Procedure** and click **New UDF** .
 
+    ![](Linked_Image_Files/UDF.jpg)
+
     > **Note**: A New UDF 1 screen appears which shows **function userDefinedFunction(){}**
 
 1. In the New Defined Function screen, in the **User Defined Function Id** text box, type **producttax**.
