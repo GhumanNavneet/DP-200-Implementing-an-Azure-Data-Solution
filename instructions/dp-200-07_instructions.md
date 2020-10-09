@@ -297,6 +297,8 @@ The main tasks for this exercise are as follows:
 
 ### Task 5: Writing to a Data Sink
 
+1. Navigate back to data factory tab.
+
 1. **Write to a Azure Synapse Analytics Sink** Now that you have finished all your transformation logic, you are ready to write to a Sink.
     1. Add a **Sink** by clicking on the **+ icon** next to your Upsert transformation and clicking Sink under Destination.
     1. In the Sink tab, create a new data warehouse dataset via the **+ New button**.
