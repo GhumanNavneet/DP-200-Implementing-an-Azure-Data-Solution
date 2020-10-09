@@ -35,48 +35,6 @@ At the end of this lab, you will have:
 
 Estimated Time: 15 minutes
 
-### Task 1: Create a SQL Data Warehouse database
-
-1. On the windows desktop, click on the **Start**, and type **"SQL Server"** and then click on **Microsoft SQL Server Management Studio 18**
-
-1. In the **Connect to Server** dialog box, fill in the following details
-    - Server Name: **dwhservice-deploymentID.database.windows.net** (navigate to resource group awrgstud-deploymentId and click on sql server dwhservice-deployment and from the overview copy the server name)
-    - Authentication: **SQL Server Authentication**
-    - Username: **sqladmin**
-    - Password: **Pa55w.rd**
-
-1. In the **Connect to Server** dialog box, click **Connect** 
-
-1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservice-deploymentID.database.windows.net** and click on **New Query**. 
-
-1. In the query window, create a DataWarehouse database named **DWDB**, with a service objective of DW100 and a maximum size of 1024GB. Click on **Execute**.
-
-    ```SQL
-    CREATE DATABASE DWDB COLLATE SQL_Latin1_General_CP1_CI_AS
-    (
-        EDITION             = 'DataWarehouse'
-    ,   SERVICE_OBJECTIVE   = 'DW100C'
-    ,   MAXSIZE             = 1024 GB
-    );
-    ```
-
-    > **Note**: The creation of the database takes approximately 2 minutes.
-
-1. Create a **master key** against the **DWDB** database. Expand dwhservice-deploymentID.database.windows.net in Object explorer , click databases and then right click on DWDB , select **NEW QUERY**. In the query editor, type in the following code and Click on **Execute**.
-
-    > **Note:-** if a pop-up appears click **yes always**
-
-    ```SQL
-    CREATE MASTER KEY;
-    ```
-
-### Task 2: Pause the Synapse SQL Pool (Data Warehouse)
-
-1. Navigate to the resource group awrgstud-deploymentId , Click on Synapse Sql Pool named **DWDB (dwhservice-deploymentId/DWDB)**.
-
-1. In the **DWDB (dwhservice-deploymentId/DWDB)** screen, On the Overview blade, click on **Pause**.
-
-1. In the Pause DWDB screen, click **Yes**
 
 ## Exercise 2: Setup Azure Data Factory
 
@@ -304,8 +262,42 @@ The main tasks for this exercise are as follows:
     ![Using the Alter Row Transformation to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/M07-E03-T03-img12.png)
 
     
+### Task 4: Create a SQL Data Warehouse database
 
-### Task 4: Writing to a Data Sink
+1. Navigate to your windows virtual machine desktop, click on the **Search**, and type **"SQL Server"** and then click on **Microsoft SQL Server Management Studio 18**
+
+1. In the **Connect to Server** dialog box, fill in the following details
+    - Server Name: **dwhservice-deploymentID.database.windows.net** (navigate to resource group awrgstud-deploymentId and click on sql server dwhservice-deployment and from the overview copy the server name)
+    - Authentication: **SQL Server Authentication**
+    - Username: **sqladmin**
+    - Password: **Pa55w.rd**
+
+1. In the **Connect to Server** dialog box, click **Connect** 
+
+1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservice-deploymentID.database.windows.net** and click on **New Query**. 
+
+1. In the query window, create a DataWarehouse database named **DWDB**, with a service objective of DW100 and a maximum size of 1024GB. Click on **Execute**.
+
+    ```SQL
+    CREATE DATABASE DWDB COLLATE SQL_Latin1_General_CP1_CI_AS
+    (
+        EDITION             = 'DataWarehouse'
+    ,   SERVICE_OBJECTIVE   = 'DW100C'
+    ,   MAXSIZE             = 1024 GB
+    );
+    ```
+
+    > **Note**: The creation of the database takes approximately 2 minutes.
+
+1. Create a **master key** against the **DWDB** database. Expand dwhservice-deploymentID.database.windows.net in Object explorer , click databases and then right click on DWDB , select **NEW QUERY**. In the query editor, type in the following code and Click on **Execute**.
+
+    > **Note:-** if a pop-up appears click **yes always**
+
+    ```SQL
+    CREATE MASTER KEY;
+    ```
+
+### Task 5: Writing to a Data Sink
 
 1. **Write to a Azure Synapse Analytics Sink** Now that you have finished all your transformation logic, you are ready to write to a Sink.
     1. Add a **Sink** by clicking on the **+ icon** next to your Upsert transformation and clicking Sink under Destination.
