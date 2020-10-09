@@ -195,6 +195,8 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, in the **Items** screen, click on the button **New SQL Query** that is above the **SQL API** Blade, above the **refresh** icon.
 
+     ![](Linked_Image_Files/new_sql_query.jpg)
+
     > **Note**: A Query 1 screen tab appears which shows the query **SELECT * FROM c** .
 
 1. Replace the query that returns a JSON file showing details for productId 1.
