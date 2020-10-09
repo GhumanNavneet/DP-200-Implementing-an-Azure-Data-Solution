@@ -135,6 +135,8 @@ The main tasks for this exercise are as follows:
 
 1. In the Documents pane, click on the icon for **New Item**. A new document appears with a sample JSON that you will now replace.
 
+      ![](Linked_Image_Files/new_item.jpg)
+
 1. Copy the following code and paste it into the **Documents** tab:
 
     ```JSON
