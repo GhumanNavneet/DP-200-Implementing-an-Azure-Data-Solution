@@ -135,6 +135,8 @@ The main tasks for this exercise are as follows:
 
 1. In the data-factory-deploymentId screen, in the middle of the screen, click on the button, **Author & Monitor**
 
+   > **Note:-** if the browser is in incognito mode please ensure you have allowed cookies for the session else it may not load the data factory.
+
 1. **Open the authoring canvas** If coming from the ADF homepage, click on the **pencil icon** on the left sidebar or the **create pipeline button** to open the authoring canvas.
 
 1. **Create the pipeline** Click on the **+** button in the Factory Resources pane and select Pipeline
