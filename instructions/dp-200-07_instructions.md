@@ -157,7 +157,7 @@ At this point, you have fully configured your copy activity. To test it out, cli
 
    ![Monitoring a pipeline in Azure Data Factory in the Azure Portal](Linked_Image_Files/M07-E02-T04-img01.png)
 
-1. To verify the copy worked as expected, open up your ADLS gen2 storage account and check to see your file was written as expected
+1. To verify the copy worked as expected, open up your **awdlsstuddxxxxxx** storage account and select containers and open data and then open output folder and view the file u can see the values same as that from the movies.csv file. 
 
 
 ## Exercise 3: Transforming Data with Mapping Data Flow
