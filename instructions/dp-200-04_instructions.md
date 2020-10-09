@@ -352,7 +352,7 @@ The following result is returned
 
 1. In the New Defined Function screen, in the **User Defined Function Id** text box, type **producttax**.
 
-1. Use the following code to create a user defined function in the user defined function Body. **note:- if not able to edit just save the udf with the name producttax then refresh the window and then navigate to the udf producttax and then edit**
+1. Use the following code to create a user defined function in the user defined function Body. **note:- if not able to edit just save the udf with the name producttax then refresh the window and then click products -> Clothing -> User defined Functions , then click producttax and then edit**
 
     ```Javascript
     function producttax(price) {
