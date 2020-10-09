@@ -328,7 +328,7 @@ At this point, You have finished building your 8 transformation Mapping Data Flo
 
 1. If you used the same logic described in this lab, your Data Flow should will written 737 rows to your SQL DW. You can go into [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) to verify the pipeline worked correctly and see what got written.
 
-1. To check the values right click DWDB database and in new query enter the mentioned queries - **select count(*) as TotalCount From Dbo.Ratings** & **select * from Dbo.Ratings**
+1. To check the values right click DWDB database and in new query enter the mentioned queries - **select count(*) as TotalCount From Dbo.Ratings** , **select * from Dbo.Ratings**
 
     ![Querying the results in SQL Server Management Studio](Linked_Image_Files/M07-E03-T05-img02.png)
 
