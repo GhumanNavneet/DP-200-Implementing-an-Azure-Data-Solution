@@ -293,6 +293,8 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, in the **Items** screen, click on the button **New Stored Procedure**.
 
+   ![](Linked_Image_Files/stored_procedure.jpg)
+
     > **Note**: A New Stored Procedure screen appears which shows a sample stored procedure .
 
 1. In the New Stored Procedure screen, in the **Stored Procedure Id** text box, type **createMyDocument**.
