@@ -3,7 +3,7 @@
 
 **Estimated Time**: 60 minutes
 
-**Lab files**: The files for this lab are located in the _Allfiles\Labfiles\Starter\DP-200.4_ folder.
+**Lab files**: The files for this lab are located in the _C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.4_ folder.
 
 ## Lab overview
 
