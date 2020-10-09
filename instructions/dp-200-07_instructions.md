@@ -31,12 +31,7 @@ At the end of this lab, you will have:
 
 > **IMPORTANT**: As you go through this lab, make a note of any issue(s) that you have encountered in any provisioning or configuration tasks and log it in the table in the document located at C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200-Issues-Doc.docx_. Document the Lab number, note the technology, Describe the issue, and what was the resolution. Save this document as you will refer back to it in a later module.
 
-## Exercise 1: Prepare a SQL Data Warehouse database
-
-Estimated Time: 15 minutes
-
-
-## Exercise 2: Setup Azure Data Factory
+## Exercise 1: Setup Azure Data Factory
 
 Estimated Time: 15 minutes
 
