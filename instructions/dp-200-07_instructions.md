@@ -111,9 +111,13 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Create a new HTTP dataset to use as a source
 
-1. In the Source tab of the Copy activity settings, click **+ New**
+1. Click on the copy data activity tab, and below navigate to the **Source** tab of the Copy activity settings, click **+ New**
 
-1. In the data store list, search for **HTTP** select the **HTTP** tile and click continue
+    ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_8.jpg)
+
+1. In the **New dataset** blade, In search column of data store list, search for **HTTP** select the **HTTP** tile and click continue
+
+    ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_9.jpg)
 
 1. In the file format list, select the **DelimitedText** format tile and click continue
 
