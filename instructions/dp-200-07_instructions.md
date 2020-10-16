@@ -102,7 +102,9 @@ The main tasks for this exercise are as follows:
 
     ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_6.jpg)
 
-1. **Add a copy activity** In the Activities pane, open the Move and Transform accordion and drag the Copy Data activity onto the pipeline canvas.
+1. **Add a copy activity** In the Activities pane, expand the Move and Transform and drag the Copy Data activity onto the pipeline canvas(blank side).
+
+    ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_7.jpg)
 
     ![Adding the Copy Activity to Azure Data Factory in the Azure Portal](Linked_Image_Files/M07-E02-T01-img01.png)
 
