@@ -144,8 +144,8 @@ The main tasks for this exercise are as follows:
     - Click **OK** once completed.
    
     a. To verify your dataset is configured correctly, click **Preview Data** in the Source tab of the copy activity to get a small snapshot of your data.
-   
-   ![Previewing in Azure Data Factory in the Azure Portal](Linked_Image_Files/M07-E02-T02-img02.png)
+
+    ![](Linked_Image_Files/lab6_14.jpg)
 
 ### Task 3: Create a new ADLS Gen2 dataset sink
 
