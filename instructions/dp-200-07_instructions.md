@@ -88,11 +88,19 @@ The main tasks for this exercise are as follows:
 
 1. On the deployment successful message, click on the button **Go to resource**.
 
-1. In the data-factory-deploymentId screen, in the middle of the screen, click on the button, **Author & Monitor**
+    ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_3.jpg)
+
+1. In the data-factory-deploymentId screen, in the middle of the screen, click on the button, **Author & Monitor**.
+
+    ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_4.jpg)
 
 1. **Open the authoring canvas** If coming from the ADF homepage, click on the **pencil icon** on the left sidebar or the **create pipeline button** to open the authoring canvas.
 
+    ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_5.jpg)
+
 1. **Create the pipeline** Click on the **+** button in the Factory Resources pane and select Pipeline
+
+    ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_6.jpg)
 
 1. **Add a copy activity** In the Activities pane, open the Move and Transform accordion and drag the Copy Data activity onto the pipeline canvas.
 
