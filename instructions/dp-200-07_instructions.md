@@ -219,6 +219,10 @@ The main tasks for this exercise are as follows:
 
     > NOTE: Data Flow clusters take 5-7 minutes to warm up.
 
+    ![](Linked_Image_Files/lab6_24.jpg)
+    
+    ![](Linked_Image_Files/lab6_25.jpg)
+    
 1. **Add a Data Flow activity** In the Activities pane, open the Move and Transform accordion and drag the **Data Flow** activity onto the pipeline canvas. In the blade that pops up, click **Create new Data Flow** and select **Data Flow** and then click **OK**. Click on the  **pipeline1** tab and drag the green box from your Copy activity to the Data Flow Activity to create an on success condition. You will see the following in the canvass:
 
     ![Adding a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/M07-E03-T01-img01.png)
