@@ -60,9 +60,9 @@ Create your data factory: Use the [Azure Portal](https://portal.azure.com) to cr
     - Leave other options to their default settings
     - Click **Review+Create** and then Click Create
 
-        ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_1.jpg)
+        ![](Linked_Image_Files/lab6_1.jpg)
         
-        ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_2.jpg)
+        ![](Linked_Image_Files/lab6_2.jpg)
 
     > **Note**: The creation of the Data Factory takes approximately 2 minute.
 
@@ -88,23 +88,23 @@ The main tasks for this exercise are as follows:
 
 1. On the deployment successful message, click on the button **Go to resource**.
 
-    ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_3.jpg)
+    ![](Linked_Image_Files/lab6_3.jpg)
 
 1. In the data-factory-deploymentId screen, in the middle of the screen, click on the button, **Author & Monitor**.
 
-    ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_4.jpg)
+    ![](Linked_Image_Files/lab6_4.jpg)
 
 1. **Open the authoring canvas** If coming from the ADF homepage, click on the **pencil icon** on the left sidebar or the **create pipeline button** to open the authoring canvas.
 
-    ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_5.jpg)
+    ![](Linked_Image_Files/lab6_5.jpg)
 
 1. **Create the pipeline** Click on the **+** button in the Factory Resources pane and select Pipeline
 
-    ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_6.jpg)
+    ![](Linked_Image_Files/lab6_6.jpg)
 
 1. **Add a copy activity** In the Activities pane, expand the Move and Transform and drag the Copy Data activity onto the pipeline canvas(blank side).
 
-    ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_7.jpg)
+    ![](Linked_Image_Files/lab6_7.jpg)
 
     ![Adding the Copy Activity to Azure Data Factory in the Azure Portal](Linked_Image_Files/M07-E02-T01-img01.png)
 
@@ -113,17 +113,19 @@ The main tasks for this exercise are as follows:
 
 1. Click on the copy data activity tab, and below navigate to the **Source** tab of the Copy activity settings, click **+ New**
 
-    ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_8.jpg)
+    ![](Linked_Image_Files/lab6_8.jpg)
 
 1. In the **New dataset** blade, In search column of data store list, search for **HTTP** select the **HTTP** tile and click continue
 
-    ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_9.jpg)
+    ![](Linked_Image_Files/lab6_9.jpg)
 
 1. In the file format list, select the **DelimitedText** format tile and click continue
 
-    ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_10.jpg)
+    ![](Linked_Image_Files/lab6_10.jpg)
 
 1. In Set Properties blade, give your dataset an understandable name such as **HTTPSource** and click on the **Linked Service** dropdown. If you have not created your HTTP Linked Service, select **New**.
+
+    ![](Linked_Image_Files/lab6_11.jpg)
 
 1. In the New Linked Service (HTTP) screen, specify the url of the moviesDB csv file. You can access the data with no authentication required using the following endpoint:
 
@@ -133,9 +135,11 @@ The main tasks for this exercise are as follows:
 
 1. In the **Authentication type** drop down, select **Anonymous**. and click on **Create**.
 
+    ![](Linked_Image_Files/lab6_12.jpg)
+
 1. Once you have created and selected the linked service, specify the rest of your dataset settings. These settings specify how and where in your connection we want to pull the data. As the url is pointed at the file already, no relative endpoint is required. As the data has a header in the first row, set **First row as header** to be true and select Import schema from **connection/store** to pull the schema from the file itself. Select **Get** as the request method. You will see the followinf screen
 
-    ![Creating a linked service and dataset in Azure Data Factory in the Azure Portal](Linked_Image_Files/M07-E02-T02-img01.png)
+    ![](Linked_Image_Files/lab6_13.jpg)
            
     - Click **OK** once completed.
    
