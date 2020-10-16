@@ -121,6 +121,8 @@ The main tasks for this exercise are as follows:
 
 1. In the file format list, select the **DelimitedText** format tile and click continue
 
+    ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_10.jpg)
+
 1. In Set Properties blade, give your dataset an understandable name such as **HTTPSource** and click on the **Linked Service** dropdown. If you have not created your HTTP Linked Service, select **New**.
 
 1. In the New Linked Service (HTTP) screen, specify the url of the moviesDB csv file. You can access the data with no authentication required using the following endpoint:
