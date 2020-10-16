@@ -181,14 +181,17 @@ The main tasks for this exercise are as follows:
 
 At this point, you have fully configured your copy activity. To test it out, click on the **Debug** button at the top of the pipeline canvas. This will start a pipeline debug run.
 
+   ![](Linked_Image_Files/lab6_21.jpg)
+
 1. To monitor the progress of a pipeline debug run, click on the **Output** tab of the pipeline
 
 1. To view a more detailed description of the activity output, click on the eyeglasses icon. This will open up the copy monitoring screen which provides useful metrics such as Data read/written, throughput and in-depth duration statistics.
 
-   ![Monitoring a pipeline in Azure Data Factory in the Azure Portal](Linked_Image_Files/M07-E02-T04-img01.png)
+   ![](Linked_Image_Files/lab6_23.jpg)
 
 1. To verify the copy worked as expected, open up your **awdlsstuddxxxxxx** storage account and select containers and open data and then open output folder and view the .txt file and you can see the values same as that from the movies.csv file. 
 
+    ![](Linked_Image_Files/lab6_22.jpg)
 
 ## Exercise 3: Transforming Data with Mapping Data Flow
   
