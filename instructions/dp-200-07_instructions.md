@@ -60,7 +60,9 @@ Create your data factory: Use the [Azure Portal](https://portal.azure.com) to cr
     - Leave other options to their default settings
     - Click **Review+Create** and then Click Create
 
-        ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/M07-E01-T01-img01.png)
+        ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_1.jpg)
+        
+        ![Creating Azure Data Factory in the Azure Portal](Linked_Image_Files/lab6_2.jpg)
 
     > **Note**: The creation of the Data Factory takes approximately 2 minute.
 
