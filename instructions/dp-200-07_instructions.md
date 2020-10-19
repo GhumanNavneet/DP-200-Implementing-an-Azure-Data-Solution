@@ -266,7 +266,11 @@ The main tasks for this exercise are as follows:
 
     ![Using the Select Transformation to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/lab6_30.jpg)
 
-1. **Add a Filter Transformation to filter out unwanted years** Say you are only interested in movies made after 1951. You can add a [Filter transformation](https://docs.microsoft.com/azure/data-factory/data-flow-filter) to specify a filter condition by clicking on the **+ icon** next to your Select transformation and choosing **Filter** under Row Modifier. Click on the **expression box** to open up the [Expression builder](https://docs.microsoft.com/azure/data-factory/concepts-data-flow-expression-builder) and enter in your filter condition. Using the syntax of the [Mapping Data Flow expression language](https://docs.microsoft.com/azure/data-factory/data-flow-expression-functions), **toInteger(year) > 1950** (enther this value in **Filter On** Box) will convert the string year value to an integer and filter rows if that value is above 1950.
+1. **Add a Filter Transformation to filter out unwanted years** Say you are only interested in movies made after 1951. You can add a [Filter transformation](https://docs.microsoft.com/azure/data-factory/data-flow-filter) to specify a filter condition by clicking on the **+ icon** next to your Select transformation and choosing **Filter** under Row Modifier. Click on the **expression box** to open up the [Expression builder](https://docs.microsoft.com/azure/data-factory/concepts-data-flow-expression-builder) and enter in your filter condition.
+
+1. Using the syntax of the [Mapping Data Flow expression language](https://docs.microsoft.com/azure/data-factory/data-flow-expression-functions),**toInteger(year) > 1950** (enter this value in **Filter On** Box) will convert the string year value to an integer and filter rows if that value is above 1950.
+
+    ![](Linked_Image_Files/lab6_30.jpg)
 
     ![Using the Filter Transformation to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/M07-E03-T03-img03.png)
 
