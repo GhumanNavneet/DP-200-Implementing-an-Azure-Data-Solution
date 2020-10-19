@@ -231,7 +231,9 @@ The main tasks for this exercise are as follows:
     
     ![](Linked_Image_Files/lab6_26_1.jpg)
 
-    ![Adding a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/M07-E03-T01-img01.png)
+1. Now the pipeline should look like the below image.
+
+    ![](Linked_Image_Files/lab6_27_2.jpg)
 
 ### Task 2: Adding a Data Source
 
