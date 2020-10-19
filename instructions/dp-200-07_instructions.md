@@ -379,13 +379,21 @@ The main tasks for this exercise are as follows:
     1. Add a **Sink** by clicking on the **+ icon** next to your Upsert transformation and clicking Sink under Destination.
         ![](Linked_Image_Files/lab6_40.jpg)
     1. In the Sink tab, create a new data warehouse dataset via the **+ New button**.
+        ![](Linked_Image_Files/lab6_41.jpg)
     1. Select **Azure Synapse Analytics** from the tile list.
+        ![](Linked_Image_Files/lab6_42.jpg)
     1. Select a new linked service and configure your Azure Synapse Analytics connection to connect to the DWDB database created in the previous step. Click **Create** when finished.
+    
     ![Creating an Azure Synapse Analytics connection in Azure Data Factory](Linked_Image_Files/M07-E03-T04-img01.png)
+    
     1. In the dataset configuration, select **Create new table** and enter in the schema of **Dbo** and the  table name of **Ratings**. Click **OK** once completed.
+
     ![Creating an Azure Synapse Analytics table in Azure Data Factory](Linked_Image_Files/M07-E03-T04-img02.png)
+    
     1. Since an upsert condition was specified, you need to go to the Settings tab and select 'Allow upsert' based on key columns PrimaryGenre and year.
+    
     ![Configuring Sink settings in Azure Data Factory](Linked_Image_Files/M07-E03-T04-img03.png)
+    
 At this point, You have finished building your 8 transformation Mapping Data Flow. It's time to run the pipeline and see the results!
 
 ![Completed Mapping Data Flow in Azure Data Factory](Linked_Image_Files/M07-E03-T04-img04.png)
