@@ -377,6 +377,7 @@ The main tasks for this exercise are as follows:
 
 1. **Write to a Azure Synapse Analytics Sink** Now that you have finished all your transformation logic, you are ready to write to a Sink.
     1. Add a **Sink** by clicking on the **+ icon** next to your Upsert transformation and clicking Sink under Destination.
+        ![](Linked_Image_Files/lab6_40.jpg)
     1. In the Sink tab, create a new data warehouse dataset via the **+ New button**.
     1. Select **Azure Synapse Analytics** from the tile list.
     1. Select a new linked service and configure your Azure Synapse Analytics connection to connect to the DWDB database created in the previous step. Click **Create** when finished.
