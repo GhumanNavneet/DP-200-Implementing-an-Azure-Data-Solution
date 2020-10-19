@@ -266,17 +266,15 @@ The main tasks for this exercise are as follows:
 
     ![Using the Select Transformation to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/lab6_30.jpg)
 
-1. **Add a Filter Transformation to filter out unwanted years** Say you are only interested in movies made after 1951. You can add a [Filter transformation](https://docs.microsoft.com/azure/data-factory/data-flow-filter) to specify a filter condition by clicking on the **+ icon** next to your Select transformation and choosing **Filter** under Row Modifier. Click on the **expression box** to open up the [Expression builder](https://docs.microsoft.com/azure/data-factory/concepts-data-flow-expression-builder) and enter in your filter condition.
-
-1. Using the syntax of the [Mapping Data Flow expression language](https://docs.microsoft.com/azure/data-factory/data-flow-expression-functions),**toInteger(year) > 1950** (enter this value in **Filter On** Box) will convert the string year value to an integer and filter rows if that value is above 1950.
+1. **Add a Filter Transformation to filter out unwanted years** Say you are only interested in movies made after 1951. You can add a [Filter transformation](https://docs.microsoft.com/azure/data-factory/data-flow-filter) to specify a filter condition by clicking on the **+ icon** next to your Select transformation and choosing **Filter** under Row Modifier. 
 
     ![](Linked_Image_Files/lab6_31.jpg)
 
-    ![](Linked_Image_Files/lab6_32.jpg)
+1.Click on the **expression box** to open up the [Expression builder](https://docs.microsoft.com/azure/data-factory/concepts-data-flow-expression-builder) as shown in the image below and enter in your filter condition. Using the syntax of the [Mapping Data Flow expression language](https://docs.microsoft.com/azure/data-factory/data-flow-expression-functions),**toInteger(year) > 1950** (enter this value in **Filter On** Box) will convert the string year value to an integer and filter rows if that value is above 1950.
 
-    You can use the expression builder's embedded Data preview pane to verify your condition is working properly
+   ![](Linked_Image_Files/lab6_31_1.jpg)
 
-    ![Using the Expression Builder in the Mapping Data Flow in Azure Data Factory](Linked_Image_Files/M07-E03-T03-img04.png)
+   ![](Linked_Image_Files/lab6_32.jpg)
 
 
 1. **Add a Derive Transformation to calculate primary genre** As you may have noticed, the genres column is a string delimited by a '|' character. If you only care about the *first* genre in each column, you can derive a new column named **PrimaryGenre** via the [Derived Column](https://docs.microsoft.com/azure/data-factory/data-flow-derived-column) transformation by clicking on the **+ icon** next to your Filter transformation and choosing Derived under Schema Modifier. Similar to the filter transformation, the derived column uses the Mapping Data Flow expression builder to specify the values of the new column.The value for the expression is **iif(locate("|",genres) > 1,left(genres, locate("|",genres)-1),genres)** .
