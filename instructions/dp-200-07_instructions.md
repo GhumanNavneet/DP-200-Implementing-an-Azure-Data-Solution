@@ -242,9 +242,11 @@ The main tasks for this exercise are as follows:
     ![](Linked_Image_Files/lab6_27_1.jpg)
 1. Click on the **Add Source** button.
 
+    ![](Linked_Image_Files/lab6_28.jpg)
+
 1. **Add an ADLS source** Double click on the Mapping Data Flow object in the canvas. Click on the Add Source button in the Data Flow canvas. In the **Source dataset** dropdown, select your **ADLSG2** dataset used in your Copy activity
 
-    ![Adding a Source to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/M07-E03-T02-img01.png)
+    ![Adding a Source to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/lab6_28_1.jpg)
 
 1. If your dataset is pointing at a folder with other files, you may need to create another dataset or utilize parameterization to make sure only the moviesDB.csv file is read
 
@@ -258,7 +260,7 @@ The main tasks for this exercise are as follows:
 
 1. **Add a Select transformation to rename and drop a column** In the preview of the data, you may have noticed that the "Rotton Tomatoes" column is misspelled. To correctly name it and drop the unused Rating column, you can add a [Select transformation](https://docs.microsoft.com/azure/data-factory/data-flow-select) by clicking on the + icon next to your ADLS source node and choosing Select under Schema modifier.
     
-    ![Adding a Transformation to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/M07-E03-T03-img01.png)
+    ![Adding a Transformation to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/lab6_29.jpg)
 
     In the **Name** as field, change 'Rotton' to 'Rotten'. To drop the Rating column, hover over it and click on the trash can icon.
 
