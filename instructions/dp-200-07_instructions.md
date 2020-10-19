@@ -272,7 +272,7 @@ The main tasks for this exercise are as follows:
 
     ![](Linked_Image_Files/lab6_30.jpg)
 
-    ![Using the Filter Transformation to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/M07-E03-T03-img03.png)
+    ![](Linked_Image_Files/lab6_31.jpg)
 
     You can use the expression builder's embedded Data preview pane to verify your condition is working properly
 
