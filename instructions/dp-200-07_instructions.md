@@ -400,7 +400,7 @@ At this point, You have finished building your 8 transformation Mapping Data Flo
 
 ## Task 5: Running the Pipeline
 
-1.**Make sure you have data flow debug selected**
+1. Make sure you have data flow debug selected.
 
    ![](Linked_Image_Files/data-flow-debug.jpg)
     
