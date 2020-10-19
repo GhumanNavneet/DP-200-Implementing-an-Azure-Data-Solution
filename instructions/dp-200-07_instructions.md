@@ -333,7 +333,7 @@ The main tasks for this exercise are as follows:
 
 
 
-    ![Using the Alter Row Transformation to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/M07-E03-T03-img12.png)
+    ![Using the Alter Row Transformation to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/lab6_39.jpg)
 
     
 ### Task 4: Create a SQL Data Warehouse database
