@@ -325,7 +325,13 @@ The main tasks for this exercise are as follows:
     * To see how the aggregate transformation changes your data, use the Data Preview tab
    
 
-1. **Specify Upsert condition via an Alter Row Transformation** If you are writing to a tabular sink, you can specify insert, delete, update and upsert policies on rows using the [Alter Row transformation](https://docs.microsoft.com/azure/data-factory/data-flow-alter-row) by clicking on the + icon next to your Aggregate transformation and clicking Alter Row under Row modifier. Since you are always inserting and updating, you can specify that all rows will always be upserted. in alter row conditions select Upsert If and set to true()
+1. **Specify Upsert condition via an Alter Row Transformation** If you are writing to a tabular sink, you can specify insert, delete, update and upsert policies on rows using the [Alter Row transformation](https://docs.microsoft.com/azure/data-factory/data-flow-alter-row) by clicking on the + icon next to your Aggregate transformation and clicking Alter Row under Row modifier.
+
+    ![](Linked_Image_Files/lab6_38.jpg)
+
+1. Since you are always inserting and updating, you can specify that all rows will always be upserted. in alter row conditions select Upsert If and set to true()
+
+
 
     ![Using the Alter Row Transformation to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/M07-E03-T03-img12.png)
 
