@@ -285,7 +285,7 @@ The main tasks for this exercise are as follows:
 
 1. Similar to the filter transformation, the derived column uses the Mapping Data Flow expression builder to specify the values of the new column.The value for the expression is **iif(locate("|",genres) > 1,left(genres, locate("|",genres)-1),genres)** .
 
-    ![Using the Derived Transformation to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/M07-E03-T03-img05.png)
+    ![Using the Derived Transformation to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/lab6_34.jpg)
 
     In this scenario, you are trying to extract the first genre from the genres column which is formatted as 'genre1|genre2|...|genreN'. Use the **locate** function to get the first 1-based index of the '|' in the genres string. Using the **iif** function, if this index is greater than 1, the primary genre can be calculated via the **left** function which returns all characters in a string to the left of an index. Otherwise, the PrimaryGenre value is equal to the genres field. You can verify the output via the expression builder's Data preview pane.
 
