@@ -401,7 +401,8 @@ At this point, You have finished building your 8 transformation Mapping Data Flo
 ## Task 5: Running the Pipeline
 
 1.**Make sure you have data flow debug selected**
-![](Linked_Image_Files/data-flow-debug.jpg)
+
+   ![](Linked_Image_Files/data-flow-debug.jpg)
     
 1. Go to the pipeline1 tab in the canvas. Because Azure Synapse Analytics in Data Flow uses [PolyBase](https://docs.microsoft.com/sql/relational-databases/polybase/polybase-guide?view=sql-server-2017), you must specify a blob or ADLS staging folder. In the Execute Data Flow activity's settings tab, open up the PolyBase accordion and select your ADLS linked service and specify a staging folder path.
 
