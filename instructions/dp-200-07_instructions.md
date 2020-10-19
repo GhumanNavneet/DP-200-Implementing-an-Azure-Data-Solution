@@ -187,7 +187,7 @@ At this point, you have fully configured your copy activity. To test it out, cli
 
 1. To view a more detailed description of the activity output, click on the eyeglasses icon. This will open up the copy monitoring screen which provides useful metrics such as Data read/written, throughput and in-depth duration statistics.
 
-   ![](Linked_Image_Files/lab6_23.jpg)
+   ![](Linked_Image_Files/lab6_23_1.jpg)
 
 1. To verify the copy worked as expected, open up your **awdlsstuddxxxxxx** storage account and select containers and open data and then open output folder and view the .txt file and you can see the values same as that from the movies.csv file. 
 
