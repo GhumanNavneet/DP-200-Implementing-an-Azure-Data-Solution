@@ -273,6 +273,8 @@ The main tasks for this exercise are as follows:
 1.Click on the **expression box** to open up the [Expression builder](https://docs.microsoft.com/azure/data-factory/concepts-data-flow-expression-builder) as shown in the image below and enter in your filter condition. Using the syntax of the [Mapping Data Flow expression language](https://docs.microsoft.com/azure/data-factory/data-flow-expression-functions),**toInteger(year) > 1950** (enter this value in **Filter On** Box) will convert the string year value to an integer and filter rows if that value is above 1950.
 
    ![](Linked_Image_Files/lab6_31_1.jpg)
+   
+   ![](Linked_Image_Files/lab6_31_2.jpg)
 
    ![](Linked_Image_Files/lab6_32.jpg)
 
