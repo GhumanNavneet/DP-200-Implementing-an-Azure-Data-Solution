@@ -237,6 +237,11 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Adding a Data Source
 
+1. Double-click on the dataflow tab to create a dataflow structure.
+
+    ![](Linked_Image_Files/lab6_27_1.jpg)
+1. Click on the **Add Source** button.
+
 1. **Add an ADLS source** Double click on the Mapping Data Flow object in the canvas. Click on the Add Source button in the Data Flow canvas. In the **Source dataset** dropdown, select your **ADLSG2** dataset used in your Copy activity
 
     ![Adding a Source to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/M07-E03-T02-img01.png)
