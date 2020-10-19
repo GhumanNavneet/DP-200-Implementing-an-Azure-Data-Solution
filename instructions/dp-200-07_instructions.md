@@ -227,6 +227,8 @@ The main tasks for this exercise are as follows:
 
     ![](Linked_Image_Files/lab6_26.jpg)
     
+    ![](Linked_Image_Files/lab6_27.jpg)
+    
     ![](Linked_Image_Files/lab6_26_1.jpg)
 
     ![Adding a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/M07-E03-T01-img01.png)
