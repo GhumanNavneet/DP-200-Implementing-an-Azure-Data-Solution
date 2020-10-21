@@ -125,7 +125,7 @@ The main tasks for this exercise are as follows:
 
 1. From the **New Container*** screen, create a container with the following settings:
 
-    - Name: **images**.
+    - Name: **images**
 
     - Public access level: **Private (no anonymous access)**
 
