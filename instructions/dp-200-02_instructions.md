@@ -51,7 +51,7 @@ The main task for this exercise are as follows:
 
 ### Task 1: Identify the data storage requirements and structures of AdventureWorks.
 
-1. From the lab virtual machine, start **Microsoft Word**, and open up the file **DP-200-Lab02-Ex01.docx** from the **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.2** folder.
+1. From the lab virtual machine, open up the file **DP-200-Lab02-Ex01** from the **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.2** folder.The file will open in wordpad.
 
 1. Spend **10 minutes** documenting the data storage requirements as outlined in the scenario of this lab. You can also use the case study document for additional reference.
 
