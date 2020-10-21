@@ -47,6 +47,8 @@ The main task for this exercise are as follows:
 
 1. The instructor will discuss the findings with the group.
 
+1. Before starting just to familiarize, we will be using deployment id for naming convention where xxxxxx will be asked to replace with deployment id and it can be found from the environment details tab from the right side of your environment.
+
 ### Task 1: Identify the data requirements and structures of AdventureWorks.
 
 1. From the lab virtual machine, start **Microsoft Word**, and open up the file **DP-200-Lab06-Ex01.docx** from the **Allfiles\Labfiles\Starter\DP-200.6** folder.
@@ -80,7 +82,7 @@ The main tasks for this exercise are as follows:
 1. In the Azure portal, click on the **+ Create a resource** icon , type **Event Hubs**, and then select **Event Hubs** from the resulting search. In the Event Hubs screen, click **Create**.
 
 1. In the Create Namespace blade, type out the following options:
-    - **Name**: **xx-phoneanalysis-ehn**, where xx are your initials
+    - **Name**: **phoneanalysis-ehn-xxxxxx**, where xxxxxx is the deploymentID
     - **Pricing Tier**: **Standard**
     - **Subscription**: **Your subscription**
     - **Resource group**: use the existing resource group **awrgstud-DeploymentID***
