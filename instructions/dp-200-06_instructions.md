@@ -106,7 +106,7 @@ The main tasks for this exercise are as follows:
 
 1. In the **xx-phoneanalysis-ehn** screen, click on **+ Event Hubs**.
 
-1. Provide the name **xx-phoneanalysis-eh**, leave the other settings to thier default values and then select **Create**.
+1. Provide the name **phoneanalysis-eh-xxxxxx**, where xxxxxx is the deploymentID, leave the other settings to thier default values and then select **Create**.
 
     ![Creating an Event Hub in Azure portal](Linked_Image_Files/M06-E02-T02-img01.png)
 
@@ -114,15 +114,15 @@ The main tasks for this exercise are as follows:
 
 ### Task 3: Configure Event Hub security
 
-1. In the Azure portal, in the **xx-phoneanalysis-ehn** screen, where **xx** are your initials. Scroll to the bottom of the window, and click on **xx-phoneanalysis-eh** event hub.
+1. In the Azure portal, in the **phoneanalysis-ehn-xxxxxx**, where xxxxxx is the deploymentID. Scroll to the bottom of the window, and click on **xx-phoneanalysis-eh** event hub.
 
 1. To grant access to the event hub, in the blade on the left click **Shared access policies**.
 
-1. Under the **xx-phoneanalysis-eh - Shared access policies** screen, create a policy with **Manage** permissions by selecting **+ Add**. Give the policy the name of **xx-phoneanalysis-eh-sap** , check **Manage**, and then click **Create**.
+1. Under the **phoneanalysis-eh-xxxxxx - Shared access policies** screen, create a policy with **Manage** permissions by selecting **+ Add**. Give the policy the name of **phoneanalysis-eh-sap-xxxxxx**, where xxxxxx is the deploymentID , check **Manage**, and then click **Create**.
 
     ![Creating a Shared Access Policy for Event Hubs in Azure portal](Linked_Image_Files/M06-E02-T03-img01.png)
 
-1. Click on your new policy **xx-phoneanalysis-eh-sap** after it has been created, and then select the copy button for the **CONNECTION STRING - PRIMARY KEY** and paste the CONNECTION STRING - PRIMARY KEY  into Notepad, this is needed later in the exercise.
+1. Click on your new policy **phoneanalysis-eh-sap-xxxxxx** after it has been created, and then select the copy button for the **CONNECTION STRING - PRIMARY KEY** and paste the CONNECTION STRING - PRIMARY KEY  into Notepad, this is needed later in the exercise.
 
     >**NOTE**: The connection string looks as follows:
     > ```CMD
