@@ -49,7 +49,7 @@ The main task for this exercise are as follows:
 
 ### Task 1: Security as a layered approach.
 
-1. From the lab virtual machine, start **Microsoft Word**, and open up the file **DP-200-Lab08-Ex01.docx** from the **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.8** folder.
+1. From the lab virtual machine, open up the file **DP-200-Lab08-Ex01.docx** from the **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.8** folder.This file will open in wordpad.
 
 1. From the course content, case study and the scenarios taken in the course so far, spend **10 minutes** in a group identifying the layers of security that you have impacted so far to secure AdventureWorks in the labs. Find three examples.
 
