@@ -71,7 +71,7 @@ The main tasks for this exercise are as follows:
 
 1. Create and configure a storage account named **awsastudxxxxxx** in the region closest to the lab location within the resource group awrgstudxxxxxx, where **xxxxxx**  is the deployment ID.
 
-1. Create a container named **images**, **phonecalls** and **tweets** within the awsastud(deploymentId) sxtorage account.
+1. Create a container named **images**, **phonecalls** and **tweets** within the awsastud(deploymentId) storage account.
 
 1. Upload some graphics to the images container of the storage account.
 
