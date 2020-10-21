@@ -236,7 +236,7 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure Databricks blade on the left of Microsoft Edge, click on Under **Workspace**, click on the drop down next to **Workspace**, then point to **Create** and then click on **Notebook**.
 
-1. In the **Create Notebook** screen, next to Name type **My Notebook**.
+1. In the **Create Notebook** screen, next to Name type **MyNotebook**.
 
 1. Next to the **Language** drop down list, select **Scala**.
 
