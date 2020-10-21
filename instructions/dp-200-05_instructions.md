@@ -166,6 +166,8 @@ The main tasks for this exercise are as follows:
 
     > **Note**: You will receive a message stating that the the server firewall rules have been successfully updated
 
+1.But for this lab, we will be adding all ips just for performing this lab. 
+
 1. Close down the Firewalls and virtual networks screen.
 
 > **Result**: After you completed this exercise, you have created an Azure  Synapse Analytics  instance and configures the server firewall to enable connections against it.
