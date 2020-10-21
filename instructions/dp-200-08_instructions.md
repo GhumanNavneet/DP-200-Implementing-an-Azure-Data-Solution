@@ -131,7 +131,7 @@ The main tasks for this exercise are as follows:
     - Server Name: **sqlservice-deploymentID.database.windows.net** (paste the value that you copied in the previous step).
     - Authentication: **SQL Server Authentication**
     - Username: **sqladmin**
-    - Password: **P@ssw0r**
+    - Password: **Pa55w.rd**
 
 1. In the **Connect to Server** dialog box, click **Connect** 
 
