@@ -82,7 +82,7 @@ The main tasks for this exercise are as follows:
 
 1. In the **Azure Databricks Service** blade, create an Azure Databricks Workspace with the following settings:
 
-    - **Workspace name**: **awdbwsstudxx**, where **xx** are your initials.
+    - **Workspace name**: **awdbwsstudxxxxxx**, where **xxxxxx** is the deployment-id.
 
     - **Subscription**: the name of the subscription you are using in this lab
 
@@ -108,13 +108,13 @@ The main tasks for this exercise are as follows:
 
 1. In the Resource groups screen, click on the **awrgstud-deploymentID** resource group.
 
-1. In the **awrgstudxx** screen, click **awdbwsstudxx**, where **xx** are your initials to open Azure Databricks. This will open your Azure Databricks service.
+1. In the **awrgstudxxxxxx** screen, click **awdbwsstudxxxxxx**, where **xxxxxx** is deployment-id to open Azure Databricks. This will open your Azure Databricks service.
 
     ![Azure Databricks Service in the Azure portal](Linked_Image_Files/M03-E02-T02-img01.png)
 
 ### Task 3: Launch a Databricks Workspace and create a Spark Cluster.
 
-1. In the Azure portal, in the **awdbwsstudxx** screen, click on the button **Launch Workspace**.
+1. In the Azure portal, in the **awdbwsstudxxxxxx** screen, click on the button **Launch Workspace**.
 
     > **Note**: You will be signed into the Azure Databricks Workspace in a separate tab in Microsoft Edge.
 
@@ -122,7 +122,7 @@ The main tasks for this exercise are as follows:
 
 1. In the **Create Cluster** screen, under New Cluster, create a Databricks Cluster with the following settings, and then click on **Create Cluster**:
 
-    - **Cluster name**: **awdbclstudxx**, where **xx** are your initials.
+    - **Cluster name**: **awdbclstudxxxxxx**, where **xxxxxx** is the deployment-id.
 
     - **Cluster Mode**: **Standard**
 
@@ -162,15 +162,15 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Confirm the creation of the Databricks cluster
 
-1. Return back to Microsoft Edge, under **Interactive Clusters** confirm that the state column is set to **Running** for the cluster named **awdbclstudxx**, where **xx** are your initials.
+1. Return back to Microsoft Edge, under **Interactive Clusters** confirm that the state column is set to **Running** for the cluster named **awdbclstudxxxxxx**, where **xxxxxx** is the deployment-id.
 
 ### Task 2: Collect the Azure Data Lake Store Gen2 account name
 
-1. In Microsoft Edge, click on the  Azure portal tab, click **Resource groups**, and then click **awrgstud-DeploymentID**, and then click on **awdlsstudxx**, where **xx** are your initials.
+1. In Microsoft Edge, click on the  Azure portal tab, click **Resource groups**, and then click **awrgstud-DeploymentID**, and then click on **awdlsstudxxxxxx**, where **xxxxxx** is the deployment-id.
 
 1. Click on **Containers** -> **logs** then click on the Upload button and upload the **preferences.json** file from `C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.2\logs` folder.
 
-1. In the **awdlsstudxx** screen, under settings, click on **Access keys**, and then click on the copy icon next to the **Storage account name** and paste it into Notepad.
+1. In the **awdlsstudxxxxxx** screen, under settings, click on **Access keys**, and then click on the copy icon next to the **Storage account name** and paste it into Notepad.
 
     ![Accessing Data Lake Storage account name in the Azure portal](Linked_Image_Files/M03-E03-T02-img01.png)
 
@@ -202,9 +202,9 @@ The main tasks for this exercise are as follows:
 
 1. Copy the **Application key value** and paste it into Notepad
 
-1. Assign the Storage Blob Data Contributor permission to your resource group. In the Azure portal, click on the **Home** hyperlink, and then the **Resource groups** icon, click on the resource group **awrgstudxx**, where **xx** are your initials.
+1. Assign the Storage Blob Data Contributor permission to your resource group. In the Azure portal, click on the **Home** hyperlink, and then the **Resource groups** icon, click on the resource group **awrgstudxxxxxx**, where **xxxxxx** is the deployment-id.
 
-1. In the **awrgstudxx** screen, click on **Access Control (IAM)** 
+1. In the **awrgstudxxxxxx** screen, click on **Access Control (IAM)** 
 
 1. Click on the **Role assignments** tab. 
 
