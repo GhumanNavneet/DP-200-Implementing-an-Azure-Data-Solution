@@ -119,7 +119,7 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, a message states that _Your deployment is complete_, click on the button **Go to resource**.
 
-1. In the **awsastud(deploymentID)** screen,  under the **Blob Service** click **Containers**.
+1. In the **awsastud(deploymentID)** screen, From the left hand side navigation pane navigate to **Blob Service** and find **Containers**.
 
 1. In the **awsastud(deploymentID) - Containers** screen, at the top left, click on the  **+ Container** button.
 
