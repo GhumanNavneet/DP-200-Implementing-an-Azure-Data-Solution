@@ -85,7 +85,7 @@ The main tasks for this exercise are as follows:
     - **Name**: **phoneanalysis-ehn-xxxxxx**, where xxxxxx is the deploymentID
     - **Pricing Tier**: **Standard**
     - **Subscription**: **Your subscription**
-    - **Resource group**: use the existing resource group **awrgstud-DeploymentID***
+    - **Resource group**: use the existing resource group **awrgstud-DeploymentID**
     - **Location**: select the location closest to you
     - **Throughput Units**: **20**
     - Leave other options to their default settings
@@ -102,9 +102,9 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstud-DeploymentID**
 
-1. Click on **xx-phoneanalysis-ehn**, where **xx** are your initials.
+1. Click on **phoneanalysis-ehn-xxxxxx**, where **xxxxxx** is the deploymentID.
 
-1. In the **xx-phoneanalysis-ehn** screen, click on **+ Event Hubs**.
+1. In the **phoneanalysis-ehn-xxxxxx** screen, click on **+ Event Hubs**.
 
 1. Provide the name **phoneanalysis-eh-xxxxxx**, where xxxxxx is the deploymentID, leave the other settings to thier default values and then select **Create**.
 
