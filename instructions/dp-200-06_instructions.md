@@ -244,9 +244,9 @@ The main tasks for this exercise are as follows:
     - **Input alias**: Enter a name for this job input as **PhoneStream**.
     - **Select Event Hub from your subscriptions**: checked
     - **Subscription**: Your subscription name
-    - **Event Hub Namespace**: xx-phoneanalysis-ehn
-    - **Event Hub Name**: Use existing named xx-phoneanalysis-eh
-    - **Event Hub Policy Name**: xx-phoneanalysis-eh-sap
+    - **Event Hub Namespace**: phoneanalysis-ehn-xxxxxx
+    - **Event Hub Name**: Use existing named phoneanalysis-eh-xxxxxx
+    - **Event Hub Policy Name**: phoneanalysis-eh-sap-xxxxxx
     - Leave the rest of the entries as default values. Finally, click **Save***.
 
         ![Create a Job Input Stream Analytics Job in the Azure Portal](Linked_Image_Files/M06-E04-T02-img01.png)
