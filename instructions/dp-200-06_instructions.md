@@ -325,7 +325,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 6: Validate streaming data is collected
 
-1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstudxx**, and then click on **awsastudxx**, where **xx** are your initials.
+1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstudxxxxxx**, and then click on **awsastudxxxxxx**, where **xxxxxx** is the deploymentID.
 
 1. In the Azure portal, click **Containers** box, and then click on the container named **phonecalls**.
 
