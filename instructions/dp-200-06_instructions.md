@@ -265,7 +265,7 @@ The main tasks for this exercise are as follows:
     - **Output alias**: **PhoneCallRefData**
     - **Select Event Hub from your subscriptions**: checked
     - **Subscription**: Your subscription name
-    - **Storage account**: **:awsastudxx**:, where xx is your initials
+    - **Storage account**: **:awsastudxxxxxx**:, where xxxxxx is the deploymentID
     - **Container**: **Use existing** and select **phonecalls**
     - Leave the rest of the entries as default values. Finally, click **Save**.
 
