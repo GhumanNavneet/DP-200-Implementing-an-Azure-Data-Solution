@@ -165,7 +165,7 @@ The main tasks for this exercise are as follows:
 
 1. Right click **Command Prompt**, click **Run as Administer**, and in the User Access Control screen, click **Yes**
 
-1. In Command Prompt, browse to the location **\Labfiles\Starter\DP-200.6\DataGenerator**
+1. In Command Prompt, browse to the location **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.6\DataGenerator**
 
 1. Type in the following command: 
 
