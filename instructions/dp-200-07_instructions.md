@@ -283,7 +283,7 @@ The main tasks for this exercise are as follows:
 
     ![](Linked_Image_Files/lab6_33.jpg)
 
-1. Similar to the filter transformation, the derived column uses the Mapping Data Flow expression builder to specify the values of the new column.The value for the expression is **iif(locate("|",genres) > 1,left(genres, locate("|",genres)-1),genres)** .
+1. Similar to the filter transformation, the derived column uses the Mapping Data Flow expression builder to specify the values of the new column.The value for the expression is **iif(locate("|",genres) > 1,left(genres, locate("|",genres)-1),genres)** (It will be better if you could type this expression).
 
     ![Using the Derived Transformation to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/lab6_34.jpg)
 
@@ -327,7 +327,7 @@ The main tasks for this exercise are as follows:
 
 1. **Specify Upsert condition via an Alter Row Transformation** If you are writing to a tabular sink, you can specify insert, delete, update and upsert policies on rows using the [Alter Row transformation](https://docs.microsoft.com/azure/data-factory/data-flow-alter-row) by clicking on the + icon next to your Aggregate transformation and clicking Alter Row under Row modifier.
 
-    ![](Linked_Image_Files/lab6_38.jpg)
+     ![](Linked_Image_Files/lab6_38.jpg)
 
 1. Since you are always inserting and updating, you can specify that all rows will always be upserted. in alter row conditions select Upsert If and set to true()
 
