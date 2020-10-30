@@ -228,7 +228,7 @@ The main tasks for this exercise are as follows:
 
 1. In the **Add role assignment** blade, under Role, select **Storage Blob Data Contributor**.
 
-1. In the **Add role assignment** blade, under Select, select **DLAccessxxxxxx** where xxxxxx is deploymentID, and then click **Save**.
+1. In the **Add role assignment** blade, under Select, select **DLAccessxxxxxx** where xxxxxx is deploymentID and confirm if **DLAccessxxxxxx** is selected, and then click **Save**.
 
     ![](Linked_Image_Files/ex3_task3_step15.png)
 
