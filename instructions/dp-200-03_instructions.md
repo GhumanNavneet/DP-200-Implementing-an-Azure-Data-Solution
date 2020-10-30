@@ -86,6 +86,8 @@ The main tasks for this exercise are as follows:
 
 1. In the **Azure Databricks** blade, click **Create**.
 
+    ![](Linked_Image_Files/ex1_task2_step3.png)
+
 1. In the **Azure Databricks Service** blade, create an Azure Databricks Workspace with the following settings:
 
     - **Workspace name**: **awdbwsstudxxxxxx**, where **xxxxxx** is the deployment-id.
