@@ -102,7 +102,9 @@ The main tasks for this exercise are as follows:
 
     - **Deploy Azure Databricks workspace in your Virtual Network**: **No**.
 
-        ![Creating Azure Databricks in the Azure portal](Linked_Image_Files/M03-E02-T01-img01.png)
+        ![](Linked_Image_Files/ex1_task2_step4.png)
+        
+        ![](Linked_Image_Files/ex1_task2_step5.png)
 
 1. In the **Azure Databricks Service** blade, click **Create**.
 
