@@ -78,9 +78,11 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, click on the **+ Create a resource** icon.
 
-    ![Azure Databricks Service in the Azure portal](Linked_Image_Files/ex1_task2_step1.png)
+    ![](Linked_Image_Files/ex1_task2_step1.png)
 
 1. In the New screen, click in the **Search the Marketplace** text box, and type the word **databricks**. Click **Azure Databricks** in the list that appears.
+
+    ![](Linked_Image_Files/ex1_task2_step2.png)
 
 1. In the **Azure Databricks** blade, click **Create**.
 
