@@ -166,7 +166,9 @@ The main tasks for this exercise are as follows:
 
     > **Note**: You will receive a message stating that the the server firewall rules have been successfully updated
 
-1.But for this lab, we will be adding all ips just for performing this lab. 
+1. But for this lab, we will be adding all ips just for performing this lab.
+
+1. Add a new Rule by entering **ALLIPS** in the **Rule Name** then **Start IP** as **0.0.0.0** and **End IP** as **255.255.255.255** and press enter and click Save At the top.
 
 1. Close down the Firewalls and virtual networks screen.
 
