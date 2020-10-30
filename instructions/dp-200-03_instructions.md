@@ -178,6 +178,8 @@ The main tasks for this exercise are as follows:
 
 1. In Microsoft Edge, click on the  Azure portal tab, click **Resource groups**, and then click **awrgstud-DeploymentID**, and then click on **awdlsstudxxxxxx**, where **xxxxxx** is the deployment-id.
 
+    ![Accessing Data Lake Storage account name in the Azure portal](Linked_Image_Files/ex3_task2_step1.png)
+
 1. Click on **Containers** -> **logs** then click on the Upload button and upload the **preferences.json** file from `C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.2\logs` folder.
 
 1. In the **awdlsstudxxxxxx** screen, under settings, click on **Access keys**, and then click on the copy icon next to the **Storage account name** and paste it into Notepad.
