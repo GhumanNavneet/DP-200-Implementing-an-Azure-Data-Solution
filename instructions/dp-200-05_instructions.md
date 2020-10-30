@@ -83,7 +83,7 @@ The main task for this exercise are as follows:
 
 1. In the **Create SQL Database** blade, click **Review + create**.
 
-1. After the validation of the **Create SQL Database*** blade, click **Create**.
+1. After the validation of the **Create SQL Database** blade, click **Create**.
 
    > **Note**: The provision will takes approximately 4 minutes.
 
