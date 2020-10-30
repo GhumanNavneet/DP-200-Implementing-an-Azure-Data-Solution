@@ -230,6 +230,8 @@ The main tasks for this exercise are as follows:
 
 1. In the **Add role assignment** blade, under Select, select **DLAccessxxxxxx** where xxxxxx is deploymentID, and then click **Save**.
 
+    ![](Linked_Image_Files/ex3_task3_step15.png)
+
 1. In the Azure portal, click the **Home** hyperlink, and then click the **Azure Active Directory** icon, Note **your role**. If you have the User role, you must make sure that non-administrators can register applications.
 
 1. Click **Users**, and then click **User settings** in the **Users - All users** blade, Check the **App registrations** setting. This value can only be set by an administrator. If set to Yes, any user in the Azure AD tenant can register an app. 
