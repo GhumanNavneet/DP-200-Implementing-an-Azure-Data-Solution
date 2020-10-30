@@ -226,7 +226,7 @@ The main tasks for this exercise are as follows:
 
 1. In the **Add role assignment** blade, under Role, select **Storage Blob Data Contributor**.
 
-1. In the **Add role assignment** blade, under Select, select **DLAccessxxxxxx**, and then click **Save**.
+1. In the **Add role assignment** blade, under Select, select **DLAccessxxxxxx** where xxxxxx is deploymentID, and then click **Save**.
 
 1. In the Azure portal, click the **Home** hyperlink, and then click the **Azure Active Directory** icon, Note **your role**. If you have the User role, you must make sure that non-administrators can register applications.
 
