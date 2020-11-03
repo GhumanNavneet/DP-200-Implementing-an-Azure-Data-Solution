@@ -203,6 +203,8 @@ The main tasks for this exercise are as follows:
 
 1. Click on the checkbox next to the **Manage** permissions to remove it, and then click **Save**.
 
+    ![](Linked_Image_Files/lab7-lastimage4.png)
+
 1. In the Azure portal, in the blade, click **Home**,
 
 > **Result**: After you completed this exercise, you modified the security of an Event Hub Shared Access Policy.
