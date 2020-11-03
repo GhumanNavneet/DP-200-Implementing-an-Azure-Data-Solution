@@ -143,7 +143,7 @@ The main tasks for this exercise are as follows:
 
 1. Right click [SalesLT].[Customers] and then click **Select Top 1000 Rows**
 
-### Task 2: View the Audit Log
+### Task 3: View the Audit Log
 
 1. Return to the Azure Portal. In the AdventureWorksLT (sqlservice-deploymentID/AdventureWorksLT) - Auditing screen, click on **View Audit Logs**
 
