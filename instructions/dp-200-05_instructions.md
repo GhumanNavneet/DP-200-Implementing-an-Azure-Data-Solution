@@ -151,14 +151,14 @@ The main tasks for this exercise are as follows:
     - Performance Level: Click **Select performance level** and select **Gen2 DW100C**. 
 
     - **Note:-** Please use the slider to set and select **DW100C**.
+    
+    - Click **Apply**. the following configuration is shown.
 
         ![Configuring performance of Azure Synapse Analytics in the Azure portal](Linked_Image_Files/lab4_ex2_task1_step5_2.png)
 
-    - Click **Apply**. the following configuration is shown.
-
-        ![Configuring Azure Synapse Analytics in the Azure portal](Linked_Image_Files/lab4_ex2_task1_step5_3.png)
-
 1. In the **SQL Data Warehouse** screen, click **Review + create**.
+
+    ![Configuring Azure Synapse Analytics in the Azure portal](Linked_Image_Files/lab4_ex2_task1_step5_3.png)
 
 1. In the **SQL Data Warehouse** blade, click **Create**.
 
