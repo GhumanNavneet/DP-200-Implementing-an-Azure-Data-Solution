@@ -41,11 +41,11 @@ The main task for this exercise are as follows:
 
 1. Setup Azure Data Factory
 
-1. Before starting just to familiarize, we will be using deployment id for naming convention where xxxxxx will be asked to replace with deployment id and it can be found from the environment details tab from the right side of your environment.
-
 ### Task 1: Setting up Azure Data Factory.
 
-Create your data factory: Use the [Azure Portal](https://portal.azure.com) to create your Data Factory. 
+1. Before starting just to familiarize, we will be using deployment id for naming convention where xxxxxx will be asked to replace with deployment id and it can be found from the environment details tab from the right side of your environment.
+
+1. Create your data factory: Use the [Azure Portal](https://portal.azure.com) to create your Data Factory. 
 
 1. In Microsoft Edge, go to the Azure portal tab, click on the **+ Create a resource** icon, type **factory**, and then click **Data Factory** from the resulting search, and then click **Create**.
 
