@@ -188,7 +188,11 @@ The main tasks for this exercise are as follows:
 
 1. Navigate to the resource group awrgstud-deploymentId , Click on Synapse Sql Pool named Warehouse-deploymentID (dwhservice-deploymentID/WarehousedeploymentID).
 
+    ![](Linked_Image_Files/lab4_ex2_lastimage_2_1.png)
+
 1. In the **Warehouse-deploymentId (dwhservice-deploymentId/WarehousedeploymentID)** screen, click on **Pause**.
+
+    ![](Linked_Image_Files/lab4_ex2_lastimage_2.png)
 
 1. In the Pause Warehouse-deploymentId screen, click **Yes**
 
