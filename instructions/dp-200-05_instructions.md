@@ -83,7 +83,7 @@ The main task for this exercise are as follows:
             - **Location**: choose a **location** near to you.
             - click on **OK**
 
-                ![Creating a server instance in the Azure portal](Linked_Image_Files/lab4_ex1_task1_step4.png)
+        ![Creating a server instance in the Azure portal](Linked_Image_Files/lab4_ex1_task1_step4.png)
 
             - Leave the remaining settings to their defaults, and then click on **OK**
 
@@ -146,7 +146,7 @@ The main tasks for this exercise are as follows:
             - Select the checkbox to Allow Azure services to access server.
             - click on **OK**.
 
-                ![Creating a server instance in the Azure portal](Linked_Image_Files/lab4_ex2_task1_step5.png)
+        ![Creating a server instance in the Azure portal](Linked_Image_Files/lab4_ex2_task1_step5.png)
 
     - Performance Level: Click **Select performance level** and select **Gen2 DW100C**. 
 
