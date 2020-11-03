@@ -233,6 +233,8 @@ The main tasks for this exercise are as follows:
 
 1. Go back to the Azure portal, navigate and click on the **+ Create a resource** icon, type **STREAM**, and then click the **Stream Analytics Job**, and then click **Create**.
 
+    ![](Linked_Image_Files/mod5_ex4_task1_step1.png)
+
 1. In the **New Stream Analytics job** screen, fill out the following details and then click on **Create**:
     - **Job name**: phoneanalysis-asa-job.
     - **Subscription**: select your subscription
@@ -240,19 +242,23 @@ The main tasks for this exercise are as follows:
     - **Location**: choose a location nearest to you.
     - Leave other options to their default settings
 
-        ![Create a Stream Analytics Job in the Azure Portal](Linked_Image_Files/M06-E04-T01-img01.png)
+        ![](Linked_Image_Files/mod5_ex4_task1_step2.png)
 
     > **Note**: You will receive a message stating that the Stream Analytics job is created after about 10 seconds. It may take a couple of minutes to update in the Azure portal.
 
 ### Task 2: Specify the a Stream Analytics job input.
 
-1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstud-DeploymentID***.
+1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstud-DeploymentID**.
 
 1. Click on **phoneanalysis-asa-job**.
 
 1. In your **phoneanalysis-asa-job** Stream Analytics job window, in the left hand blade, under **Job topology**, click **Inputs**.
 
+    ![](Linked_Image_Files/mod5_ex4_task2_step3.png)
+
 1. In the **Inputs** screen, click **+ Add stream input**, and then click **Event Hubs**.
+
+    ![](Linked_Image_Files/mod5_ex4_task2_step4.png)
 
 1. In the Event Hub screen, type in the following values and click the **Save** button.
     - **Input alias**: Enter a name for this job input as **PhoneStream**.
@@ -263,7 +269,7 @@ The main tasks for this exercise are as follows:
     - **Event Hub Policy Name**: phoneanalysis-eh-sap-xxxxxx
     - Leave the rest of the entries as default values. Finally, click **Save***.
 
-        ![Create a Job Input Stream Analytics Job in the Azure Portal](Linked_Image_Files/M06-E04-T02-img01.png)
+         ![](Linked_Image_Files/mod5_ex4_task2_step5.png)
 
 1. Once completed, the **PhoneStream** Input job will appear under the input window. Close the input widow to return to the Resource Group Page
 
