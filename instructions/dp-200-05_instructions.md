@@ -131,16 +131,16 @@ The main tasks for this exercise are as follows:
 
         - **Server**: Create a new server by clicking **Create new** with the following settings and click on **OK**:
             - **Server name**: **dwhservice-xxxxxx**, where **xxxxxx** is the deployment Id and you can find it from the environment details tab.
-            - **Server admin login**: **sqladmin**.
-            - **Password**: **Pa55w.rd**.
-            - **Confirm Password**: **Pa55w.rd**.
+            - **Server admin login**: **sqladmin**
+            - **Password**: **Pa55w.rd**
+            - **Confirm Password**: **Pa55w.rd**
             - **Location**: choose a **location** near to you.
             - Select the checkbox to Allow Azure services to access server.
             - click on **OK**.
 
                 ![Creating a server instance in the Azure portal](Linked_Image_Files/M05-E02-T01-img01.png)
 
-    - Performance Level: Click **Select performance level** and select **Gen2 DW100C**.
+    - Performance Level: Click **Select performance level** and select **Gen2 DW100C**. (**Note:-** Please use the slider to set and select DW100C)
 
         ![Configuring performance of Azure Synapse Analytics in the Azure portal](Linked_Image_Files/M05-E02-T01-img02.png)
 
