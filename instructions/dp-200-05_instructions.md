@@ -152,7 +152,7 @@ The main tasks for this exercise are as follows:
 
     - Click **Apply**. the following configuration is shown.
 
-        ![Configuring Azure Synapse Analytics in the Azure portal](Linked_Image_Files/M05-E02-T01-img03.png)
+        ![Configuring Azure Synapse Analytics in the Azure portal](Linked_Image_Files/lab4_ex2_task1_step5_3.png)
 
 1. In the **SQL Data Warehouse** screen, click **Review + create**.
 
@@ -168,13 +168,13 @@ The main tasks for this exercise are as follows:
 
 1. In the dwhservice-deploymentId - Firewalls and virtual networks screen, click on the option **+ Add client IP**, and then click on **Save**. On the success screen click **OK**.
 
-    ![Configuring Azure Synapse Analytics firewall settings in the Azure portal](Linked_Image_Files/M05-E02-T02-img01.png)
-
     > **Note**: You will receive a message stating that the the server firewall rules have been successfully updated
 
 1. But for this lab, we will be adding all ips just for performing this lab.
 
 1. Add a new Rule by entering **ALLIPS** in the **Rule Name** then **Start IP** as **0.0.0.0** and **End IP** as **255.255.255.255** and press enter and click Save At the top.
+
+    ![Configuring Azure Synapse Analytics firewall settings in the Azure portal](Linked_Image_Files/lab4_ex2_lastimage.png)
 
 1. Close down the Firewalls and virtual networks screen.
 
