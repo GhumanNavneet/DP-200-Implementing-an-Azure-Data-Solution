@@ -281,6 +281,8 @@ The main tasks for this exercise are as follows:
 
 1. In the **Outputs** screen, click **+ Add**, and then click **Blob Storage**.
 
+    ![](Linked_Image_Files/mod5_ex4_task3_step3.png)
+
 1. In the **Blob storage** window, type or select the following values in the pane:
     - **Output alias**: **PhoneCallRefData**
     - **Select Event Hub from your subscriptions**: checked
@@ -289,7 +291,7 @@ The main tasks for this exercise are as follows:
     - **Container**: **Use existing** and select **phonecalls**
     - Leave the rest of the entries as default values. Finally, click **Save**.
 
-        ![Create a Job Output in Stream Analytics Job in the Azure Portal](Linked_Image_Files/M06-E04-T03-img01.png)
+        ![](Linked_Image_Files/mod5_ex4_task3_step4.png)
 
 1. Close the output screen to return to the Resource Group page
 
@@ -326,7 +328,7 @@ The main tasks for this exercise are as follows:
     > NOTE: This query performs a self-join on a 5-second interval of call data. To check for fraudulent calls, you can self-join the streaming data based on the CallRecTime value. You can then look for call records where the CallingIMSI value (the originating number) is the same, but the SwitchNum value (country/region of origin) is different. When you use a JOIN operation with streaming data, the join must provide some limits on how far the matching rows can be separated in time. Because the streaming data is endless, the time bounds for the relationship are specified within the ON clause of the join using the DATEDIFF function.
     This query is just like a normal SQL join except for the DATEDIFF function. The DATEDIFF function used in this query is specific to Stream Analytics, and it must appear within the ON...BETWEEN clause.
 
-    ![Create a Query in Stream Analytics Job in the Azure Portal](Linked_Image_Files/M06-E04-T04-img01.png)
+    ![Create a Query in Stream Analytics Job in the Azure Portal](Linked_Image_Files/mod5_ex4_task4.png)
 
 1. Select **Save Query**.
 
@@ -351,7 +353,7 @@ The main tasks for this exercise are as follows:
 
 1. Confirm that a JSON file appears, and note the size column.
 
-    ![Viewing Files in the Azure Portal](Linked_Image_Files/M06-E04-T06-img01.png)
+    ![Viewing Files in the Azure Portal](Linked_Image_Files/mod5_ex_lastimage.png)
 
 1. Refresh Microsoft Edge, and when the screen has refreshed note the size of the file
 
