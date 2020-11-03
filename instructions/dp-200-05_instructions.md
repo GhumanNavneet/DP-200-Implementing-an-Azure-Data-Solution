@@ -69,7 +69,7 @@ The main task for this exercise are as follows:
      
         - Server: Create a new server by clicking **Create new** with the following settings and click on **OK**:
             - **Server name**: **sqlservice-xxxxx**, where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
-            - **Server admin login**: **sqladmin**.
+            - **Server admin login**: **sqladmin**
             - **Password**: **Pa55w.rd**
             - **Confirm Password**: **Pa55w.rd**
             - **Location**: choose a **location** near to you.
