@@ -51,6 +51,10 @@ The main task for this exercise are as follows:
 
 ### Task 1: Identify the data requirements and structures of AdventureWorks.
 
+1. Before starting just to familiarize, we will be using deployment id for naming convention where xxxxxx will be asked to replace with deployment id and it can be found from the environment details tab from the right side of your environment.
+
+    ![](Linked_Image_Files/deployment-ID.png)
+
 1. From the lab virtual machine, start **Microsoft Word**, and open up the file **DP-200-Lab06-Ex01.docx** from the **Allfiles\Labfiles\Starter\DP-200.6** folder.
 
 1. As a group, spend **10 minutes** discussing and listing the data requirements and data structure that your group has identified within the case study document.
@@ -81,6 +85,8 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, click on the **+ Create a resource** icon , type **Event Hubs**, and then select **Event Hubs** from the resulting search. In the Event Hubs screen, click **Create**.
 
+    ![](Linked_Image_Files/mod5_ex2_task1.png)
+
 1. In the Create Namespace blade, type out the following options:
     - **Name**: **phoneanalysis-ehn-xxxxxx**, where xxxxxx is the deploymentID
     - **Pricing Tier**: **Standard**
@@ -90,7 +96,7 @@ The main tasks for this exercise are as follows:
     - **Throughput Units**: **20**
     - Leave other options to their default settings
 
-        ![Creating an Event Hub Namespace in Azure portal](Linked_Image_Files/M06-E02-T01-img01.png)
+        ![](Linked_Image_Files/mod5_ex2_task1_step3.png)
 
 1. Then click **Create**
 
@@ -106,9 +112,11 @@ The main tasks for this exercise are as follows:
 
 1. In the **phoneanalysis-ehn-xxxxxx** screen, click on **+ Event Hubs**.
 
+    ![](Linked_Image_Files/mod5_ex2_task2_step4.png)
+
 1. Provide the name **phoneanalysis-eh-xxxxxx**, where xxxxxx is the deploymentID, leave the other settings to thier default values and then select **Create**.
 
-    ![Creating an Event Hub in Azure portal](Linked_Image_Files/M06-E02-T02-img01.png)
+    ![](Linked_Image_Files/mod5_ex2_task2_step5.png)
 
     > **Note**: You will receive a message stating that the Event Hub is created after about 10 seconds
 
@@ -116,13 +124,19 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, in the **phoneanalysis-ehn-xxxxxx**, where xxxxxx is the deploymentID. Scroll to the bottom of the window, and click on **phoneanalysis-eh-xxxxxx** event hub.
 
+    ![](Linked_Image_Files/mod5_ex2_task3_step1.png)
+
 1. To grant access to the event hub, in the blade on the left click **Shared access policies**.
+
+    ![](Linked_Image_Files/mod5_ex2_task3_step2.png)
 
 1. Under the **phoneanalysis-eh-xxxxxx - Shared access policies** screen, create a policy with **Manage** permissions by selecting **+ Add**. Give the policy the name of **phoneanalysis-eh-sap-xxxxxx**, where xxxxxx is the deploymentID , check **Manage**, and then click **Create**.
 
-    ![Creating a Shared Access Policy for Event Hubs in Azure portal](Linked_Image_Files/M06-E02-T03-img01.png)
+    ![](Linked_Image_Files/mod5_ex2_task3_step3.png)
 
 1. Click on your new policy **phoneanalysis-eh-sap-xxxxxx** after it has been created, and then select the copy button for the **CONNECTION STRING - PRIMARY KEY** and paste the CONNECTION STRING - PRIMARY KEY  into Notepad, this is needed later in the exercise.
+
+    ![](Linked_Image_Files/mod5_ex2_task3_step4.png)
 
     >**NOTE**: The connection string looks as follows:
     > ```CMD
