@@ -83,7 +83,7 @@ The main task for this exercise are as follows:
             - **Location**: choose a **location** near to you.
             - click on **OK**
 
-        ![Creating a server instance in the Azure portal](Linked_Image_Files/lab4_ex1_task1_step4.png)
+   ![Creating a server instance in the Azure portal](Linked_Image_Files/lab4_ex1_task1_step4.png)
 
             - Leave the remaining settings to their defaults, and then click on **OK**
 
