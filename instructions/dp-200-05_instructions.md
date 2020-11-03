@@ -45,6 +45,10 @@ The main task for this exercise are as follows:
 
 ### Task 1: Create and configure a SQL Database instance.
 
+1. Before starting just to familiarize, we will be using deployment id for naming convention where xxxxxx will be asked to replace with deployment id and it can be found from the environment details tab from the right side of your environment.
+
+    ![](Linked_Image_Files/deployment-ID.png)
+
 1. In the Azure portal, navigate to the **+ Create a resource** blade.
 
 1. In the New screen, click the **Search the Marketplace** text box, and type the word **SQL Database**. Click **SQL Database** in the list that appears.
