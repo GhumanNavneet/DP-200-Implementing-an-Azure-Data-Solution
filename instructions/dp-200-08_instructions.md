@@ -113,13 +113,19 @@ The main tasks for this exercise are as follows:
 
 1. Click on **Storage Details - Configure**.
 
+    ![](Linked_Image_Files/lab7-ex3-task1-step5.png)
+
 1. In the **Storage Setting** screen, click **Subscription - change storage subscription**, and then click your subscription.
 
 1. In the **Storage Setting** screen, click **Storage Settings - Configure required settings**. In the **Choose storage account** screen, click **awsastud(deploymentId)**
 
+    ![](Linked_Image_Files/lab7-ex3-task1-step7_1.png)
+    
+    ![](Linked_Image_Files/lab7-ex3-task1-step7_2.png)
+
 1. In the **Retention Days** text box, type **90**, and then click on **OK**.
 
-    ![Configuring Auditing in the Azure Portal](Linked_Image_Files/M08-E04-T01-img01.png)
+    ![Configuring Auditing in the Azure Portal](Linked_Image_Files/lab7-ex3-task1-step8.png)
 
 1. Click on **Save**.
 
@@ -127,9 +133,15 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, in the blade, click Resource groups, select **awrgstud-deploymentID**, and then click on **sqlservice-deploymentId**.
 
+    ![](Linked_Image_Files/lab7-ex3-task2-step1.png)
+
 1. From the left navigation menu under **Settings** select **Properties**. Copy the **"Server name"** and paste it into Notepad.
 
+    ![](Linked_Image_Files/lab7-ex3-task2-step2.png)
+
 1. On the windows desktop, click on the **Start**, and type **"SQL Server"** and then click on **Microsoft SQL Server Management Studio 18**
+
+    ![](Linked_Image_Files/lab7-ex3-task2-step3.png)
 
 1. In the **Connect to Server** dialog box, fill in the following details
     - Server Name: **sqlservice-deploymentID.database.windows.net** (paste the value that you copied in the previous step).
@@ -137,9 +149,13 @@ The main tasks for this exercise are as follows:
     - Username: **sqladmin**
     - Password: **P@ssw0r**
 
+    ![](Linked_Image_Files/lab7-ex3-task2-step4.png)
+
 1. In the **Connect to Server** dialog box, click **Connect** 
 
 > **Note**: An error message is returned as the password is incorrect. Type in the correct password of **P@Ssw0rd**.
+
+   ![](Linked_Image_Files/lab7-ex3-task2-step5.png)
 
 1. Type in the correct password of **Pa55w.rd**
 
@@ -147,13 +163,17 @@ The main tasks for this exercise are as follows:
 
 1. Right click [SalesLT].[Customers] and then click **Select Top 1000 Rows**
 
+    ![](Linked_Image_Files/lab7-ex3-task2-laststep.png)
+
 ### Task 3: View the Audit Log
 
 1. Return to the Azure Portal. In the AdventureWorksLT (sqlservice-deploymentID/AdventureWorksLT) - Auditing screen, click on **View Audit Logs**
 
-1. Note in the **Audit records** log file the **Failed Authentication** record. Close down the **Audit records** screen
+    ![](Linked_Image_Files/lab7-ex3-task3-step1.png)
 
-    ![Viewing Audit records in the Azure Portal](Linked_Image_Files/M08-E04-T01-img02.png)
+1. Note in the **Audit records** log file the **Failed Authentication** record. Close down the **Audit records** screen. (**Note :-** Please scroll down through the logs to find the failed record.)
+
+    ![Viewing Audit records in the Azure Portal](Linked_Image_Files/lab7-lastimage.png)
 
 > **Result**: After you completed this exercise, you have enabled database auditing and verified that the auditing works.
 
