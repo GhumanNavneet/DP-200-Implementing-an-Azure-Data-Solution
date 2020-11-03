@@ -140,7 +140,9 @@ The main tasks for this exercise are as follows:
 
                 ![Creating a server instance in the Azure portal](Linked_Image_Files/M05-E02-T01-img01.png)
 
-    - Performance Level: Click **Select performance level** and select **Gen2 DW100C**. (**Note:-** Please use the slider to set and select DW100C)
+    - Performance Level: Click **Select performance level** and select **Gen2 DW100C**. 
+
+    - **Note:-** Please use the slider to set and select **DW100C**.
 
         ![Configuring performance of Azure Synapse Analytics in the Azure portal](Linked_Image_Files/M05-E02-T01-img02.png)
 
