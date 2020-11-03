@@ -49,6 +49,8 @@ The main task for this exercise are as follows:
 
 1. In the New screen, click the **Search the Marketplace** text box, and type the word **SQL Database**. Click **SQL Database** in the list that appears.
 
+    ![](Linked_Image_Files/lab4_ex1_task1_step2.png)
+
 1. In the **SQL Database** screen, click **Create**.
 
 1. From the **Create SQL Database** screen, create an Azure SQL Database with the following settings:
@@ -59,7 +61,9 @@ The main task for this exercise are as follows:
 
         - **Resource group**: select existing resource group with name **awrgstud-DeploymentId**.
 
-    - Click on the  **Additional setting** tab, click **Sample** . The AdventureworksLT sample database is selected automatically. 
+    - Click on the  **Additional setting** tab, click **Sample** . The AdventureworksLT sample database is selected automatically.
+    
+        ![](Linked_Image_Files/lab4_ex1_task1_step4_1.png)
     
     - Click the **Basics** tab once this has been done.
     
@@ -75,11 +79,9 @@ The main task for this exercise are as follows:
             - **Location**: choose a **location** near to you.
             - click on **OK**
 
-                ![Creating a server instance in the Azure portal](Linked_Image_Files/M05-E01-T01-img1.png)
+                ![Creating a server instance in the Azure portal](Linked_Image_Files/lab4_ex1_task1_step4.png)
 
             - Leave the remaining settings to their defaults, and then click on **OK**
-	     
-	     ![Creating a SQL Database in the Azure portal](Linked_Image_Files/M05-E01-T01-img02.png)
 
 1. In the **Create SQL Database** blade, click **Review + create**.
 
@@ -111,6 +113,8 @@ The main tasks for this exercise are as follows:
 
 1. In the New blade, navigate to the **Search the Marketplace** text box, and type the word **Synapse**. Click **Azure Synapse Analytics (formerly SQL DW)** in the list that appears.
 
+    ![](Linked_Image_Files/lab4_ex2_task1_step3.png)
+
 1. In the **Azure Synapse Analytics (formerly SQL DW)** blade, click **Create**.
 
 1. From the **SQL Data Warehouse** blade, create an Azure Synapse Analytics  with the following settings:
@@ -138,13 +142,13 @@ The main tasks for this exercise are as follows:
             - Select the checkbox to Allow Azure services to access server.
             - click on **OK**.
 
-                ![Creating a server instance in the Azure portal](Linked_Image_Files/M05-E02-T01-img01.png)
+                ![Creating a server instance in the Azure portal](Linked_Image_Files/lab4_ex2_task1_step5.png)
 
     - Performance Level: Click **Select performance level** and select **Gen2 DW100C**. 
 
     - **Note:-** Please use the slider to set and select **DW100C**.
 
-        ![Configuring performance of Azure Synapse Analytics in the Azure portal](Linked_Image_Files/M05-E02-T01-img02.png)
+        ![Configuring performance of Azure Synapse Analytics in the Azure portal](Linked_Image_Files/lab4_ex2_task1_step5_2.png)
 
     - Click **Apply**. the following configuration is shown.
 
