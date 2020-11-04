@@ -83,6 +83,8 @@ The main tasks for this exercise are as follows:
 
 1. In the New screen, click in the **Search the Marketplace** text box, and type the word **storage acount**. Click **Storage account - blob, file, table, queue** in the list that appears.
 
+    ![](Linked_Image_Files/lab1_ex1_task1_step2.png)
+
 1. In the **Storage account** screen, click **Create**.
 
 1. From the **Create storage account** screen, create the first storage account with the following settings:
@@ -107,9 +109,9 @@ The main tasks for this exercise are as follows:
 
         - **Access tier (default)**: **Hot**.
 
-            ![Create storage account settings in the Azure portal](Linked_Image_Files/M02-E02-T02-img01.png)
-
 1. In the **Create storage account** screen, click **Review + create**.
+
+    ![Create storage account settings in the Azure portal](Linked_Image_Files/lab1_ex1_task1_step4.png)
 
 1. After the validation of the **Create storage account*** screen, click **Create**.
 
@@ -121,6 +123,8 @@ The main tasks for this exercise are as follows:
 
 1. In the **awsastud(deploymentID)** screen, From the left hand side navigation pane navigate to **Blob Service** and find **Containers**.
 
+    ![Create a Container in the Azure portal](Linked_Image_Files/lab1_ex1_task2_step2.png)
+
 1. In the **awsastud(deploymentID) - Containers** screen, at the top left, click on the  **+ Container** button.
 
 1. From the **New Container*** screen, create a container with the following settings:
@@ -129,7 +133,7 @@ The main tasks for this exercise are as follows:
 
     - Public access level: **Private (no anonymous access)**
 
-        ![Create a Container in the Azure portal](Linked_Image_Files/M02-E02-T03-img01.png)
+        ![Create a Container in the Azure portal](Linked_Image_Files/lab1_ex1_task2_step4.png)
 
 1. In the **New Container** screen, click **Create**.
 
@@ -139,7 +143,7 @@ The main tasks for this exercise are as follows:
 
 1. Repeat steps 4 -5 to create a container named **tweets** with the public access level of **Private (no anonymous access)**. Your screen should look as the graphic below:
 
-    ![List of Containers in the Azure portal](Linked_Image_Files/M02-E02-T03-img02.png)
+    ![List of Containers in the Azure portal](Linked_Image_Files/lab1_ex1_task2_laststep.png)
 
 ### Task 3: Upload some graphics to the images container of the storage account.
 
@@ -217,7 +221,7 @@ The main tasks for this exercise are as follows:
 
 1. Under Data Lake Storage Gen2, click **Enabled** under **Hierarchical namespace**.
 
-    ![Defining the Hierarchical Namespace setting in Create Storage Account screen in the Azure portal](Linked_Image_Files/M02-E03-T01-img01.png)
+    ![Defining the Hierarchical Namespace setting in Create Storage Account screen in the Azure portal](Linked_Image_Files/lab1_ex3_task1_step6.png)
 
 1. In the **Create storage account** blade, click **Review + create**.
 
@@ -243,7 +247,7 @@ The main tasks for this exercise are as follows:
 
    > **Note**: The creation of the file system is immediate and will appear in the list of the **awdlsstud(deploymentID) - Containers** screen as follows.
 
-    ![File Systems listed in the Azure portal](Linked_Image_Files/M02-E03-T02-img01.png)
+    ![File Systems listed in the Azure portal](Linked_Image_Files/lab1_ex3_task2_step5.png)
 
 > **Result**: After you completed this exercise, you have created a Data Lake Gen2 Storage account named awdlsstudxx that has a file system named data.
 
