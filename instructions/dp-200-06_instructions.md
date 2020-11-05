@@ -166,10 +166,14 @@ The main tasks for this exercise are as follows:
 
 1. Open the **telcodatagen.exe.config** file in a text editor of your choice
 
+    ![](Linked_Image_Files/ex3_task1_step2.png)
+
 1. Update the <appSettings> element in the config file with the following details:
 
     - Set the value of the **EventHubName** key to the value of the **EntityPath** in the connection string.
     - Set the value of the **Microsoft.ServiceBus.ConnectionString** key to the connection string **without the EntityPath value** (don't forget to remove the semicolon that precedes it).
+
+   ![](Linked_Image_Files/ex3_task1_step3.png)
 
 1. Save the file.
 
