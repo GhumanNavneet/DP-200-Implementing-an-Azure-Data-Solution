@@ -162,7 +162,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Updates the application connection string.
 
-1. Browse to the location **\Labfiles\Starter\DP-200.6\DataGenerator**
+1. Browse to the location **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.6\DataGenerator**
 
 1. Open the **telcodatagen.exe.config** file in a text editor of your choice
 
@@ -179,7 +179,7 @@ The main tasks for this exercise are as follows:
 
 1. Right click **Command Prompt**, click **Run as Administrator**, and in the User Access Control screen, click **Yes**
 
-1. In Command Prompt, browse to the location **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.6\DataGenerator**
+1. In Command Prompt, browse to the location **cd C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.6\DataGenerator**
 
 1. Type in the following command: 
 
