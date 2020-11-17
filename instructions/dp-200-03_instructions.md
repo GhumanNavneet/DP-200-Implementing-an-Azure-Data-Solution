@@ -94,7 +94,7 @@ The main tasks for this exercise are as follows:
 
     - **Subscription**: the name of the subscription you are using in this lab
 
-    - **Resource group**: use existing resource group with name **awrgstud-deploymentID**.
+    - **Resource group**: use existing resource group with name **awrgstud-xxxxxx**, where **xxxxxx** is the deployment-id.
 
     - **Location**: the name of the Azure region which is closest to the lab location and where you can provision Azure VMs.
 
@@ -116,9 +116,9 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, navigate to the **Resource group** screen.
 
-1. In the Resource groups screen, click on the **awrgstud-deploymentID** resource group.
+1. In the Resource groups screen, click on the **awrgstud-xxxxxx** resource group, where **xxxxxx** is the deployment-id.
 
-1. In the **awrgstudxxxxxx** screen, click **awdbwsstudxxxxxx**, where **xxxxxx** is deployment-id to open Azure Databricks. This will open your Azure Databricks service.
+1. In the **awrgstudxxxxxx** screen, click **awdbwsstudxxxxxx**, where **xxxxxx** is  to open Azure Databricks. This will open your Azure Databricks service.
 
     ![Azure Databricks Service in the Azure portal](Linked_Image_Files/lab2_ex2_task2.png)
 
@@ -176,7 +176,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Collect the Azure Data Lake Store Gen2 account name
 
-1. In Microsoft Edge, click on the  Azure portal tab, click **Resource groups**, and then click **awrgstud-DeploymentID**, and then click on **awdlsstudxxxxxx**, where **xxxxxx** is the deployment-id.
+1. In Microsoft Edge, click on the  Azure portal tab, click **Resource groups**, and then click **awrgstud-xxxxxx**,where **xxxxxx** is the deployment-id, and then click on **awdlsstudxxxxxx**, where **xxxxxx** is the deployment-id.
 
     ![Accessing Data Lake Storage account name in the Azure portal](Linked_Image_Files/ex3_task2_step1.png)
 
