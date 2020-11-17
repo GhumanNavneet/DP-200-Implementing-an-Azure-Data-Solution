@@ -120,7 +120,7 @@ The main tasks for this exercise are as follows:
 
 1. In the **awrgstudxxxxxx** screen, click **awdbwsstudxxxxxx**, where **xxxxxx** is deployment-id to open Azure Databricks. This will open your Azure Databricks service.
 
-    ![Azure Databricks Service in the Azure portal](Linked_Image_Files/M03-E02-T02-img01.png)
+    ![Azure Databricks Service in the Azure portal](Linked_Image_Files/lab2_ex2_task2.png)
 
 ### Task 3: Launch a Databricks Workspace and create a Spark Cluster.
 
