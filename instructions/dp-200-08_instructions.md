@@ -133,7 +133,7 @@ The main tasks for this exercise are as follows:
 
 1. Under **Enable Azure SQL Auditing**, click on the **ON** button, then select storage account box and Select the same storage account that you configured for database auditing in the beginning of this task.
 
-    ![](Linked_Image_Files/lab7-ex3-task1-step7_2.png)
+    ![](Linked_Image_Files/dp-200module7-newimage.png)
     
 1. Click on **Save**.
 
