@@ -107,7 +107,7 @@ The main tasks for this exercise are as follows:
 
 1. In the **sqlservice-deploymentId/AdventureWorksLT** database screen, click on the **Auditing** blade.
 
-1. Under **Auditing**, click on the **ON** button.
+1. Under **Enable Azure SQL Auditing**, click on the **ON** button.
 
 1. Select the checkbox next to **Storage**.
 
@@ -127,6 +127,14 @@ The main tasks for this exercise are as follows:
 
     ![Configuring Auditing in the Azure Portal](Linked_Image_Files/lab7-ex3-task1-step8.png)
 
+1. Click on **Save**.
+
+1. In the Azure portal, in the search blade, search for the sql servers and then click on **sqlservice-DeploymentID**, and then click on Auditing Under Security.
+
+1. Under **Enable Azure SQL Auditing**, click on the **ON** button, then select storage account box and Select the same storage account that you configured for database auditing in the beginning of this task.
+
+    ![](Linked_Image_Files/lab7-ex3-task1-step7_2.png)
+    
 1. Click on **Save**.
 
 ### Task 2: Query the database
