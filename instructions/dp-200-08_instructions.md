@@ -129,7 +129,7 @@ The main tasks for this exercise are as follows:
 
 1. Click on **Save**.
 
-1. In the Azure portal, in the search blade, search for the sql servers and then click on **sqlservice-DeploymentID**, and then click on Auditing Under Security.
+1. In the Azure portal, in the search blade, search for the sql servers and then click on **sqlservice-DeploymentID**, and then click on **Auditing** Under Security.
 
 1. Under **Enable Azure SQL Auditing**, click on the **ON** button, then select storage account box and Select the same storage account that you configured for database auditing in the beginning of this task.
 
