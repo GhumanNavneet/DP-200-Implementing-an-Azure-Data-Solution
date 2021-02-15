@@ -274,7 +274,7 @@ The main tasks for this exercise are as follows:
     spark.conf.set("fs.azure.account.oauth2.client.endpoint.<storage-account-name>.dfs.core.windows.net", "https://login.microsoftonline.com/<tenant-id>/oauth2/token")
     ```
 
-1. In this code block, replace the **application-id**, **authentication-id**, **tenant-id**, **file-system-name** and **storage-account-name** placeholder values in this code block with the values that you collected earlier and are held in notepad.
+1. In this code block, replace the **application-id**, **authentication-id**, **tenant-id** and **storage-account-name** placeholder values in this code block with the values that you collected earlier and are held in notepad.
 
 1. In the Notebook, in the cell under **Cmd 1**, click on the **Run** icon and click on **Run Cell** as highlighted in the following graphic. 
 
