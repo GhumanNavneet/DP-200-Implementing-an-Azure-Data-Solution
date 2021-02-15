@@ -265,7 +265,7 @@ The main task for this exercise are as follows:
 
 ### Task 1: Install Storage Explorer.
 
-1. In the Azure portal, in the **awdlsstud(deploymentID) - Overview** screen, click on **Open in Explorer**.
+1. In the Azure portal, Open the storage account **awdlsstud(deploymentID)**, and navigate to **awdlsstud(deploymentID) - Overview** screen, click on **Open in Explorer**.
 
 1. Then click on the **You can download Azure Storage Explorer if you do not have it yet** hyperlink
 
