@@ -133,7 +133,7 @@ The main tasks for this exercise are as follows:
         - **Select Data Lake Storage Gen2**: "from subscription"
         - **Account Name**: select **awdlsstudxxxxxx**, where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
         - **File System Name**: select **data**
-        - **Check** the "Assign myself the Storage Blob Data Contributor role on the Data Lake Storage Gen2 account 'awdlsstudxx" 
+        - **Check** the "Assign myself the Storage Blob Data Contributor role on the Data Lake Storage Gen2 account 'awdlsstudxxxxxx" 
 
         ![Create Synapse Workspace](Linked_Image_Files/M05-E02-T01-img01a.png) 
 
@@ -149,7 +149,7 @@ The main tasks for this exercise are as follows:
 
    > **Note**: The provision will takes approximately 7 minutes.
 
-6. Once provisioned select **Go to resource**, and you'll be landing in the **Overview** page of your Azure Synapse Analytics workspace.  
+6. Once provisioned select **Go to resource group**, and find your Azure Synapse Analytics workspace with name **wrkspcxxxxxx**.
 
 7. Select **+ New dedicated SQL Pool**.
 
