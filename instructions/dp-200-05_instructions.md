@@ -260,6 +260,17 @@ The main tasks for this exercise are as follows:
 
       >**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
+  ```
+    CREATE TABLE dbo.Users(
+    userId int null,
+    City nvarchar(100) null,
+    Region nvarchar(100) null,
+    Country nvarchar(100) null
+    ) WITH (
+    CLUSTERED COLUMNSTORE INDEX,
+    DISTRIBUTION = REPLICATE
+    );
+  ```
 
 5. In **Synapse Studio**, click on **Run** and the query will be executed. To verify if the **dbo.Users** table was created you can click refresh and navigate to **tables** which, when expanded, should show you the table. 
 
@@ -286,6 +297,24 @@ The main tasks for this exercise are as follows:
 
     >**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
+  ```
+    CREATE TABLE dbo.Products(
+    ProductId int null,
+    EnglishProductName nvarchar(100) null,
+    Color nvarchar(100) null,
+    StandardCost int null,
+    ListPrice int null,
+    Size nvarchar(100) null,
+    Weight int null,
+    DaysTomanufacture int null,
+    Class nvarchar(100) null,
+    Style nvarchar(100) null
+    ) WITH (
+    CLUSTERED COLUMNSTORE INDEX,
+    DISTRIBUTION = ROUND_ROBIN
+    );
+  ```
+
 10. In **Synapse Studio**, click on **Run** and the query will be executed. To verify if the **dbo.Products** table was created you can click refresh and navigate to **tables** which, when expanded, should show you the table. 
 
 11. In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
@@ -305,6 +334,19 @@ The main tasks for this exercise are as follows:
     | SalesUnit | int | NULL|
 
     >**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
+
+  ```
+    CREATE TABLE dbo.FactSales(
+    DateId int null,
+    ProductId int null,
+    UserId int null,
+    UserPreferenceId int null,
+    SalesUnit int null
+    ) WITH (
+    CLUSTERED COLUMNSTORE INDEX,
+    DISTRIBUTION = HASH(SalesUnit)
+    );
+  ```
 
 15. In **Synapse Studio**, click on **Run** and the query will be executed. To verify if the **dbo.FactSales** table was created you can click refresh and navigate to **tables** which, when expanded, should show you the table. 
 
