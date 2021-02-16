@@ -269,7 +269,7 @@ The main tasks for this exercise are as follows:
 
 8. Select **New SQL script**, and **empty script**
 
-9. Create a table named **dbo.Products** with a **clustered columnstore** index with a distribution of **round robin** with the following columns:
+9. Create a table named **dbo.Products** with a **clustered columnstore** index with a distribution of **ROUND_ROBIN** with the following columns:
 
     | column name | data type | Nullability|
     |-------------|-----------|------------|
