@@ -124,14 +124,14 @@ The main tasks for this exercise are as follows:
 
         - **Subscription**: the name of the subscription you are using in this lab
 
-        - **Resource group**: **awrgstudxx**, where **xx** are your initials.
+        - **Resource group**: **awrgstudxxxxxx**, where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
 
     - In the workspace details section, create the workspace with the following settings:
         
-        - **Workspace Name**: **wrkspcxx**, where **xx** are your initials.
+        - **Workspace Name**: **wrkspcxxxxxx**, where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
         - **Region**: choose the region nearest to you and where you deployed your resource group
         - **Select Data Lake Storage Gen2**: "from subscription"
-        - **Account Name**: select **awdlsstudxx**, where **xx** are your initials
+        - **Account Name**: select **awdlsstudxxxxxx**, where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
         - **File System Name**: select **data**
         - **Check** the "Assign myself the Storage Blob Data Contributor role on the Data Lake Storage Gen2 account 'awdlsstudxx" 
 
@@ -154,7 +154,7 @@ The main tasks for this exercise are as follows:
 7. Select **+ New dedicated SQL Pool**.
 
 8.. In the **basics** page of **Create dedicated SQL pool** blade configure the following settings:
-        - Dedicated SQL pool name: **dedsqlxx**, where **xx** are your initials
+        - Dedicated SQL pool name: **dedsqlxxxxxx**, where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
         - Leave all the other settings per default
 
 9. In the **Create dedicated SQL pool** screen, click **Review + create**.
@@ -168,9 +168,9 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstudxx**, and then click on **wrkspcxx**, where **xx** are your initials
 
-2. In the **wrkspcxx** screen, click on **Firewalls**.
+2. In the **wrkspcxxxxxx** screen, click on **Firewalls**.
 
-3. In the **wrkspcxx**- Firewalls  screen, click on the option **+ Add client IP**, and check that **Allow Azure services and resources to access this workspace** is set to **On**, and then click on **Save**. On the success screen click **OK**.
+3. In the **wrkspcxxxxxx**- Firewalls  screen, click on the option **+ Add client IP**, and check that **Allow Azure services and resources to access this workspace** is set to **On**, and then click on **Save**. On the success screen click **OK**.
 
     ![Configuring Azure Synapse Analytics firewall settings in the Azure portal](Linked_Image_Files/M05-E02-T02-img01.png)
 
@@ -182,13 +182,13 @@ The main tasks for this exercise are as follows:
 
 ### Task 3: Pause the **dedsqlxx** dedicated SQL Pool
 
-1. Navigate to **dedsqlxx** resource in your resource group. 
+1. Navigate to **dedsqlxxxxxx** resource in your resource group. 
 
-2. Click on **dedsqlxx**, where **xx** are your initials.
+2. Click on **dedsqlxxxxxx**, where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
 
-3. In the **dedsqlkxx (wrkspcxx/dedsqlxx)** screen, click on **Pause**.
+3. In the **dedsqlkxxxxxx (wrkspcxxxxxx/dedsqlxxxxxx)** screen, click on **Pause**.
 
-4. In the Pause **dedsqlxx** screen, click **Yes**
+4. In the Pause **dedsqlxxxxxx** screen, click **Yes**
 
 
 
@@ -210,7 +210,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Connect the Dedicated SQL Pool to Azure Synapse Studio
 
-1. Navigate to the **dedsqlxx** resource in your resource group. 
+1. Navigate to the **dedsqlxxxxxx** resource in your resource group. 
 
 2. In the **overview** section of the Synapse Workspace navigate to **Launch Synapse Studio**
 
@@ -319,11 +319,11 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Collect Azure Blob account name and key details
 
-1. In the Azure portal, click on **Resource groups** and then click on **awrgstudxx**, and then click on **awdlsstudxx** where xx are the initials of your name.
+1. In the Azure portal, click on **Resource groups** and then click on **awrgstudxxxxxx**, and then click on **awdlsstudxxxxxx** where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
 
-2. In the **awdlsstudxx** screen, click **Access keys**. Click on the icon next to the **Storage account name** and paste it into Notepad.
+2. In the **awdlsstudxxxxxx** screen, click **Access keys**. Click on the icon next to the **Storage account name** and paste it into Notepad.
 
-3. In the **awdlsstudxx - Access keys** screen, under **key1**, Click on the icon next to the **Key** and paste it into Notepad.
+3. In the **awdlsstudxxxxxx - Access keys** screen, under **key1**, Click on the icon next to the **Key** and paste it into Notepad.
 
 ### Task 2: Create a dbo.Dates table using PolyBase from Azure Blob
 
@@ -369,13 +369,13 @@ The main tasks for this exercise are as follows:
 
 13. Select **New SQL script**, and **empty script**
 
-14. In the Query window, type in code that will create an external data source named **AzureStorage** for the Blob storage account and data container created in with a type of **HADOOP** that makes use of the ****AzureStorageCredential**. Note that you should replace **awdlsstudxx** in the location key with your storage account with your initials 
+14. In the Query window, type in code that will create an external data source named **AzureStorage** for the Blob storage account and data container created in with a type of **HADOOP** that makes use of the ****AzureStorageCredential**. Note that you should replace **awdlsstudxxxxxx** in the location key with your storage account with your deploymentID
 
     ```SQL
 	CREATE EXTERNAL DATA SOURCE AzureStorage
     WITH (
         TYPE = HADOOP,
-        LOCATION = 'abfs://data@awdlsstudxx.dfs.core.windows.net',
+        LOCATION = 'abfs://data@awdlsstudxxxxxx.dfs.core.windows.net',
         CREDENTIAL = AzureStorageCredential
     );
     ```
