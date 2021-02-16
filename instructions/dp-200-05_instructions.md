@@ -185,9 +185,9 @@ The main tasks for this exercise are as follows:
 
 ### Task 3: Pause the **dedsqlxx** dedicated SQL Pool
 
-1. Navigate to **dedsqlxxxxxx** resource in your resource group. 
+1. Navigate to resource group **awrgstudxxxxxx**. 
 
-2. Click on **dedsqlxxxxxx**, where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
+2. Click on **dedsqlkxxxxxx (wrkspcxxxxxx/dedsqlxxxxxx)**, where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
 
 3. In the **dedsqlkxxxxxx (wrkspcxxxxxx/dedsqlxxxxxx)** screen, click on **Pause**.
 
