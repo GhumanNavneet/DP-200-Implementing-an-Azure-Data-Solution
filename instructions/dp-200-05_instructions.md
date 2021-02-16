@@ -169,7 +169,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Configure the Server Firewall
 
-1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstudxx**, and then click on **wrkspcxx**, where **xx** are your initials
+1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstudxxxxxx**, and then click on **wrkspcxxxxxx**, where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
 
 2. In the **wrkspcxxxxxx** screen, click on **Firewalls**.
 
