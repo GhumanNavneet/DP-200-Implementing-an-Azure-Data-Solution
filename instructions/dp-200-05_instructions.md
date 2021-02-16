@@ -280,7 +280,7 @@ The main tasks for this exercise are as follows:
 
 8. Select **New SQL script**, and **empty script**
 
-9. Create a table named **dbo.Products** with a **clustered columnstore** index with a distribution of **ROUND_ROBIN** with the following columns:
+9. Create a table named **dbo.Products** with a **clustered columnstore** index with a distribution of **ROUND_ROBIN** with the following columns: **Note :- ignore the error showing**
 
     | column name | data type | Nullability|
     |-------------|-----------|------------|
@@ -448,6 +448,8 @@ The main tasks for this exercise are as follows:
     >**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
 20. In **Synapse Studio**, click on **Run** and the query will be executed.
+
+21. Before proceeding to next step, go to the storage account **awdlsstudxxxxxx**, navigate to containers and open **data** and upload the file with name **DimDate2.txt** from location **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.2\Static files** .
 
 21. . In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
 
