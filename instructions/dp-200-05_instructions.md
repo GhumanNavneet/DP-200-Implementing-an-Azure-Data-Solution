@@ -233,6 +233,8 @@ The main tasks for this exercise are as follows:
 
 
     ![Dedicated SQL Pool creation through Synapse Workspace](Linked_Image_Files/new-feb2021/ex3-tsk1-step3-1.png)
+    
+    ![Dedicated SQL Pool creation through Synapse Workspace](Linked_Image_Files/new-feb2021/ex3-task1-step4.png)
 
  > **Note**: The creation of the database takes approximately 6 minutes.
 
