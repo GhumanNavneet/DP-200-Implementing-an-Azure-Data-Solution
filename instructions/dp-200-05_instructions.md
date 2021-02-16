@@ -209,7 +209,7 @@ The main tasks for this exercise are as follows:
 
 3. Create dedicated SQL Pool tables
 
-    > **Note**: If you are not familiar with Transact-SQL, statements are available for the following labs in the following location **Allfiles\Labfiles\Starter\DP-200.5\SQL DW Files**
+    > **Note**: If you are not familiar with Transact-SQL, statements are available for the following labs in the following location **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.5\SQL DW Files**
 
 ### Task 1: Connect the Dedicated SQL Pool to Azure Synapse Studio
 
