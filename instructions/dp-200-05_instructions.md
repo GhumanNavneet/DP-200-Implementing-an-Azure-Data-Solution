@@ -104,96 +104,93 @@ The main tasks for this exercise are as follows:
 
 1. Create and configure a Azure Synapse Analytics instance.
 
-1. Configure the Server Firewall
+2. Configure the Server Firewall
 
-1. Pause the warehouse database
+3. Pause the warehouse database
 
 ### Task 1: Create and configure a Azure Synapse Analytics instance.
 
 1. In the Azure portal, click on the link **home** at the top left of the screen.
 
-1. In the Azure portal, click **+ Create a resource**.
+2. In the Azure portal, click **+ Create a resource**.
 
-1. In the New blade, navigate to the **Search the Marketplace** text box, and type the word **Synapse**. Click **Azure Synapse Analytics (formerly SQL DW)** in the list that appears.
+3. In the New blade, navigate to the **Search the Marketplace** text box, and type the word **Synapse**. Click **Azure Synapse Analytics** in the list that appears.
 
-    ![](Linked_Image_Files/lab4_ex2_task1_step3.png)
+4. In the **Azure Synapse Analytics** blade, click **Create**.
 
-1. In the **Azure Synapse Analytics (formerly SQL DW)** blade, click **Create**.
-
-1. From the **SQL Data Warehouse** blade, create an Azure Synapse Analytics  with the following settings:
+5. From the **Create Synapse workspace** **basics** blade, create an Azure Synapse Analytics Workspace with the following settings:
 
     - In the Project details section, type in the following information
 
         - **Subscription**: the name of the subscription you are using in this lab
 
-        - **Resource group**: select existing resource group with name **awrgstud-DeploymentId**.
+        - **Resource group**: **awrgstudxx**, where **xx** are your initials.
 
-    - In **Additional setting** tab, under data source, click **Sample**.
+    - In the workspace details section, create the workspace with the following settings:
+        
+        - **Workspace Name**: **wrkspcxx**, where **xx** are your initials.
+        - **Region**: choose the region nearest to you and where you deployed your resource group
+        - **Select Data Lake Storage Gen2**: "from subscription"
+        - **Account Name**: select **awdlsstudxx**, where **xx** are your initials
+        - **File System Name**: select **data**
+        - **Check** the "Assign myself the Storage Blob Data Contributor role on the Data Lake Storage Gen2 account 'awdlsstudxx" 
 
-    - Click the **Basics** tab once this has been done.
-    
-    - In the Database details section, type in the following information
+        ![Create Synapse Workspace](Linked_Image_Files/M05-E02-T01-img01a.png) 
 
-        - **SQL pool name**: **Warehousexxxxxx**, where **xxxxxx** is the deployment Id.
+    - Navigate to the **Security** tab in the **Create Synapse workspace** blade. 
 
-        - **Server**: Create a new server by clicking **Create new** with the following settings and click on **OK**:
-            - **Server name**: **dwhservice-xxxxxx**, where **xxxxxx** is the deployment Id and you can find it from the environment details tab.
-            - **Server admin login**: **sqladmin**
-            - **Password**: **Pa55w.rd**
-            - **Confirm Password**: **Pa55w.rd**
-            - **Location**: choose a **location** near to you.
-            - Select the checkbox to Allow Azure services to access server.
-            - click on **OK**.
+    - Under the SQL administrator credentials section provide the following:
+        - **Password**: **Pa55w.rd**
+        - **Confirm Password**: **Pa55w.rd**
+        - Leave all the other settings as **default**. 
 
-        ![Creating a server instance in the Azure portal](Linked_Image_Files/lab4_ex2_task1_step5.png)
+    - In the screen, click **Review + create**.
+    - In the blade, click **Create**.
 
-    - Performance Level: Click **Select performance level** and select **Gen2 DW100C**. 
+   > **Note**: The provision will takes approximately 7 minutes.
 
-    - **Note:-** Please use the slider to set and select **DW100C**.
-    
-    - Click **Apply**. the following configuration is shown.
+6. Once provisioned select **Go to resource**, and you'll be landing in the **Overview** page of your Azure Synapse Analytics workspace.  
 
-        ![Configuring performance of Azure Synapse Analytics in the Azure portal](Linked_Image_Files/lab4_ex2_task1_step5_2.png)
+7. Select **+ New dedicated SQL Pool**.
 
-1. In the **SQL Data Warehouse** screen, click **Review + create**.
+8.. In the **basics** page of **Create dedicated SQL pool** blade configure the following settings:
+        - Dedicated SQL pool name: **dedsqlxx**, where **xx** are your initials
+        - Leave all the other settings per default
 
-    ![Configuring Azure Synapse Analytics in the Azure portal](Linked_Image_Files/lab4_ex2_task1_step5_3.png)
+9. In the **Create dedicated SQL pool** screen, click **Review + create**.
 
-1. In the **SQL Data Warehouse** blade, click **Create**.
+10. In the **Create dedicated SQL pool** blade, click **Create**.
+  
 
    > **Note**: The provision will takes approximately 7 minutes.
 
 ### Task 2: Configure the Server Firewall
 
-1. In the Azure portal, in the blade, click **Resource groups**, select **awrgstud-deploymentId**, and then click on **dwhservice-deploymentId**.
+1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstudxx**, and then click on **wrkspcxx**, where **xx** are your initials
 
-1. In the **dwhservice-deploymentId** screen, click on **Firewalls and virtual networks**.
+2. In the **wrkspcxx** screen, click on **Firewalls**.
 
-1. In the dwhservice-deploymentId - Firewalls and virtual networks screen, click on the option **+ Add client IP**, and then click on **Save**. On the success screen click **OK**.
+3. In the **wrkspcxx**- Firewalls  screen, click on the option **+ Add client IP**, and check that **Allow Azure services and resources to access this workspace** is set to **On**, and then click on **Save**. On the success screen click **OK**.
+
+    ![Configuring Azure Synapse Analytics firewall settings in the Azure portal](Linked_Image_Files/M05-E02-T02-img01.png)
 
     > **Note**: You will receive a message stating that the the server firewall rules have been successfully updated
 
-1. But for this lab, we will be adding all ips just for performing this lab.
-
-1. Add a new Rule by entering **ALLIPS** in the **Rule Name** then **Start IP** as **0.0.0.0** and **End IP** as **255.255.255.255** and press enter and click Save At the top.
-
-    ![Configuring Azure Synapse Analytics firewall settings in the Azure portal](Linked_Image_Files/lab4_ex2_lastimage.png)
-
-1. Close down the Firewalls and virtual networks screen.
+4. Close down the Firewalls screen.
 
 > **Result**: After you completed this exercise, you have created an Azure  Synapse Analytics  instance and configures the server firewall to enable connections against it.
 
-### Task 3: Pause the Warehouse-xxxxxx database
+### Task 3: Pause the **dedsqlxx** dedicated SQL Pool
 
-1. Navigate to the resource group awrgstud-deploymentId , Click on Synapse Sql Pool named Warehouse-deploymentID (dwhservice-deploymentID/WarehousedeploymentID).
+1. Navigate to **dedsqlxx** resource in your resource group. 
 
-    ![](Linked_Image_Files/lab4_ex2_lastimage_2_1.png)
+2. Click on **dedsqlxx**, where **xx** are your initials.
 
-1. In the **Warehouse-deploymentId (dwhservice-deploymentId/WarehousedeploymentID)** screen, click on **Pause**.
+3. In the **dedsqlkxx (wrkspcxx/dedsqlxx)** screen, click on **Pause**.
 
-    ![](Linked_Image_Files/lab4_ex2_lastimage_2.png)
+4. In the Pause **dedsqlxx** screen, click **Yes**
 
-1. In the Pause Warehouse-deploymentId screen, click **Yes**
+
 
 ## Exercise 3: Creating an Azure Synapse Analytics database and tables
 
@@ -203,61 +200,51 @@ Individual exercise
 
 The main tasks for this exercise are as follows:
 
-1. Install SQL Server Management Studio and connect to a data warehouse instance.
+1. Understand Synapse Studio and connect to a dedicated SQL Pool.
 
-1. Create a SQL Data Warehouse database
+2. Create a dedicated SQL Pool database
 
-1. Create SQL Data Warehouse tables
+3. Create dedicated SQL Pool tables
 
-    > **Note**: If you are not familiar with Transact-SQL, statements are available for the following labs in the following location **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.5\SQL DW Files**
+    > **Note**: If you are not familiar with Transact-SQL, statements are available for the following labs in the following location **Allfiles\Labfiles\Starter\DP-200.5\SQL DW Files**
 
-### Task 1: Install SQL Server Management Studio and connect to a SQL Data Warehouse instance.
+### Task 1: Connect the Dedicated SQL Pool to Azure Synapse Studio
 
-1. In the Azure portal, in the blade, click **Resource groups**, select **awrgstud-deploymentID**, and then click on **dwhservice-deploymentID**.
+1. Navigate to the **dedsqlxx** resource in your resource group. 
 
-1. From the left navigation menu  under **Settings** select **Properties**.
+2. In the **overview** section of the Synapse Workspace navigate to **Launch Synapse Studio**
 
-1. Copy the **"Server name"** and paste it into Notepad.
+3. Click on the **Manage Hub** on the left side of the screen
 
-1. Download [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) and install onto your machine. **But in the environment its already installed.**
+4. Select **SQL pool** and select **+ New**
 
-1. On the windows desktop, click on the **Start**, and type **"SQL Server"** and then click on **Microsoft SQL Server Management Studio 18**
+    - In the Basics details section, type in the following information
 
-1. In the **Connect to Server** dialog box, fill in the following details
-    - Server Name: **dwhservice-deploymentID.database.windows.net** (paste the value that you copied in the previous step).
-    - Authentication: **SQL Server Authentication**
-    - Username: **sqladmin**
-    - Password: **Pa55w.rd**
+        - **Dedicated SQL pool name**: **DWDB**
 
-1. In the **Connect to Server** dialog box, click **Connect** 
+    - Leave all the other settings as default
 
-### Task 2: Create a SQL Data Warehouse database.
-
-1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservice-deploymentID.database.windows.net** and click on **New Query**. 
-
-1. In the query window, create a DataWarehouse database named **DWDB**, with a service objective of DW100 and a maximum size of 1024GB. Click on **Execute**.
-
-    ```SQL
-    CREATE DATABASE DWDB COLLATE SQL_Latin1_General_CP1_CI_AS
-    (
-        EDITION             = 'DataWarehouse'
-    ,   SERVICE_OBJECTIVE   = 'DW100C'
-    ,   MAXSIZE             = 1024 GB
-    );
-    ```
-
-    > **Note**: The creation of the database takes approximately 2 minutes.
+    - Select **Review + Create** and select **Create**
 
 
-### Task 3: Create SQL Data Warehouse tables.
+    ![Dedicated SQL Pool creation through Synapse Workspace](Linked_Image_Files/M05-E03-T01-img01a.png)
 
-1. In **SQL Server Management Studio**, in Object Explorer, expand **dwhservice-deploymentID.database.windows.net**.
+ > **Note**: The creation of the database takes approximately 6 minutes.
 
-1. In **SQL Server Management Studio**, in SQL Editor toolbar, expand **Databases**, right click on **DWDB** and select **New Query**. 
+5. Once the database is set up, navigate to the **Data Hub** on the left side of the screen. Select the ellipsis next to **Databases** and select **refresh**. You should see the the newly created database DWDB. 
 
-    >**Note**: If you are unfamiliar with Transact-SQL, there is a script in the C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Solution\DP-200.5\folder named **Exercise3 Task3 Step2 script.sql**. It contains the bulk of the code required to create the tables, but you do have to complete the code by selecting the distribution type to use for each table 
 
-1. Create a table named **dbo.Users** with a **clustered columnstore** index with a distribution of **replicate** with the following columns:
+### Task 3: Create dedicated SQL Pool tables.
+
+1. In Synapse Studio, navigate to the newly created database under **Databases** in the **Data hub**, when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
+
+2. Select the ellipsis next to the **DWDB** database.
+
+3. Select **New SQL script**, and **empty script**
+
+    >**Note**: If you are unfamiliar with Transact-SQL, there is a script in the Allfiles\Solution\DP-200.5\folder named **Exercise3 Task3Step2 script.sql**. It contains the bulk of the code required to create the tables, but you do have to complete the code by selecting the distribution type to use for each table 
+
+4. Create a table named **dbo.Users** with a **clustered columnstore** index with a distribution of **replicate** with the following columns:
 
     | column name | data type | Nullability|
     |-------------|-----------|------------|
@@ -266,13 +253,18 @@ The main tasks for this exercise are as follows:
     | Region | nvarchar(100) | NULL|
     | Country | nvarchar(100) | NULL|
 
-1. In **SQL Server Management Studio**, click on **Execute**.
+      >**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
-1. In **SQL Server Management Studio**, in Object Explorer, expand **dwhservice-deploymentID.database.windows.net**.
 
-1. In **SQL Server Management Studio**, in SQL Editor toolbar, expand **Databases**, right click on **DWDB** and select **New Query**.
+5. In **Synapse Studio**, click on **Run** and the query will be executed. To verify if the **dbo.Users** table was created you can click refresh and navigate to **tables** which, when expanded, should show you the table. 
 
-1. Create a table named **dbo.Products** with a **clustered columnstore** index with a distribution of **ROUND_ROBIN** with the following columns:
+6. In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
+
+7. Select the ellipsis next to the **DWDB** database.
+
+8. Select **New SQL script**, and **empty script**
+
+9. Create a table named **dbo.Products** with a **clustered columnstore** index with a distribution of **round robin** with the following columns:
 
     | column name | data type | Nullability|
     |-------------|-----------|------------|
@@ -287,13 +279,17 @@ The main tasks for this exercise are as follows:
     | Class | nvarchar(100) | NULL|
     | Style | nvarchar(100) | NULL|
 
-1. In **SQL Server Management Studio**, click on **Execute**.
+    >**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
-1. In **SQL Server Management Studio**, in Object Explorer, expand **dwhservice-deploymentID.database.windows.net**.
+10. In **Synapse Studio**, click on **Run** and the query will be executed. To verify if the **dbo.Products** table was created you can click refresh and navigate to **tables** which, when expanded, should show you the table. 
 
-1. In **SQL Server Management Studio**, in SQL Editor toolbar, expand **Databases**, right click on **DWDB** and select **New Query**.
+11. In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
 
-1. Create a table named **dbo.FactSales** with a **clustered columnstore** index with a distribution of **Hash** on the **SalesUnit**  i.e **Hash([SalesUnit])** with the following columns:
+12. Select the ellipsis next to the **DWDB** database.
+
+13. Select **New SQL script**, and **empty script**
+
+14. Create a table named **dbo.FactSales** with a **clustered columnstore** index with a distribution of **Hash** on the **SalesUnit** with the following columns:
 
     | column name | data type | Nullability|
     |-------------|-----------|------------|
@@ -303,9 +299,11 @@ The main tasks for this exercise are as follows:
     | UserPreferenceId | int | NULL|
     | SalesUnit | int | NULL|
 
-1. In **SQL Server Management Studio**, click on **Execute**.
+    >**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
-> **Result**: After you completed this exercise, you have installed SQL Server Management Studio to create a data warhouse named DWDB and three tables named Users, Products and FactSales.
+15. In **Synapse Studio**, click on **Run** and the query will be executed. To verify if the **dbo.FactSales** table was created you can click refresh and navigate to **tables** which, when expanded, should show you the table. 
+
+> **Result**: After you completed this exercise, you have used Synapse Studio to create a data warehouse named DWDB and three tables named Users, Products and FactSales.
 
 ## Exercise 4: Using PolyBase to Load Data into Azure Synapse Analytics 
 
@@ -317,33 +315,40 @@ The main tasks for this exercise are as follows:
 
 1. Collect Data Lake Storage container and key details
 
-1. Create a dbo.Dates table using PolyBase from Azure Data Lake Storage
+2. Create a dbo.Dates table using PolyBase from Azure Data Lake Storage
 
 ### Task 1: Collect Azure Blob account name and key details
 
-1. In the Azure portal, click on **Resource groups**,  click on **awrgstud-deploymentID** resource group, and then click on **awdlsstudxxxxxx** storage account where **xxxxxx** is the deployment ID .
+1. In the Azure portal, click on **Resource groups** and then click on **awrgstudxx**, and then click on **awdlsstudxx** where xx are the initials of your name.
 
-1. From the left hand menu under **Data Lake Storage**, select **Containers**. Click on **data** container and select **upload**, browse to C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.2Labfiles\Static Files folder select **DimDate2** file and click **Open**.
+2. In the **awdlsstudxx** screen, click **Access keys**. Click on the icon next to the **Storage account name** and paste it into Notepad.
 
-1. In the Upload blob screen, click on the **Upload** button.
-
-1. Go back to **awdlsstud(deploymentID)** storage account screen, click **Access keys**. Click on the icon next to the **Storage account name** and paste it into Notepad.
-
-1. In the **awdlsstud(deploymentID) - Access keys** screen, under **key1**, Click on the icon next to the **Key** and paste it into Notepad.
+3. In the **awdlsstudxx - Access keys** screen, under **key1**, Click on the icon next to the **Key** and paste it into Notepad.
 
 ### Task 2: Create a dbo.Dates table using PolyBase from Azure Blob
 
-1. In **SQL Server Management Studio**, in Object Explorer, expand **dwhservice-deploymentID.database.windows.net**.
+1. In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
 
-1. In **SQL Server Management Studio**, in SQL Editor toolbar, expand **Databases**, right click on **DWDB** and select **New Query**.
+2. Select the ellipsis next to the **DWDB** database.
 
-1. Create a **master key** against the **DWDB** database. In the query editor, type in the following code:
+3. Select **New SQL script**, and **empty script**
+
+4. Create a **master key** against the **DWDB** database. In the query editor, type in the following code:
 
     ```SQL
     CREATE MASTER KEY;
     ```
+    >**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
-1. Create a database scoped credential named **AzureStorageCredential** with the following details, by typing in the following code:
+5. In **Synapse Studio**, click on **Run** and the query will be executed.
+
+6. In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
+
+7. Select the ellipsis next to the **DWDB** database.
+
+8. Select **New SQL script**, and **empty script**
+
+9. Create a database scoped credential named **AzureStorageCredential** with the following details, by typing in the following code in the query editor:
     - IDENTITY: **MOCID**
     - SECRET: **The access key of your storage account**
 
@@ -351,22 +356,40 @@ The main tasks for this exercise are as follows:
     CREATE DATABASE SCOPED CREDENTIAL AzureStorageCredential
     WITH
     IDENTITY = 'MOCID',
-    SECRET = 'Your storage account key';
-    
-1. In **SQL Server Management Studio**, highlight both statements and then click on **Execute**.
+    SECRET = 'Your storage account key'
+;
+    ```
+    >**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
-1. In **SQL Server Management Studio**, in the Query window, type in code that will create an external data source named **AzureStorage** for the Blob storage account and data container created in with a type of **HADOOP** that makes use of the ****AzureStorageCredential**. Note that you should replace **awdlsstud(xxxxxx)** in the location key with your storage account with your deploymentId.(just execute again if failing)
+10. In **Synapse Studio**, click on **Run** and the query will be executed.
+
+11. In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
+
+12. Select the ellipsis next to the **DWDB** database.
+
+13. Select **New SQL script**, and **empty script**
+
+14. In the Query window, type in code that will create an external data source named **AzureStorage** for the Blob storage account and data container created in with a type of **HADOOP** that makes use of the ****AzureStorageCredential**. Note that you should replace **awdlsstudxx** in the location key with your storage account with your initials 
 
     ```SQL
 	CREATE EXTERNAL DATA SOURCE AzureStorage
     WITH (
         TYPE = HADOOP,
-        LOCATION = 'abfs://data@awdlsstudxxxxxx.dfs.core.windows.net',
+        LOCATION = 'abfs://data@awdlsstudxx.dfs.core.windows.net',
         CREDENTIAL = AzureStorageCredential
     );
     ```
+    >**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
-1. In **SQL Server Management Studio**, in the Query window, type in code that will create an external file format named **TextFile** with a formattype of **DelimitedText** and a filed terminator of **comma**.
+15. In **Synapse Studio**, click on **Run** and the query will be executed.
+
+16. In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
+
+17. Select the ellipsis next to the **DWDB** database.
+
+18. Select **New SQL script**, and **empty script**
+
+19. In the Query window, type in code that will create an external file format named **TextFile** with a formattype of **DelimitedText** and a filed terminator of **comma**.
 
     ```SQL
     CREATE EXTERNAL FILE FORMAT TextFile
@@ -375,10 +398,17 @@ The main tasks for this exercise are as follows:
         FORMAT_OPTIONS (FIELD_TERMINATOR = ',')
     );
     ```
+    >**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
-1. In **SQL Server Management Studio**, highlight the statement and then click on **Execute**.
+20. In **Synapse Studio**, click on **Run** and the query will be executed.
 
-1. In **SQL Server Management Studio**, in the Query window, type in code that will create an external table named **dbo.DimDate2External** with the **location** as the root file, the Data source as **AzureStorage**, the File_format of **TextFile** with the following columns:
+21. . In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
+
+22. Select the ellipsis next to the **DWDB** database.
+
+23. Select **New SQL script**, and **empty script**   
+
+24. In  the Query window, type in code that will create an external table named **dbo.DimDate2External** with the **location** as the root file, the Data source as **AzureStorage**, the File_format of **TextFile** with the following columns:
 
     | column name | data type | Nullability|
     |-------------|-----------|------------|
@@ -416,16 +446,34 @@ The main tasks for this exercise are as follows:
         FILE_FORMAT=TextFile
     );
     ```
+    >**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
-1. In **SQL Server Management Studio**, highlight the statement and then click on **Execute**.
 
-1. Test that the table is created by running a select statement against it
+25. In **Synapse Studio**, click on **Run** and the query will be executed.
+
+26. In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
+
+27. Select the ellipsis next to the **DWDB** database.
+
+28. Select **New SQL script**, and **empty script**  
+
+29. Test that the table is created by running a select statement against it:
 
     ```SQL
     SELECT * FROM dbo.DimDate2External;
     ```
+>**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
-1. In **SQL Server Management Studio**, in the Query window, type in a **CTAS** statement that creates a table named **dbo.Dates** with a **columnstore** index and a **distribution** of **round robin** that loads data from the **dbo.DimDate2External** table.
+
+30. In **Synapse Studio**, click on **Run** and the query will be executed.
+
+31. In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
+
+32. Select the ellipsis next to the **DWDB** database.
+
+33. Select **New SQL script**, and **empty script**  
+
+34. In the Query window, type in a **CTAS** statement that creates a table named **dbo.Dates** with a **columnstore** index and a **distribution** of **round robin** that loads data from the **dbo.DimDate2External** table.
 
     ```SQL
     CREATE TABLE dbo.Dates
@@ -437,21 +485,38 @@ The main tasks for this exercise are as follows:
     AS
     SELECT * FROM [dbo].[DimDate2External];
     ```
+>**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
-1. In **SQL Server Management Studio**, highlight the statement and then click on **Execute**.
+35. In **Synapse Studio**, click on **Run** and the query will be executed.
+
+36. In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
+
+37. Select the ellipsis next to the **DWDB** database.
+
+38. Select **New SQL script**, and **empty script**  
  
-1. In **SQL Server Management Studio**, in the Query window, type in a query that creates statistics on the **DateKey**, **Quarter** and **Month** column.
+39. In the Query window, type in a query that creates statistics on the **DateKey**, **Quarter** and **Month** column.
 
     ```SQL
     CREATE STATISTICS [DateKey] on [Dates] ([DateKey]);
     CREATE STATISTICS [Quarter] on [Dates] ([Quarter]);
     CREATE STATISTICS [Month] on [Dates] ([Month]);
     ```
+>**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
-1. Test that the table is created by running a select statement against it
+40. In **Synapse Studio**, click on **Run** and the query will be executed.
+
+41. In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
+
+42. Select the ellipsis next to the **DWDB** database.
+
+43. Select **New SQL script**, and **empty script**
+
+44. Test that the table is created by running a select statement against it
 
     ```SQL
     SELECT * FROM dbo.Dates;
     ```
+>**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**.
 
-
+45. In **Synapse Studio**, click on **Run** and the query will be executed.
