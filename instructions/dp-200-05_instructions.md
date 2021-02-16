@@ -217,7 +217,9 @@ The main tasks for this exercise are as follows:
 
 2. In the **overview** section of the Synapse Workspace navigate to **Open Synapse Studio**
 
-3. Click on the **Manage Hub** on the left side of the screen
+3. Click on the **Manage Hub** on the left side of the screen.
+
+    ![Dedicated SQL Pool creation through Synapse Workspace](Linked_Image_Files/new-feb2021/ex3-tsk1_step3.png)
 
 4. Select **SQL pool** and select **+ New**
 
@@ -230,7 +232,7 @@ The main tasks for this exercise are as follows:
     - Select **Review + Create** and select **Create**
 
 
-    ![Dedicated SQL Pool creation through Synapse Workspace](Linked_Image_Files/M05-E03-T01-img01a.png)
+    ![Dedicated SQL Pool creation through Synapse Workspace](Linked_Image_Files/new-feb2021/ex3-tsk1-step3-1.png)
 
  > **Note**: The creation of the database takes approximately 6 minutes.
 
