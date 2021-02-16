@@ -116,6 +116,8 @@ The main tasks for this exercise are as follows:
 
 3. In the New blade, navigate to the **Search the Marketplace** text box, and type the word **Synapse**. Click **Azure Synapse Analytics** in the list that appears.
 
+    ![Create Synapse Workspace](Linked_Image_Files/new-feb2021/ex2_tsk1_step3.png)
+
 4. In the **Azure Synapse Analytics** blade, click **Create**.
 
 5. From the **Create Synapse workspace** **basics** blade, create an Azure Synapse Analytics Workspace with the following settings:
@@ -135,7 +137,7 @@ The main tasks for this exercise are as follows:
         - **File System Name**: select **data**
         - **Check** the "Assign myself the Storage Blob Data Contributor role on the Data Lake Storage Gen2 account 'awdlsstudxxxxxx" 
 
-        ![Create Synapse Workspace](Linked_Image_Files/M05-E02-T01-img01a.png) 
+        ![Create Synapse Workspace](Linked_Image_Files/new-feb2021/ex2_tsk1_step5.png) 
 
     - Navigate to the **Security** tab in the **Create Synapse workspace** blade. 
 
@@ -144,6 +146,7 @@ The main tasks for this exercise are as follows:
         - **Confirm Password**: **Pa55w.rd**
         - Leave all the other settings as **default**. 
 
+    ![Create Synapse Workspace](Linked_Image_Files/new-feb2021/ex2_tsk1_step5-1.png)
     - In the screen, click **Review + create**.
     - In the blade, click **Create**.
 
