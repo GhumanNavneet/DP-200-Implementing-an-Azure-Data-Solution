@@ -149,7 +149,7 @@ The main tasks for this exercise are as follows:
 
    > **Note**: The provision will takes approximately 7 minutes.
 
-6. Once provisioned select **Go to resource group**, and find your Azure Synapse Analytics workspace with name **wrkspcxxxxxx**.
+6. Once provisioned select **Go to resource group**, and find and click your Azure Synapse Analytics workspace with name **wrkspcxxxxxx**.
 
 7. Select **+ New dedicated SQL Pool**.
 
