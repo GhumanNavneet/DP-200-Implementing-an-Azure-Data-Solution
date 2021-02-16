@@ -126,7 +126,7 @@ The main tasks for this exercise are as follows:
 
         - **Subscription**: the name of the subscription you are using in this lab
 
-        - **Resource group**: **awrgstudxxxxxx**, where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
+        - **Resource group**: **awrgstud-xxxxxx**, where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
 
     - In the workspace details section, create the workspace with the following settings:
         
@@ -169,7 +169,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Configure the Server Firewall
 
-1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstudxxxxxx**, and then click on **wrkspcxxxxxx**, where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
+1. In the Azure portal, in the blade, click **Resource groups**, and then click **awrgstud-xxxxxx**, and then click on **wrkspcxxxxxx**, where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
 
 2. In the **wrkspcxxxxxx** screen, click on **Firewalls**.
 
@@ -185,7 +185,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 3: Pause the **dedsqlxx** dedicated SQL Pool
 
-1. Navigate to resource group **awrgstudxxxxxx**. 
+1. Navigate to resource group **awrgstud-xxxxxx**. 
 
 2. Click on **dedsqlkxxxxxx (wrkspcxxxxxx/dedsqlxxxxxx)**, where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
 
@@ -213,9 +213,9 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Connect the Dedicated SQL Pool to Azure Synapse Studio
 
-1. Navigate to the **dedsqlxxxxxx** resource in your resource group. 
+1. Navigate to the **dedsqlxxxxxx** resource in your resource group **awrgstud-xxxxxx** . 
 
-2. In the **overview** section of the Synapse Workspace navigate to **Launch Synapse Studio**
+2. In the **overview** section of the Synapse Workspace navigate to **Open Synapse Studio**
 
 3. Click on the **Manage Hub** on the left side of the screen
 
