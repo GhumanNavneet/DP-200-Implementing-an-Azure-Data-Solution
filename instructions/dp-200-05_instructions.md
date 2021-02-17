@@ -158,6 +158,7 @@ The main tasks for this exercise are as follows:
 
 8.. In the **basics** page of **Create dedicated SQL pool** blade configure the following settings:
         - Dedicated SQL pool name: **dedsqlxxxxxx**, where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
+        - Performance Level: scroll the bar to left and set to **DW100c**
         - Leave all the other settings per default
 
 9. In the **Create dedicated SQL pool** screen, click **Review + create**.
@@ -226,8 +227,8 @@ The main tasks for this exercise are as follows:
     - In the Basics details section, type in the following information
 
         - **Dedicated SQL pool name**: **DWDB**
-
-    - Leave all the other settings as default
+        - Performance Level: scroll the bar to left and set to **DW100c**
+       - Leave all the other settings as default
 
     - Select **Review + Create** and select **Create**
 
