@@ -283,7 +283,7 @@ The main tasks for this exercise are as follows:
 
     ![](Linked_Image_Files/lab6_33.jpg)
 
-1. Similar to the filter transformation, the derived column uses the Mapping Data Flow expression builder to specify the values of the new column.The value for the expression is **iif(locate("|",genres) > 1,left(genres, locate("|",genres)-1),genres)** (It will be better if you could type this expression).
+1. Similar to the filter transformation, the derived column uses the Mapping Data Flow expression builder to specify the values of the new column.The value for the expression is **iif(locate("|",genres) > 1,left(genres, locate("|",genres)-1),genres)** (It will be better if you could type this expression). Also provide output stream name as **DerivedPrimaryGenre**.
 
     ![Using the Derived Transformation to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/lab6_34.jpg)
 
