@@ -484,7 +484,7 @@ The main tasks for this exercise are as follows:
 
 1. On the left hand side of the screen, click on the **Manage** icon. This opens Connections section.
 
-1. Under **Connections**, u can find linked services and then click on **+ New**.
+1. Under **Connections**, you can find linked services and then click on **+ New**.
 
 1. In the **New Linked Service**, at the top of the screen, click on **Compute**, and then click on **Azure Databricks**, and then click on **Continue**.
 
