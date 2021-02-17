@@ -438,7 +438,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Generate a Databricks Access Token.
 
-1. In the Azure portal, click on **Resource groups** and then click on **awrgstudxxxxxx**, and then click on **xxxxxx** where xxxxxx is the deployment id.
+1. In the Azure portal, click on **Resource groups** and then click on **awrgstudxxxxxx**, and then click on Azure databricks Service named **xxxxxx** where xxxxxx is the deployment id.
 
 1. Click on **Launch Workspace**
 
