@@ -214,9 +214,9 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Connect the Dedicated SQL Pool to Azure Synapse Studio
 
-1. Navigate to the **dedsqlxxxxxx** resource in your resource group **awrgstud-xxxxxx** . 
+1. Navigate to the **dedsqlxxxxxx (wrkspcxxxxxx/dedsqlxxxxxx)** resource in your resource group **awrgstud-xxxxxx** . 
 
-2. In the **overview** section of the Synapse Workspace navigate to **Open Synapse Studio**
+2. In the **Overview** section of the dedicated sql pool navigate to **Launch Synapse Studio**
 
 3. Click on the **Manage Hub** on the left side of the screen.
 
