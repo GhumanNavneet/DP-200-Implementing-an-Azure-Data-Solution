@@ -229,8 +229,6 @@ The main tasks for this exercise are as follows:
 
     ![](Linked_Image_Files/lab6_26.jpg)
     
-    ![](Linked_Image_Files/lab6_27.jpg)
-    
     ![](Linked_Image_Files/lab6_26_1.jpg)
 
 1. Now the pipeline should look like the below image.
