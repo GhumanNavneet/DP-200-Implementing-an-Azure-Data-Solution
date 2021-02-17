@@ -497,7 +497,7 @@ The main tasks for this exercise are as follows:
     - **Choose from existing cluster**: awdbclstud
     - Leave other options to their default settings
 
-    > **Note**: When you click on finish, you are returned to the **Author & Monitor** screen where the xx_dbls has been created, with the other linked services created in the previous exercize.
+    > **Note**: When you click on finish, you are returned to the **Author & Monitor** screen where the dbls has been created, with the other linked services created in the previous exercize.
 
 ### Task 5: Create a pipeline that uses Databricks Notebook Activity.
 
