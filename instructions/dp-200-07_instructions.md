@@ -547,3 +547,9 @@ No errors were found." Click on the >> to close the window.
 1. In the **Azure Databricks** workspace, click on **Clusters** and you can see the Job status as pending execution, running, or terminated.
 
 1. Click on the cluster **awdbclstud**, and then click on the **Event Log** to view the activities.
+
+
+
+
+
+
