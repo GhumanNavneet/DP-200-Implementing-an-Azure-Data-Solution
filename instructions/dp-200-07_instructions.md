@@ -49,7 +49,7 @@ The main task for this exercise are as follows:
 
 1. Create your data factory: Use the [Azure Portal](https://portal.azure.com) to create your Data Factory. 
 
-1. In Microsoft Edge, go to the Azure portal tab, click on the **+ Create a resource** icon, type **factory**, and then click **Data Factory** from the resulting search, and then click **Create**.
+1. In Microsoft Edge, go to the Azure portal tab, click on the **+ Create a resource** icon, type **data factory**, and then click **Data Factory** from the resulting search, and then click **Create**.
 
 1. In the New Data Factory screen, create a new Data Factory with the following options, then click **Create**:
     - **Name**: data-factory-xxxxxx, where xxxxxx is the deployment id 
