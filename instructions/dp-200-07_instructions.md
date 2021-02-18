@@ -386,7 +386,7 @@ The main tasks for this exercise are as follows:
     1. In the Sink tab, create a new data warehouse dataset via the **+ New button**.
         ![](Linked_Image_Files/lab6_41.jpg)
     1. Select **Azure Synapse Analytics** from the tile list.
-        ![](Linked_Image_Files/lab6_42.jpg)
+        ![](Linked_Image_Files/new-feb2021/lb6_42_new.png)
     1. Select a new linked service and configure your Azure Synapse Analytics connection to connect to the DWDB database created in the previous step. Click **Create** when finished.
     
         ![Creating an Azure Synapse Analytics connection in Azure Data Factory](Linked_Image_Files/M07-E03-T04-img01.png)
@@ -431,7 +431,7 @@ Estimated Time: 15 minutes
 
 Individual exercise
   
-The main tasks for this exercise are as follows:
+The main tasks for this exercise are as follows: 
 
 1. Generate a Databricks Access Token.
 
