@@ -421,15 +421,21 @@ At this point, You have finished building your 8 transformation Mapping Data Flo
     
 1. **Note:-** If the validation shows error "PrimaryGenre does not exist in mapped columns" , please try to create the dataflow from scratch.
 
-1. Before you publish your pipeline, run another debug run to confirm it's working as expected. Looking at the Output tab, you can monitor the status of both activities as they are running.
+1. Before you publish your pipeline, run another debug run by clicking on **Debug** button to confirm it's working as expected. Looking at the Output tab, you can monitor the status of both activities as they are running.
 
 1. Once both activities succeeded, you can click on the eyeglasses icon next to the Data Flow activity to get a more in depth look at the Data Flow run.
 
-1. If you used the same logic described in this lab, your Data Flow should will written 737 rows to your SQL DW. You can go into [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) to verify the pipeline worked correctly and see what got written.
+1. If you used the same logic described in this lab, your Data Flow should will written 737 rows to your SQL DW. You can go into [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) to verify the pipeline worked correctly and see what got written.Please follow next step to check.
 
-1. To check the values right click DWDB database and in new query enter the mentioned queries - **select count(*) as TotalCount From Dbo.Ratings** , **select * from Dbo.Ratings**
+1. Navigate to SQl Server Management Studio in your vm and expand the server and right click DWDB database and in new query enter the mentioned queries first enter - **select count(*) as TotalCount From Dbo.Ratings**.
+
+1. Then press enter and in next line enter **select * from Dbo.Ratings**
+
+1. Click Execute and same results should appear.
 
     ![Querying the results in SQL Server Management Studio](Linked_Image_Files/M07-E03-T05-img02.png)
+
+1. Publish the pipeline by clicking on **Publish All**.
 
 ## Exercise 4: Azure Data Factory and Databricks
   
