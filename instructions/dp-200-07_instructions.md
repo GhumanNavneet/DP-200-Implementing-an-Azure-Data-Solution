@@ -544,9 +544,12 @@ No errors were found." Click on the >> to close the window.
 
 1. In Microsoft Edge, click on the tab **mynotebook - Databricks** 
 
-1. In the **Azure Databricks** workspace, click on **Clusters** and you can see the Job status as pending execution, running, or terminated.
+1. In the **Azure Databricks** workspace, Find **Clusters** from left navigation pane and then Click on the cluster **awdbclstud**.
 
-1. Click on the cluster **awdbclstud**, and then click on the **Event Log** to view the activities.
+1. Click on the cluster **awdbclstud**, and then click on the **Event Log** to view the activities. You will notice that the cluster was started at the same time you ran the pipeline indicating with a status **STARTING** and then you will see a status as **RUNNING** and finally **DRIVER_HEALTHY** 
+
+
+
 
 
 
