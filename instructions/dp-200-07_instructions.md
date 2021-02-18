@@ -397,7 +397,7 @@ The main tasks for this exercise are as follows:
     
       ![Creating an Azure Synapse Analytics connection in Azure Data Factory](Linked_Image_Files/new-feb2021/lb6_synp-linkedser.png)
     
-    1. In the dataset configuration, select **Create new table** and enter in the schema of **Dbo** and the  table name of **Ratings**. Click **OK** once completed.
+    1. In the dataset configuration, select **Create new table** and enter in schema **Dbo** (provide the same value mentioned here) and table name of **Ratings**. Click **OK** once completed.
 
         ![Creating an Azure Synapse Analytics table in Azure Data Factory](Linked_Image_Files/M07-E03-T04-img02.png)
     
