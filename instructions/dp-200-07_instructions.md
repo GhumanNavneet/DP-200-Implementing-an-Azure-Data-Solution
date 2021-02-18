@@ -388,8 +388,14 @@ The main tasks for this exercise are as follows:
     1. Select **Azure Synapse Analytics** from the tile list.
         ![](Linked_Image_Files/new-feb2021/lb6_42_new.png)
     1. Select a new linked service and configure your Azure Synapse Analytics connection to connect to the DWDB database created in the previous step. Click **Create** when finished.
+     i)    Name - **AzureSynapseAnalytics1**
+     ii)   ServerName - **dwhservice-xxxxxx**
+     iii)  DatabaseName - **DWDB**
+     iv)   Authentication type - **sql authentication**
+     v)    UserNAme - **sqladmin**
+     vi)   Password: **Pa55w.rd**
     
-        ![Creating an Azure Synapse Analytics connection in Azure Data Factory](Linked_Image_Files/M07-E03-T04-img01.png)
+      ![Creating an Azure Synapse Analytics connection in Azure Data Factory](Linked_Image_Files/new-feb2021/lb6_synp-linkedser.png)
     
     1. In the dataset configuration, select **Create new table** and enter in the schema of **Dbo** and the  table name of **Ratings**. Click **OK** once completed.
 
