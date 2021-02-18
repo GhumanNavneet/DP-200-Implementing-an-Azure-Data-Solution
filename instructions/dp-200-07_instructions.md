@@ -222,6 +222,10 @@ The main tasks for this exercise are as follows:
     > NOTE: Data Flow clusters take 5-7 minutes to warm up.
 
     ![](Linked_Image_Files/lab6_24.jpg)
+
+1. Select for two hours and should like below after turned-on.
+
+    ![](Linked_Image_Files/new-feb2021/lb6_ex3_task1_img3.png)
     
     ![](Linked_Image_Files/lab6_25.jpg)
     
