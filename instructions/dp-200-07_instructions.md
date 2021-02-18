@@ -145,7 +145,7 @@ The main tasks for this exercise are as follows:
            
     - Click **OK** once completed.
    
-    a. To verify your dataset is configured correctly, click **Preview Data** in the Source tab of the copy activity to get a small snapshot of your data.
+    a. To verify your dataset is configured correctly, click **Preview Data** in the Source tab of the copy activity to get a small snapshot of your data. Just click on refresh if data not loaded.
 
     ![](Linked_Image_Files/lab6_14.jpg)
 
