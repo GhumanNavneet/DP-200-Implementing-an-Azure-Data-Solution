@@ -241,9 +241,12 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Adding a Data Source
 
-1. Double-click on the dataflow tab to create a dataflow structure.
+1. Click on the dataflow tab to create a dataflow structure.
 
     ![](Linked_Image_Files/lab6_27_1.jpg)
+
+1. Click on **Settings** and then click on **+New** next to dataflow to create the dataflow structure.
+    ![](Linked_Image_Files/new-feb2021/lb6_ex3_task2_st1.png)
 1. Click on the **Add Source** button.
 
     ![](Linked_Image_Files/lab6_28.jpg)
