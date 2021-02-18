@@ -1,7 +1,7 @@
 ﻿# DP 200 - Implementing a Data Platform Solution
 # Lab 6 - Orchestrating Data Movement with Azure Data Factory
 
-**Estimated Time**: 70 minutes
+**Estimated Time**: 120 minutes
 
 ## Lab overview
 
@@ -223,7 +223,7 @@ The main tasks for this exercise are as follows:
 
     ![](Linked_Image_Files/lab6_24.jpg)
 
-1. Select for two hours and should like below after turned-on.
+1. Select for two hours and should look like below after turned-on.
 
     ![](Linked_Image_Files/new-feb2021/lb6_ex3_task1_img3.png)
     
