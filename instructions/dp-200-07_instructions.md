@@ -302,13 +302,13 @@ The main tasks for this exercise are as follows:
 
 1. To accomplish this, specify what you are windowing over, what you are sorting by, what the range is, and how to calculate your new window columns. In this example, we will window over PrimaryGenre and year with an unbounded range, sort by Rotten Tomato descending, a calculate a new column called RatingsRank which is equal to the rank each movie has within its specific genre-year.(If need help please refer below images)
 
-    ![Window Over](Linked_Image_Files/WindowOver.PNG "Window Over")
+    ![Window Sort](Linked_Image_Files/new-feb2021/lb6_ex3_task3_st8_img1.png)
 
-    ![Window Sort](Linked_Image_Files/WindowSort.PNG "Window Sort")
+    ![Window Sort](Linked_Image_Files/new-feb2021/lb6_ex3_task3_st8_img2.png)
 
-    ![Window Bound](Linked_Image_Files/WindowBound.PNG "Window Bound")
+    ![Window Sort](Linked_Image_Files/new-feb2021/lb6_ex3_task3_st8_img3.png)
 
-    ![Window Rank](Linked_Image_Files/WindowRank.PNG "Window Rank")
+    ![Window Rank](Linked_Image_Files/new-feb2021/lb6_ex3_task3_st8_img4.png)
 
 1. **Aggregate ratings with an Aggregate Transformation** Now that you have gathered and derived all your required data, we can add an [Aggregate transformation](https://docs.microsoft.com/azure/data-factory/data-flow-aggregate) to calculate metrics based on a desired group by clicking on the **+ icon** next to your Window transformation and clicking Aggregate under Schema modifier. 
 
