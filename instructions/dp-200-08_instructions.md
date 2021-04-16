@@ -134,12 +134,19 @@ The main tasks for this exercise are as follows:
 5. Perform the following steps:
 
   - **Enable Azure SQL Auditing** - Click on the toggle button to enable Auditing
+  
   - Select the checkbox next to **Storage**.
+  
   - **Subscription** - Select your subscription from the drop down
+  
   - **Storage Account** - Select your storage account(i.e., **awsastud(deploymentId)**) from the drop down
+  
   - Click on **Advanced properties**
+  
   - In the **Retention Days** text box, type **90**
+  
   - **Storage access key** - Set to **Primary**
+  
   - Click on **Save**
 
     ![](Linked_Image_Files/dp-200mod7-updatedimage.png)
