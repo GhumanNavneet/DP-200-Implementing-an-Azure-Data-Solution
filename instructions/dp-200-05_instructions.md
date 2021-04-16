@@ -88,7 +88,7 @@ The main task for this exercise are as follows:
 
 1. After the validation of the **Create SQL Database*** blade, click **Create**.
 
-   > **Note**: The provision will takes approximately 4 minutes.
+   > **Note**: The provision will take approximately 4 minutes.
 
 > **Result**: After you completed this exercise, you have an Azure SQL Database instance
 
