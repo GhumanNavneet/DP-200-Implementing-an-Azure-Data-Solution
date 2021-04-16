@@ -67,13 +67,12 @@ The main task for this exercise are as follows:
 
         - **API**: **Core(SQL)**
 
-        - **Notebooks (Preview)**: **Off**
-
         - **Location**: the name of the Azure region which is closest to the lab location and where you can provision Azure VMs.
 
         -  change Apply Free Tier Discount to **Do not Apply**, Leave the remaining options to the default settings
 
-            ![Creating Azure Cosmos DB in the Azure portal](Linked_Image_Files/M04-E01-T01-img01.png)
+            ![Creating Azure Cosmos DB in the Azure portal](Linked_Image_Files/dp200img1.png)
+            ![Creating Azure Cosmos DB in the Azure portal](Linked_Image_Files/dp200img2.png)
 
 1. In the **Create Azure Cosmos DB Account** blade, click **Review + create**.
 
