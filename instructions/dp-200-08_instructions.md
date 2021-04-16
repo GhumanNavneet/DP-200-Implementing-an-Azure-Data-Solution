@@ -120,6 +120,8 @@ The main tasks for this exercise are as follows:
   - **Storage access key** - Set to **Primary**
   - Click on **Save**
 
+    ![](Linked_Image_Files/lab7-ex3-task1-step3.png)
+    
 4. In Azure portal, in the search blade, search for the sql servers and then click on **sqlservice-DeploymentID**, and then click on **Auditing** Under Security.
 
 5. Perform the following steps:
