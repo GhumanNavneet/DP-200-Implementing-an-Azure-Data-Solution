@@ -86,7 +86,7 @@ The main tasks for this exercise are as follows:
 
 1. In the **Azure Databricks** blade, click **Create**.
 
-    ![](Linked_Image_Files/ex1_task2_step3.png)
+![](Linked_Image_Files/ex1_task2_step3.png)
 
 1. In the **Azure Databricks Service** blade, create an Azure Databricks Workspace with the following settings:
 
@@ -104,10 +104,9 @@ The main tasks for this exercise are as follows:
 
     - **Deploy Azure Databricks workspace in your Virtual Network**: **No**.
 
-
-        ![](Linked_Image_Files/ex1_task2_step4.png)
+    ![](Linked_Image_Files/ex1_task2_step4.png)
         
-        ![](Linked_Image_Files/ex1_task2_step5.1.png)
+    ![](Linked_Image_Files/ex1_task2_step5.1.png)
 
 1. In the **Azure Databricks Service** blade, click **Create**.
 
