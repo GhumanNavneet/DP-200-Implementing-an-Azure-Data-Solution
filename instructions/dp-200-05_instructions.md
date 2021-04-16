@@ -363,7 +363,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Collect Azure Blob account name and key details
 
-1. In the Azure portal, click on **Resource groups** and then click on **awrgstud-xxxxxx**, and then click on **awdlsstudxxxxxx** where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
+1. In the Azure portal, click on **Resource groups**, then click on **awrgstud-xxxxxx**, and then click on **awdlsstudxxxxxx** storage account where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
 
 2. In the **awdlsstudxxxxxx** screen, click **Access keys**. Click on the icon next to the **Storage account name** and paste it into Notepad.
 
