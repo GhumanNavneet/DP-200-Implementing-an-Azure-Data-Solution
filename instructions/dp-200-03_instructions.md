@@ -104,7 +104,6 @@ The main tasks for this exercise are as follows:
 
     - **Deploy Azure Databricks workspace in your Virtual Network**: **No**.
 
-
         ![](Linked_Image_Files/ex1_task2_step4.png)
         
         ![](Linked_Image_Files/ex1_task2_step5.1.png)
@@ -243,9 +242,9 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure Active Directory blade, click **Properties**.
 
-1. Click on the Copy icon next to the **Directory ID** to get your tenant ID and paste this into notepad.
+1. Click on the Copy icon next to the **Tenant ID** to get your tenant ID and paste this into notepad.
 
-1. Save the notepad document in the folder **Allfiles\Labfiles\Starter\DP-200.3** as **DatabricksDetails.txt**
+1. Save the notepad document in the folder **AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.3** as **DatabricksDetails.txt**
 
 ### Task 4: Create a Databricks Notebook and connect to a Data Lake Store.
 
