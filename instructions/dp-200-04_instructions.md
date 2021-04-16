@@ -326,7 +326,7 @@ The main tasks for this exercise are as follows:
 
 1. In the New Stored Procedure screen, click **Execute**.
 
-1. In the Input Parameters screen, **type** should be set to **string**, and **value** set to  **33218898** in the **Partition Key Value** text box, and then click **Execute**.
+1. In the Input Parameters screen, **key** should be set to **string**, and **value** set to  **33218898** in the **Partition Key Value** text box, and then click **Execute**.
 
 The following result is returned
 
