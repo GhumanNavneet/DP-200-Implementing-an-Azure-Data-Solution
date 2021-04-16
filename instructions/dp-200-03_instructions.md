@@ -398,7 +398,7 @@ The main tasks for this exercise are as follows:
 
 > **Result**: After you completed this exercise, you have created an annotation within a notebook.
 
-### Task 4: If time permits or post course review
+### Task 4: If time permits or post course review (Optional)
 
 If you have completed this lab early, the following sections provide links to content that can help you learn more about basic and advanced transformations in Azure.
 
