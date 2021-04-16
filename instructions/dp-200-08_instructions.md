@@ -200,13 +200,13 @@ The main tasks for this exercise are as follows:
 
 2. In the Azure portal, in the **phoneanalysis-ehn-deploymentID**. Scroll to the bottom of the window, and click on **co-phoneanalysis-eh** event hub.
 
-    ![](Linked_Image_Files/lab7-lastimage2.png)
+    ![](Linked_Image_Files/up-lab7-lastimage3.png)
 
 3. To grant access to the event hub, click **Shared access policies**.
 
 4. Under the **co-phoneanalysis-eh - Shared access policies** screen, click on **phoneanalysis-eh-sap**.
 
-    ![](Linked_Image_Files/up-lab7-lastimage3.png)
+    ![](Linked_Image_Files/lab7-lastimage3.png)
 
 5. Click on the checkbox next to the **Manage** permissions to remove it, and then click **Save**.
 
