@@ -53,7 +53,7 @@ The main task for this exercise are as follows:
 
 ### Task 1: Define the digital transformation and candidate data source.
 
-1. From the lab virtual machine, start **Microsoft Word**, and open up the file **DP-200-Lab03-Ex01.docx** from the **Allfiles\Labfiles\Starter\DP-200.3** folder.
+1. From the lab virtual machine, start **Microsoft Word**, and open up the file **DP-200-Lab03-Ex01.docx** from the **AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.3** folder.
 
 1. Spend **10 minutes** documenting the digital transformation requirement and candidate data source as outlined in the case study and the scenario of this lab.
 
@@ -100,11 +100,14 @@ The main tasks for this exercise are as follows:
 
     - **Pricing Tier**: **Premium (+ Role-based access controls)**.
 
+    - **Deploy Azure Databricks workspace with Secure Cluster Connectivity**: **No**.
+
     - **Deploy Azure Databricks workspace in your Virtual Network**: **No**.
+
 
         ![](Linked_Image_Files/ex1_task2_step4.png)
         
-        ![](Linked_Image_Files/ex1_task2_step5.png)
+        ![](Linked_Image_Files/ex1_task2_step5.1.png)
 
 1. In the **Azure Databricks Service** blade, click **Create**.
 
