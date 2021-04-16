@@ -1,4 +1,4 @@
-﻿# DP 200 - Implementing a Data Platform Solution
+# DP 200 - Implementing a Data Platform Solution
 # Lab 2 - Enabling Team Based Data Science with Azure Databricks
 
 **Estimated Time**: 60 minutes
@@ -12,7 +12,7 @@
 By the end of this lab the student will be able to explain why Azure Databricks can be used to help in Data Science projects. The students will provision an Azure Databricks instance and will then create a workspace that will be used to perform simple data preparation tasks from a Data Lake Store Gen2 store. Finally, the student will perform a walk-through of performing transformations using Azure Databricks.
 
 ## Lab objectives
-  
+
 After completing this lab, you will be able to:
 
 1. Explain Azure Databricks
@@ -21,7 +21,7 @@ After completing this lab, you will be able to:
 1. Perform transformations with Azure Databricks
 
 ## Scenario
-  
+
 In response to the Information Services (IS) department, you will start the process of building a predictive analytics platform by listing out the benefits of using the technology. The department will be joined by data scientists and they want to ensure that there is a predictive analytics environment available to the new team members.
 
 You will stand up and provision an Azure Databricks environment, and then test that this environment works by performing a simple data preparation routine on the service by ingesting data from a pre-existing Data Lake Storage Gen2 account. As a data engineer, it has been indicated to you that you may be required to help the data scientists perform data preparation exercises. To that end, you have been recommended to walk-through a notebook that can help you perform basic transformations.
@@ -44,7 +44,7 @@ At the end of this lad, you will have:
 Estimated Time: 15 minutes
 
 Individual exercise
-  
+
 The main task for this exercise are as follows:
 
 1. From the content you have learned in this course so far, identify the digital transformation requirement that Azure Databricks will meet and a candidate data source for Azure Databricks.
@@ -63,7 +63,7 @@ The main task for this exercise are as follows:
 Estimated Time: 20 minutes
 
 Individual exercise
-  
+
 The main tasks for this exercise are as follows:
 
 1. Create an Azure Databricks Premium Tier instance in a resource group.
@@ -111,8 +111,9 @@ The main tasks for this exercise are as follows:
 1. In the **Azure Databricks Service** blade, click **Create**.
 
    > **Note**: The provision will take approximately 3 minutes. The Databricks Runtime is built on top of Apache Spark and is natively built for the Azure cloud. Azure Databricks completely abstracts out the infrastructure complexity and the need for specialized expertise to set up and configure your data infrastructure. For data engineers, who care about the performance of production jobs, Azure Databricks provides a Spark engine that is faster and performant through various optimizations at the I/O layer and processing layer (Databricks I/O).
-   
-### Task 2: Open Azure Databricks.
+
+
+### Task 2: Open Azure Databricks
 
 1. Confirm that the Azure Databricks service has been created.
 
@@ -124,7 +125,7 @@ The main tasks for this exercise are as follows:
 
     ![Azure Databricks Service in the Azure portal](Linked_Image_Files/lab2_ex2_task2.png)
 
-### Task 3: Launch a Databricks Workspace and create a Spark Cluster.
+### Task 3: Launch a Databricks Workspace and create a Spark Cluster
 
 1. In the Azure portal, in the **awdbwsstudxxxxxx** screen, click on the button **Launch Workspace**.
 
@@ -146,13 +147,14 @@ The main tasks for this exercise are as follows:
 
     - Leave all the remaining options to their current settings.
 
-        ![Creating an Azure Databricks Cluster in the Azure portal](Linked_Image_Files/cluster.png)
+    ![Creating an Azure Databricks Cluster in the Azure portal](Linked_Image_Files/cluster.png)
 
 1. In the **Create Cluster** screen, click on **Create Cluster** and leave the Microsoft Edge screen open.
 
 > **Note**: The creation of the Azure Databricks instance will take approximately 10 minutes as the creation of a Spark cluster is simplified through the graphical user interface. You will note that the **State** of **Pending** whilst the cluster is being created. This will change to **Running** when the Cluster is created.
 
 > **Note**: While the cluster is being created, **go back and perform Exercise 1**.
+
 
 ## Exercise 3: Read data with Azure Databricks
 
@@ -164,7 +166,7 @@ The main tasks for this exercise are as follows:
 
 1. Confirm that the Databricks cluster has been created.
 
-1. Collect the Azure Data Lake Store Gen2 account name
+1. Collect the Azure Data Lake Store Gen2 account name.
 
 1. Enable your Databricks instance to access the Data Lake Gen2 Store.
 
@@ -190,7 +192,7 @@ The main tasks for this exercise are as follows:
 
     ![Accessing Data Lake Storage account name in the Azure portal](Linked_Image_Files/M03-E03-T02-img01.png)
 
-### Task 3: Enable your Databricks instance to access the Data Lake Gen2 Store.
+### Task 3: Enable your Databricks instance to access the Data Lake Gen2 Store
 
 1. In the Azure portal, Click the **Home** hyperlink, and then click the **Azure Active Directory** icon.
 
@@ -220,9 +222,9 @@ The main tasks for this exercise are as follows:
 
 1. Assign the Storage Blob Data Contributor permission to your resource group. In the Azure portal, click on the **Home** hyperlink, and then the **Resource groups** icon, click on the resource group **awrgstudxxxxxx**, where **xxxxxx** is the deployment-id.
 
-1. In the **awrgstudxxxxxx** screen, click on **Access Control (IAM)** 
+1. In the **awrgstudxxxxxx** screen, click on **Access Control (IAM)**
 
-1. Click on the **Role assignments** tab. 
+1. Click on the **Role assignments** tab.
 
 1. Click **+ Add**, and click **Add role assignment**
 
@@ -236,7 +238,7 @@ The main tasks for this exercise are as follows:
 
 1. In the Azure portal, click the **Home** hyperlink, and then click the **Azure Active Directory** icon, Note **your role**. If you have the User role, you must make sure that non-administrators can register applications.
 
-1. Click **Users**, and then click **User settings** in the **Users - All users** blade, Check the **App registrations** setting. This value can only be set by an administrator. If set to Yes, any user in the Azure AD tenant can register an app. 
+1. Click **Users**, and then click **User settings** in the **Users - All users** blade, Check the **App registrations** setting. This value can only be set by an administrator. If set to Yes, any user in the Azure AD tenant can register an app.
 
 1. Close down the **Users - All users** screen.
 
@@ -278,15 +280,15 @@ The main tasks for this exercise are as follows:
 
 1. In this code block, replace the **application-id**, **authentication-id**, **tenant-id** and **storage-account-name** placeholder values in this code block with the values that you collected earlier and are held in notepad.
 
-1. In the Notebook, in the cell under **Cmd 1**, click on the **Run** icon and click on **Run Cell** as highlighted in the following graphic. 
+1. In the Notebook, in the cell under **Cmd 1**, click on the **Run** icon and click on **Run Cell** as highlighted in the following graphic.
 
     ![Running cvode in a Notebook in Azure Databricks](Linked_Image_Files/M03-E03-T04-img02.png)
 
     >**Note** A message will be returned at the bottom of the cell that states "Command took 0.0X seconds -- by person at 4/4/2019, 2:46:48 PM on awdbclstudxx"
 
-### Task 5: Read data in Azure Databricks.
+### Task 5: Read data in Azure Databricks
 
-1. In the Notebook, hover your mouse at the top right of cell **Cmd 1**, and click on the **Add Cell Below** icon. A new cell will appear named **Cmd2**.
+1. In the Notebook, hover your mouse at the top right of cell **Cmd 1**, and click on the **Add Cell Below** icon. A new cell will appear named **Cmd2**
 
     ![Adding a cell in a Notebook in Azure Databricks](Linked_Image_Files/M03-E03-T04-img03.png)
 
@@ -300,7 +302,7 @@ The main tasks for this exercise are as follows:
 
 1. In this code block, replace the **file-system-name** with the word **logs** and **storage-account-name** placeholder values in this code block with the value that you collected earlier and are held in notepad.
 
-1. In the Notebook, in the cell under **Cmd 2**, click on the **Run** icon and click on **Run Cell**. 
+1. In the Notebook, in the cell under **Cmd 2**, click on the **Run** icon and click on **Run Cell**.
 
     >**Note** A message will be returned at the bottom of the cell that states that a Spark job has executed and "Command took 0.0X seconds -- by person at 4/4/2019, 2:46:48 PM on awdbclstudxx"
 
@@ -310,7 +312,7 @@ The main tasks for this exercise are as follows:
 
     ```scala
     //Show result of reading the JSON file
-  
+
     df.show()
     ```
 
@@ -348,12 +350,12 @@ The main tasks for this exercise are as follows:
 
     ```scala
     //Retrieve specific columns from a JSON dataset in Azure Data Lake Storage Gen2 file system
-    
+
     val specificColumnsDf = df.select("firstname", "lastname", "gender", "location", "page")
     specificColumnsDf.show()
     ```
 
-1. In the Notebook, in the cell under **Cmd 4**, click on the **Run** icon and click on **Run Cell**. 
+1. In the Notebook, in the cell under **Cmd 4**, click on the **Run** icon and click on **Run Cell**.
 
     >**Note**  A message will be returned at the bottom of the cell that states that a Spark job has executed, a table of results are returned and "Command took 0.0X seconds -- by person at 4/4/2019, 2:46:48 PM on awdbclstudxx"
 
@@ -372,7 +374,7 @@ The main tasks for this exercise are as follows:
     renamedColumnsDF.show()
     ```
 
-1. In the Notebook, in the cell under **Cmd 5**, click on the **Run** icon and click on **Run Cell**. 
+1. In the Notebook, in the cell under **Cmd 5**, click on the **Run** icon and click on **Run Cell**.
 
     >**Note**  A message will be returned at the bottom of the cell that states that a Spark job has executed, a table of results are returned and "Command took 0.0X seconds -- by person at 4/4/2019, 2:46:48 PM on awdbclstudxx"
 
@@ -408,12 +410,11 @@ If the url are inaccessible, there is a copy of the notebooks ion the _Allfiles\
 
 1. In the blade that appears, select the **downwards pointing chevron next to your name**, and select **Import**.
 
-1. On the Import Notebooks dialog, select **URL below** and paste in the following URL: 
+1. On the Import Notebooks dialog, select **URL below** and paste in the following URL:
 
 ```url
     https://github.com/MicrosoftDocs/mslearn-perform-basic-data-transformation-in-azure-databricks/blob/master/DBC/05.1-Basic-ETL.dbc?raw=true
 ```
-
 1. Select **Import**.
 
 1. A folder named **05.1-Basic-ETL** after the import should appear. Select that folder.
@@ -439,7 +440,7 @@ Follow the instructions within the notebook, until you've completed the entire n
 
 1. In the blade that appears, select the **downwards pointing chevron next to your name**, and select **Import**.
 
-1. On the Import Notebooks dialog, select **URL below** and paste in the following URL: 
+1. On the Import Notebooks dialog, select **URL below** and paste in the following URL:
 
 ```url
     https://github.com/MicrosoftDocs/mslearn-perform-advanced-data-transformation-in-azure-databricks/blob/master/DBC/05.2-Advanced-ETL.dbc?raw=true
