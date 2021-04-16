@@ -246,7 +246,7 @@ The main tasks for this exercise are as follows:
 
 2. Select the ellipsis next to the **DWDB** database.
 
-3. Select **New SQL script**, and **empty script**
+3. Select **New SQL script**, and **empty script**.
 
     >**Note**: If you are unfamiliar with Transact-SQL, there is a script in the C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Solution\DP-200.5\folder named **Exercise3 Task3Step2 script.sql**. It contains the bulk of the code required to create the tables, but you do have to complete the code by selecting the distribution type to use for each table 
 
@@ -277,7 +277,7 @@ The main tasks for this exercise are as follows:
 
 6. Navigate to **DWDB** database and select the ellipsis next to it.
 
-7. Select **New SQL script**, and **empty script**
+7. Select **New SQL script**, and **empty script**.
 
 8. Create a table named **dbo.Products** with a **clustered columnstore** index with a distribution of **ROUND_ROBIN** with the following columns: **Note :- ignore the error showing**
 
@@ -316,11 +316,9 @@ The main tasks for this exercise are as follows:
 
 9. Navigate to **DWDB** database and select the ellipsis next to it.
 
-10. Select the ellipsis next to the **DWDB** database.
+10. Select **New SQL script**, and **empty script**.
 
-12. Select **New SQL script**, and **empty script**
-
-12. Create a table named **dbo.FactSales** with a **clustered columnstore** index with a distribution of **Hash** on the **SalesUnit** with the following columns:
+11. Create a table named **dbo.FactSales** with a **clustered columnstore** index with a distribution of **Hash** on the **SalesUnit** with the following columns:
 
     | column name | data type | Nullability|
     |-------------|-----------|------------|
@@ -345,7 +343,7 @@ The main tasks for this exercise are as follows:
     );
   ```
 
-13. In **Synapse Studio**, click on **Run** and the query will be executed. To verify if the **dbo.FactSales** table was created you can click refresh and navigate to **tables** which, when expanded, should show you the table. 
+12. In **Synapse Studio**, click on **Run** and the query will be executed. To verify if the **dbo.FactSales** table was created you can click refresh and navigate to **tables** which, when expanded, should show you the table. 
 
 > **Result**: After you completed this exercise, you have used Synapse Studio to create a data warehouse named DWDB and three tables named Users, Products and FactSales.
 
@@ -375,7 +373,7 @@ The main tasks for this exercise are as follows:
 
 2. Select the ellipsis next to the **DWDB** database.
 
-3. Select **New SQL script**, and **empty script**
+3. Select **New SQL script**, and **empty script**.
 
 4. Create a **master key** against the **DWDB** database. In the query editor, type in the following code:
 
@@ -386,13 +384,11 @@ The main tasks for this exercise are as follows:
 
 5. In **Synapse Studio**, click on **Run** and the query will be executed.
 
-6. In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
+6. Navigate to **DWDB** database and select the ellipsis next to it.
 
-7. Select the ellipsis next to the **DWDB** database.
+7. Select **New SQL script**, and **empty script**.
 
-8. Select **New SQL script**, and **empty script**
-
-9. Create a database scoped credential named **AzureStorageCredential** with the following details, by typing in the following code in the query editor:
+8. Create a database scoped credential named **AzureStorageCredential** with the following details, by typing in the following code in the query editor:
     - IDENTITY: **MOCID**
     - SECRET: **The access key of your storage account**
 
@@ -405,15 +401,13 @@ The main tasks for this exercise are as follows:
     ```
     >**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
-10. In **Synapse Studio**, click on **Run** and the query will be executed.
+9. In **Synapse Studio**, click on **Run** and the query will be executed.
 
-11. In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
+10. Navigate to **DWDB** database and select the ellipsis next to it.
 
-12. Select the ellipsis next to the **DWDB** database.
+11. Select **New SQL script**, and **empty script**
 
-13. Select **New SQL script**, and **empty script**
-
-14. In the Query window, type in code that will create an external data source named **AzureStorage** for the Blob storage account and data container created in with a type of **HADOOP** that makes use of the ****AzureStorageCredential**. Note that you should replace **awdlsstudxxxxxx** in the location key with your storage account with your deploymentID
+12. In the Query window, type in code that will create an external data source named **AzureStorage** for the Blob storage account and data container created in with a type of **HADOOP** that makes use of the ****AzureStorageCredential**. Note that you should replace **awdlsstudxxxxxx** in the location key with your storage account with your deploymentID
 
     ```SQL
 	CREATE EXTERNAL DATA SOURCE AzureStorage
@@ -425,15 +419,13 @@ The main tasks for this exercise are as follows:
     ```
     >**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
-15. In **Synapse Studio**, click on **Run** and the query will be executed.
+13. In **Synapse Studio**, click on **Run** and the query will be executed.
 
-16. In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
+14. Navigate to **DWDB** database and select the ellipsis next to it.
 
-17. Select the ellipsis next to the **DWDB** database.
+15. Select **New SQL script**, and **empty script**.
 
-18. Select **New SQL script**, and **empty script**
-
-19. In the Query window, type in code that will create an external file format named **TextFile** with a formattype of **DelimitedText** and a filed terminator of **comma**.
+16. In the Query window, type in code that will create an external file format named **TextFile** with a formattype of **DelimitedText** and a filed terminator of **comma**.
 
     ```SQL
     CREATE EXTERNAL FILE FORMAT TextFile
@@ -444,17 +436,15 @@ The main tasks for this exercise are as follows:
     ```
     >**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
-20. In **Synapse Studio**, click on **Run** and the query will be executed.
+17. In **Synapse Studio**, click on **Run** and the query will be executed.
 
-21. Before proceeding to next step, go to the storage account **awdlsstudxxxxxx**, navigate to containers and open **data** and upload the file with name **DimDate2.txt** from location **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.2\Static files** .
+18. Before proceeding to next step, go to the storage account **awdlsstudxxxxxx**, navigate to containers and open **data** and upload the file with name **DimDate2.txt** from location **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.2\Static files** .
 
-21. . In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
+19. Navigate to **DWDB** database and select the ellipsis next to it.
 
-22. Select the ellipsis next to the **DWDB** database.
+20. Select **New SQL script**, and **empty script**.  
 
-23. Select **New SQL script**, and **empty script**   
-
-24. In  the Query window, type in code that will create an external table named **dbo.DimDate2External** with the **location** as the root file, the Data source as **AzureStorage**, the File_format of **TextFile** with the following columns:
+21. In  the Query window, type in code that will create an external table named **dbo.DimDate2External** with the **location** as the root file, the Data source as **AzureStorage**, the File_format of **TextFile** with the following columns:
 
     | column name | data type | Nullability|
     |-------------|-----------|------------|
@@ -495,15 +485,13 @@ The main tasks for this exercise are as follows:
     >**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
 
-25. In **Synapse Studio**, click on **Run** and the query will be executed.
+22. In **Synapse Studio**, click on **Run** and the query will be executed.
 
-26. In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
+23. Navigate to **DWDB** database and select the ellipsis next to it.
 
-27. Select the ellipsis next to the **DWDB** database.
+24. Select **New SQL script**, and **empty script**.  
 
-28. Select **New SQL script**, and **empty script**  
-
-29. Test that the table is created by running a select statement against it:
+25. Test that the table is created by running a select statement against it:
 
     ```SQL
     SELECT * FROM dbo.DimDate2External;
@@ -511,15 +499,13 @@ The main tasks for this exercise are as follows:
 >**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
 
-30. In **Synapse Studio**, click on **Run** and the query will be executed.
+26. In **Synapse Studio**, click on **Run** and the query will be executed.
 
-31. In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
+27. Navigate to **DWDB** database and select the ellipsis next to it.
 
-32. Select the ellipsis next to the **DWDB** database.
+28. Select **New SQL script**, and **empty script**. 
 
-33. Select **New SQL script**, and **empty script**  
-
-34. In the Query window, type in a **CTAS** statement that creates a table named **dbo.Dates** with a **columnstore** index and a **distribution** of **round robin** that loads data from the **dbo.DimDate2External** table.
+29. In the Query window, type in a **CTAS** statement that creates a table named **dbo.Dates** with a **columnstore** index and a **distribution** of **round robin** that loads data from the **dbo.DimDate2External** table.
 
     ```SQL
     CREATE TABLE dbo.Dates
@@ -533,15 +519,13 @@ The main tasks for this exercise are as follows:
     ```
 >**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
-35. In **Synapse Studio**, click on **Run** and the query will be executed.
+30. In **Synapse Studio**, click on **Run** and the query will be executed.
 
-36. In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
+31. Navigate to **DWDB** database and select the ellipsis next to it.
 
-37. Select the ellipsis next to the **DWDB** database.
-
-38. Select **New SQL script**, and **empty script**  
+32. Select **New SQL script**, and **empty script**.
  
-39. In the Query window, type in a query that creates statistics on the **DateKey**, **Quarter** and **Month** column.
+33. In the Query window, type in a query that creates statistics on the **DateKey**, **Quarter** and **Month** column.
 
     ```SQL
     CREATE STATISTICS [DateKey] on [Dates] ([DateKey]);
@@ -550,15 +534,13 @@ The main tasks for this exercise are as follows:
     ```
 >**Note**: Make sure that the script has is connected to **DWDB** and uses the database **DWDB**. 
 
-40. In **Synapse Studio**, click on **Run** and the query will be executed.
+34. In **Synapse Studio**, click on **Run** and the query will be executed.
 
-41. In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
+35. Navigate to **DWDB** database and select the ellipsis next to it.
 
-42. Select the ellipsis next to the **DWDB** database.
+36. Select **New SQL script**, and **empty script**.
 
-43. Select **New SQL script**, and **empty script**
-
-44. Test that the table is created by running a select statement against it
+37. Test that the table is created by running a select statement against it
 
     ```SQL
     SELECT * FROM dbo.Dates;
