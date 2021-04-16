@@ -90,7 +90,7 @@ The main task for this exercise are as follows:
 
 1. After the validation of the **Create SQL Database** blade, click **Create**.
 
-   > **Note**: The provision will takes approximately 4 minutes.
+   > **Note**: The provision will take approximately 4 minutes.
 
 > **Result**: After you completed this exercise, you have an Azure SQL Database instance
 
@@ -150,7 +150,7 @@ The main tasks for this exercise are as follows:
     - In the screen, click **Review + create**.
     - In the blade, click **Create**.
 
-   > **Note**: The provision will takes approximately 7 minutes.
+   > **Note**: The provision will take approximately 7 minutes.
 
 6. Once provisioned select **Go to resource group**, and find and click your Azure Synapse Analytics workspace with name **wrkspcxxxxxx**.
 
@@ -166,7 +166,7 @@ The main tasks for this exercise are as follows:
 10. In the **Create dedicated SQL pool** blade, click **Create**.
   
 
-   > **Note**: The provision will takes approximately 7 minutes.
+   > **Note**: The provision will take approximately 7 minutes.
 
 ### Task 2: Configure the Server Firewall
 
@@ -235,7 +235,7 @@ The main tasks for this exercise are as follows:
  ![Dedicated SQL Pool creation through Synapse Workspace](Linked_Image_Files/new-feb2021/ex3-tsk1-step3-1.png)
  ![Dedicated SQL Pool creation through Synapse Workspace](Linked_Image_Files/new-feb2021/ex3-task1-step4.png)
 
- > **Note**: The creation of the database takes approximately 6 minutes.
+ > **Note**: The creation of the database take approximately 6 minutes.
 
 5. Once the database is set up, navigate to the **Data Hub** on the left side of the screen. Select the ellipsis next to **Databases** and select **refresh**. You should see the the newly created database DWDB. 
 
@@ -275,13 +275,11 @@ The main tasks for this exercise are as follows:
 
 5. In **Synapse Studio**, click on **Run** and the query will be executed. To verify if the **dbo.Users** table was created you can click refresh and navigate to **tables** which, when expanded, should show you the table. 
 
-6. In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
+6. Navigate to **DWDB** database and select the ellipsis next to it.
 
-7. Select the ellipsis next to the **DWDB** database.
+7. Select **New SQL script**, and **empty script**
 
-8. Select **New SQL script**, and **empty script**
-
-9. Create a table named **dbo.Products** with a **clustered columnstore** index with a distribution of **ROUND_ROBIN** with the following columns: **Note :- ignore the error showing**
+8. Create a table named **dbo.Products** with a **clustered columnstore** index with a distribution of **ROUND_ROBIN** with the following columns: **Note :- ignore the error showing**
 
     | column name | data type | Nullability|
     |-------------|-----------|------------|
@@ -316,15 +314,13 @@ The main tasks for this exercise are as follows:
     );
   ```
 
-10. In **Synapse Studio**, click on **Run** and the query will be executed. To verify if the **dbo.Products** table was created you can click refresh and navigate to **tables** which, when expanded, should show you the table. 
+9. Navigate to **DWDB** database and select the ellipsis next to it.
 
-11. In Synapse Studio, navigate to the newly created database under **Databases** , when opening the ellipsis in the **Data hub** tab. Click on **DWDB**.
+10. Select the ellipsis next to the **DWDB** database.
 
-12. Select the ellipsis next to the **DWDB** database.
+12. Select **New SQL script**, and **empty script**
 
-13. Select **New SQL script**, and **empty script**
-
-14. Create a table named **dbo.FactSales** with a **clustered columnstore** index with a distribution of **Hash** on the **SalesUnit** with the following columns:
+12. Create a table named **dbo.FactSales** with a **clustered columnstore** index with a distribution of **Hash** on the **SalesUnit** with the following columns:
 
     | column name | data type | Nullability|
     |-------------|-----------|------------|
@@ -349,7 +345,7 @@ The main tasks for this exercise are as follows:
     );
   ```
 
-15. In **Synapse Studio**, click on **Run** and the query will be executed. To verify if the **dbo.FactSales** table was created you can click refresh and navigate to **tables** which, when expanded, should show you the table. 
+13. In **Synapse Studio**, click on **Run** and the query will be executed. To verify if the **dbo.FactSales** table was created you can click refresh and navigate to **tables** which, when expanded, should show you the table. 
 
 > **Result**: After you completed this exercise, you have used Synapse Studio to create a data warehouse named DWDB and three tables named Users, Products and FactSales.
 
