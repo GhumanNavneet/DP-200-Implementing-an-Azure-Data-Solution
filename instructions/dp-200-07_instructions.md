@@ -173,7 +173,7 @@ The main tasks for this exercise are as follows:
 
 1. Click on **Create**
 
-1. Once you have configured your linked service, you enter the set properties blade. As you are writing to this dataset, you want to point the folder where you want moviesDB.csv copied to. In the example below, I am writing to folder so **output** (put this value in directory) in the **file system** as **data** (put this value in file system),refer below image, if have doubts. While the folder can be dynamically created, the file system must exist prior to writing to it. Set **First row as header** to be true. You can either Import schema from **sample file** (use the moviesDB.csv file from **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.7\SampleFiles**)  
+1. Once the linked service is configured, the page comes backs to the set properties blade. As you are writing to this dataset, you want to point the folder where you want moviesDB.csv copied to. In the example below, we will be writing to folder **output** (put this value in directory) in the **file system** as **data** (put this value in file system), refer below image, if have doubts. While the folder can be dynamically created, the file system must exist prior to writing to it. Set **First row as header** to be true. You can either Import schema from **sample file** (use the moviesDB.csv file from **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.7\SampleFiles**)  
 
     ![](Linked_Image_Files/lab6_20_1.jpg)
 
