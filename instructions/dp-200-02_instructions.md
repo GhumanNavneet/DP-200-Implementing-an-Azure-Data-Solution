@@ -281,7 +281,7 @@ The main task for this exercise are as follows:
 
 1. On completion of the installation, ensure that the checkbox next to **Launch Microsoft Azure Storage Explorer** is selected and then click **Finish**. Microsoft Azure Storage Explorer opens up and lists your subscriptions.
 
-1. In Storage Explorer, go to the **Account Management Panel** and select **Add an account**.
+1. In Storage Explorer, go to the **Account Management** and select **Add an account**.
 
     ![](Linked_Image_Files/lab1_ex4_task1_step8.png)
 
