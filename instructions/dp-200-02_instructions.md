@@ -281,7 +281,9 @@ The main task for this exercise are as follows:
 
 1. On completion of the installation, ensure that the checkbox next to **Launch Microsoft Azure Storage Explorer** is selected and then click **Finish**. Microsoft Azure Storage Explorer opens up and lists your subscriptions.
 
-1. In Storage Explorer, select **Manage Accounts** to go to the **Account Management Panel**.
+1. In Storage Explorer, go to the **Account Management Panel** and select **Add an account**.
+
+    ![Defining the Hierarchical Namespace setting in Create Storage Account screen in the Azure portal](Linked_Image_Files/lab1_ex4_task1_step8.png)
 
 1. The left pane now displays all the Azure accounts you've signed in to. To connect to another account, select **Add an account**.
 
