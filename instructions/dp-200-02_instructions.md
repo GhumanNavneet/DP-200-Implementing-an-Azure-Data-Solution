@@ -283,7 +283,7 @@ The main task for this exercise are as follows:
 
 1. In Storage Explorer, go to the **Account Management Panel** and select **Add an account**.
 
-    ![Defining the Hierarchical Namespace setting in Create Storage Account screen in the Azure portal](Linked_Image_Files/lab1_ex4_task1_step8.png)
+    ![](Linked_Image_Files/lab1_ex4_task1_step8.png)
 
 1. The left pane now displays all the Azure accounts you've signed in to. To connect to another account, select **Add an account**.
 
