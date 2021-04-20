@@ -107,7 +107,7 @@ The main tasks for this exercise are as follows:
 
         - **Replication**: **Read-access geo-redundant storage (RA_GRS)**
 
-        - **Access tier (default)**: **Hot**.
+      
 
 1. In the **Create storage account** screen, click **Review + create**.
 
@@ -215,7 +215,7 @@ The main tasks for this exercise are as follows:
 
         - **Replication**: **Read-access geo-redundant storage (RA_GRS)**
 
-        - **Access tier (default)**: **Hot**.
+        
 
 1. Click on the **Advanced** tab.
 
