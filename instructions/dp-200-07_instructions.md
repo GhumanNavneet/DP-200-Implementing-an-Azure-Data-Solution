@@ -1,4 +1,4 @@
-﻿# DP 200 - Implementing a Data Platform Solution
+# DP 200 - Implementing a Data Platform Solution
 # Lab 6 - Orchestrating Data Movement with Azure Data Factory
 
 **Estimated Time**: 120 minutes
@@ -29,7 +29,7 @@ At the end of this lab, you will have:
 1. Used the Mapping Data Flow task to perform transformation
 1. Performed transformations using a compute resource
 
-> **IMPORTANT**: As you go through this lab, make a note of any issue(s) that you have encountered in any provisioning or configuration tasks and log it in the table in the document located at C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200-Issues-Doc.docx_. Document the Lab number, note the technology, Describe the issue, and what was the resolution. Save this document as you will refer back to it in a later module.
+> **IMPORTANT**: As you go through this lab, make a note of any issue(s) that you have encountered in any provisioning or configuration tasks and log it in the table in the document located at C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\DP-200-Issues-Doc.docx. Document the Lab number, note the technology, Describe the issue, and what was the resolution. Save this document as you will refer back to it in a later module.
 
 ## Exercise 1: Setup Azure Data Factory
 
@@ -47,20 +47,20 @@ The main task for this exercise are as follows:
 
     ![](Linked_Image_Files/deployment-ID.png)
 
-1. Create your data factory: Use the [Azure Portal](https://portal.azure.com) to create your Data Factory. 
+1. **Create your data factory**: Use the Azure Portal(https://portal.azure.com) to create your Data Factory. 
 
 1. In Microsoft Edge, go to the Azure portal tab, click on the **+ Create a resource** icon, type **data factory**, and then click **Data Factory** from the resulting search, and then click **Create**.
 
-1. In the New Data Factory screen, create a new Data Factory with the following options, then click **Create**:
-    - **Name**: data-factory-xxxxxx, where xxxxxx is the deployment id 
-    - **Version**: V2
+1. In the New Data Factory screen, create a new Data Factory with the following options:
     - **Subscription**: Your subscription
     - **Resource group**: awrgstud-deploymentId
-    - **Location**: east us
-    - click on next : Git Configuration
+    - **Region**: east us
+    - **Name**: data-factory-xxxxxx, where xxxxxx is the deployment id 
+    - **Version**: V2
+    - click on next : **Git Configuration**
     - **Configure Git later**: checked
     - Leave other options to their default settings
-    - Click **Review+Create** and then Click Create
+    - Click **Review+Create** and then Click **Create**
 
         ![](Linked_Image_Files/lab6_1.jpg)
         
@@ -92,19 +92,19 @@ The main tasks for this exercise are as follows:
 
     ![](Linked_Image_Files/lab6_3.jpg)
 
-1. In the data-factory-deploymentId screen, in the middle of the screen, click on the button, **Author & Monitor**.
+1. On the data-factory-deploymentId screen, in the middle of the screen, click on the button, **Author & Monitor**. It will open **ADF homepage** in new browser tab.
 
     ![](Linked_Image_Files/lab6_4.jpg)
 
-1. **Open the authoring canvas** If coming from the ADF homepage, click on the **pencil icon** on the left sidebar or the **create pipeline button** to open the authoring canvas.
+1. **Open the authoring canvas**: In the ADF homepage, click on the **Pencil icon** on the left sidebar or the **Create pipeline** button to open the authoring canvas.
 
     ![](Linked_Image_Files/lab6_5.jpg)
 
-1. **Create the pipeline** Click on the **+** button in the Factory Resources pane and select Pipeline
+1. **Create the pipeline**: Click on the **+** button in the Factory Resources pane and select **Pipeline**
 
     ![](Linked_Image_Files/lab6_6.jpg)
 
-1. **Add a copy activity** In the Activities pane, expand the Move and Transform and drag the Copy Data activity onto the pipeline canvas(blank side).
+1. **Add a copy activity**: In the Activities pane, expand the Move and Transform and drag the **Copy Data** activity onto the pipeline canvas(blank side).
 
     ![](Linked_Image_Files/lab6_7.jpg)
 
@@ -113,67 +113,72 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Create a new HTTP dataset to use as a source
 
-1. Click on the copy data activity tab, and below navigate to the **Source** tab of the Copy activity settings, click **+ New**
+1. Click on the **Copy data** activity tab, and below navigate to the **Source** tab, click **+ New**
 
     ![](Linked_Image_Files/lab6_8.jpg)
 
-1. In the **New dataset** blade, In search column of data store list, search for **HTTP** select the **HTTP** tile and click continue
+1. On the **New dataset** blade, In search column of data store list, search for **HTTP** select the **HTTP** tile and click **Continue**
 
     ![](Linked_Image_Files/lab6_9.jpg)
 
-1. In the file format list, select the **DelimitedText** format tile and click continue
+1. In the **Select format** list, select the **DelimitedText** format tile and click **Continue**
 
     ![](Linked_Image_Files/lab6_10.jpg)
 
-1. In Set Properties blade, give your dataset an understandable name such as **HTTPSource** and click on the **Linked Service** dropdown. If you have not created your HTTP Linked Service, select **New**.
+1. In **Set Properties** blade, give your dataset an understandable name such as **HTTPSource** and click on the **Linked Service** dropdown. Select **New** to create HTTP Linked Service.
 
     ![](Linked_Image_Files/lab6_11.jpg)
 
 1. In the New Linked Service (HTTP) screen, specify the url of the moviesDB csv file. You can access the data with no authentication required using the following endpoint:
 
-    https://raw.githubusercontent.com/djpmsft/adf-ready-demo/master/moviesDB.csv
+   ```
+   https://raw.githubusercontent.com/djpmsft/adf-ready-demo/master/moviesDB.csv
+   ```
+   
+1. Place above URL in the **Base URL** text box. Give **HttpServer1** in the **Name** field.
 
-1. Place this in the **Base URL** text box. 
-
-1. In the **Authentication type** drop down, select **Anonymous**. and click on **Create**.
+1. In the **Authentication type** drop down, select **Anonymous** then click on **Create**.
 
     ![](Linked_Image_Files/lab6_12.jpg)
 
-1. Once you have created and selected the linked service, specify the rest of your dataset settings. These settings specify how and where in your connection we want to pull the data. As the url is pointed at the file already, no relative endpoint is required. As the data has a header in the first row, set **First row as header** to be true and select Import schema from **connection/store** to pull the schema from the file itself. Select **Get** as the request method. You will see the following screen
+1. Once you have created and selected the linked service, specify the rest of your dataset settings. These settings specify how and where in your connection we want to pull the data. As the url is pointed at the file already, no relative endpoint is required. As the data has a header in the first row, set **First row as header** to be true and select **Import schema** as **From connection/store** to pull the schema from the file itself. Select **Get** as the **Request method**. You will see the following screen
 
     ![](Linked_Image_Files/lab6_13.jpg)
            
-    - Click **OK** once completed.
+1. Click **OK** once completed.
    
-    a. To verify your dataset is configured correctly, click **Preview Data** in the Source tab of the copy activity to get a small snapshot of your data. Just click on refresh if data not loaded.
+1. To verify your dataset is configured correctly, click **Preview Data** in the **Source** tab of the copy activity to get a small snapshot of your data.
 
     ![](Linked_Image_Files/lab6_14.jpg)
 
 ### Task 3: Create a new ADLS Gen2 dataset sink
 
-1. Click on the **Sink tab**, and the click **+ New**
+1. Click on the **Copy data** activity tab, and below navigate to the **Sink** tab, click **+ New**
 
     ![](Linked_Image_Files/lab6_15.jpg)
 
-1. Select the **Azure Data Lake Storage Gen2** tile and click **Continue**.
+1. Search and select the **Azure Data Lake Storage Gen2** tile and click **Continue**.
 
     ![](Linked_Image_Files/lab6_16.jpg)
 
-1. Select the **DelimitedText** format tile and click **Continue**.
+1. In the **Select format** list, select the **DelimitedText** format tile and click **Continue**.
 
     ![](Linked_Image_Files/lab6_17.jpg)
 
-1. In Set Properties blade, give your dataset an understandable name such as **ADLSG2** and click on the **Linked Service** dropdown. If you have not created your ADLS Linked Service, select **New**.
+1. In the **Set Properties** blade, give your dataset an understandable name such as **ADLSG2** and click on the **Linked Service** dropdown select **New** to create ADLS Linked Service.
 
     ![](Linked_Image_Files/lab6_18.jpg)
 
-1. In the New linked service (Azure Data Lake Storage Gen2) blade, select your authentication method as **Account key**, select your **Azure Subscription** and select your Storage account name of **awdlsstudxxxxxx**. You will see a screen as follows:
+1. In the **New linked service (Azure Data Lake Storage Gen2)** blade, select following options:
+    - **Authentication method**: Account key
+    - **Azure Subscription**: Your subscription
+    - **Storage account name**: awdlsstudxxxxxx
 
     ![](Linked_Image_Files/lab6_19.jpg)
 
 1. Click on **Create**
 
-1. Once the linked service is configured, the page comes backs to the set properties blade. As you are writing to this dataset, you want to point the folder where you want moviesDB.csv copied to. In the example below, we will be writing to folder **output** (put this value in directory) in the **file system** as **data** (put this value in file system), refer below image, if have doubts. While the folder can be dynamically created, the file system must exist prior to writing to it. Set **First row as header** to be true. You can either Import schema from **sample file** (use the moviesDB.csv file from **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.7\SampleFiles**)  
+1. Once the linked service is configured, the page comes backs to the set properties blade. As you are writing to this dataset, you want to point the folder where you want moviesDB.csv copied to. In the example below, we will be writing to folder **output** (put this value in directory) in the **file system** as **data** (put this value in file system), refer below image. While the folder can be dynamically created, the file system must exist prior to writing to it. Set **First row as header** to be true. You can either Import schema from **sample file** (use the moviesDB.csv file from **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.7\SampleFiles**)  
 
     ![](Linked_Image_Files/lab6_20_1.jpg)
 
@@ -181,7 +186,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 4: Test the Copy Activity
 
-At this point, you have fully configured your copy activity. To test it out, click on the **Debug** button at the top of the pipeline canvas. This will start a pipeline debug run.
+1. At this point, you have fully configured your copy activity. To test it out, click on the **Debug** button at the top of the pipeline canvas. This will start a pipeline debug run.
 
    ![](Linked_Image_Files/lab6_21.jpg)
 
@@ -191,7 +196,7 @@ At this point, you have fully configured your copy activity. To test it out, cli
 
    ![](Linked_Image_Files/lab6_23_1.jpg)
 
-1. To verify the copy worked as expected, open up your **awdlsstuddxxxxxx** storage account and select containers and open data and then open output folder and view the .txt file and you can see the values same as that from the movies.csv file. 
+1. To verify the copy worked as expected, open up your **awdlsstuddxxxxxx** storage account in the **Azure Portal** and select **Containers** from left pane and open data and then open output folder and view the .txt file and you can see the values same as that from the movies.csv file. 
 
     ![](Linked_Image_Files/lab6_22.jpg)
 
