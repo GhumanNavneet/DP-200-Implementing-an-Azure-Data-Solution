@@ -1,7 +1,7 @@
 # DP 200 - Implementing a Data Platform Solution
 # Lab 6 - Orchestrating Data Movement with Azure Data Factory
 
-**Estimated Time**: 120 minutes
+**Estimated Time**: 240 minutes
 
 ## Lab overview
 
@@ -47,17 +47,17 @@ The main task for this exercise are as follows:
 
     ![](Linked_Image_Files/deployment-ID.png)
 
-1. **Create your data factory**: Use the Azure Portal(https://portal.azure.com) to create your Data Factory. 
+1. **Create your data factory**: Use the Azure Portal(https://portal.azure.com) to create your Data Factory. If prompted for login use credentials provided in **Environment Details** tab.
 
 1. In Microsoft Edge, go to the Azure portal tab, click on the **+ Create a resource** icon, type **data factory**, and then click **Data Factory** from the resulting search, and then click **Create**.
 
 1. In the New Data Factory screen, create a new Data Factory with the following options:
     - **Subscription**: Your subscription
     - **Resource group**: awrgstud-deploymentId
-    - **Region**: east us
+    - **Region**: East US
     - **Name**: data-factory-xxxxxx, where xxxxxx is the deployment id 
     - **Version**: V2
-    - click on next : **Git Configuration**
+    - click on **Next : Git Configuration**
     - **Configure Git later**: checked
     - Leave other options to their default settings
     - Click **Review+Create** and then Click **Create**
@@ -100,7 +100,7 @@ The main tasks for this exercise are as follows:
 
     ![](Linked_Image_Files/lab6_5.jpg)
 
-1. **Create the pipeline**: Click on the **+** button in the Factory Resources pane and select **Pipeline**
+1. **Create the pipeline**: Click on the **+** button in the **Factory Resources** pane and select **Pipeline**
 
     ![](Linked_Image_Files/lab6_6.jpg)
 
@@ -125,11 +125,11 @@ The main tasks for this exercise are as follows:
 
     ![](Linked_Image_Files/lab6_10.jpg)
 
-1. In **Set Properties** blade, give your dataset an understandable name such as **HTTPSource** and click on the **Linked Service** dropdown. Select **New** to create HTTP Linked Service.
+1. In **Set Properties** blade, give your dataset an understandable name such as **HTTPSource** and click on the **Linked Service** dropdown, select **+New** to create HTTP Linked Service.
 
     ![](Linked_Image_Files/lab6_11.jpg)
 
-1. In the New Linked Service (HTTP) screen, specify the url of the moviesDB csv file. You can access the data with no authentication required using the following endpoint:
+1. In the New Linked Service (HTTP) screen, you need to specify the url of the moviesDB csv file. You can access the data with no authentication required using the following endpoint:
 
    ```
    https://raw.githubusercontent.com/djpmsft/adf-ready-demo/master/moviesDB.csv
@@ -259,24 +259,26 @@ The main tasks for this exercise are as follows:
     ![Adding a Source to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/lab6_28_1.jpg)
 
 1. Verify your data is loaded correctly via the **Data Preview** tab. Once you click the refresh button, Mapping Data Flow will show calculate a snapshot of what your data looks like when it is at each transformation.
+
+    **Note**: It will take 5-10 minutes to get refresh button in the **Data Preview** tab.
   
 ### Task 3: Using Mapping Data Flow transformation
 
-1. Please read the instructions carefully and if any doubts, you can also refer the images.
+1. Please read the instructions carefully also you can refer the images if you have doubts.
 
-1. **Add a Select transformation to rename and drop a column** In the preview of the data, you may have noticed that the "Rotton Tomatoes" column is misspelled. To correctly name it and drop the unused Rating column, you can add a [Select transformation](https://docs.microsoft.com/azure/data-factory/data-flow-select) by clicking on the + icon next to your ADLS source node and choosing Select under Schema modifier.
+1. **Add a Select transformation to rename and drop a column**: In the preview of the data, you may have noticed that the "Rotton Tomatoes" column (Scroll to right in **Data Preview** tab) is misspelled. To correctly name it and drop the unused Rating column, you can add a Select transformation by clicking on the + icon next to your ADLS source(Source1) node in the canvas and choosing **Select** under **Schema modifier**.
     
     ![Adding a Transformation to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/lab6_29.jpg)
 
-    In the **Name as** field, change 'Rotton' to 'Rotten'. To drop the Rating column, hover over it and click on the trash can icon. (Scroll down to see the columns)
+1. In the **Name as** field, change 'Rotton' to 'Rotten'. To drop the Rating column, hover over it and click on the trash can icon. (Scroll down to see the columns)
 
     ![Using the Select Transformation to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/lab6_30.jpg)
 
-1. **Add a Filter Transformation to filter out unwanted years** Say you are only interested in movies made after 1951. You can add a [Filter transformation](https://docs.microsoft.com/azure/data-factory/data-flow-filter) to specify a filter condition by clicking on the **+ icon** next to your Select transformation and choosing **Filter** under Row Modifier. 
+1. **Add a Filter Transformation to filter out unwanted years**: Say you are only interested in movies made after 1951. You can add a Filter transformation to specify a filter condition by clicking on the **+** icon next to your Select transformation in the canvas and choosing **Filter** under **Row Modifier**. 
 
     ![](Linked_Image_Files/lab6_31.jpg)
 
-1. Click on the **expression box** to open up the [Expression builder](https://docs.microsoft.com/azure/data-factory/concepts-data-flow-expression-builder) as shown in the image below and enter in your filter condition. Using the syntax of the [Mapping Data Flow expression language](https://docs.microsoft.com/azure/data-factory/data-flow-expression-functions),**toInteger(year) > 1950** (enter this value in **Filter On** Box) will convert the string year value to an integer and filter rows if that value is above 1950.
+1. In the below panel click on the **Enter filter** then click on **Open Expression builder** as shown in the image below. Using the syntax of the Mapping Data Flow expression language, **toInteger(year) > 1950** (enter this value in **Expression** Box then click on **Save and finish**) will convert the string year value to an integer and filter rows if that value is above 1950.
 
    ![](Linked_Image_Files/lab6_31_1.jpg)
    
@@ -285,21 +287,21 @@ The main tasks for this exercise are as follows:
    ![](Linked_Image_Files/lab6_32.jpg)
 
 
-1. **Add a Derive Transformation to calculate primary genre** As you may have noticed, the genres column is a string delimited by a '|' character. If you only care about the *first* genre in each column, you can derive a new column named **PrimaryGenre** via the [Derived Column](https://docs.microsoft.com/azure/data-factory/data-flow-derived-column) transformation by clicking on the **+ icon** next to your Filter transformation and choosing Derived under Schema Modifier. 
+1. **Add a Derive Transformation to calculate primary genre**: As you may have noticed, the genres column is a string delimited by a '|' character. If you only care about the *first* genre in each column, you can derive a new column named **PrimaryGenre** via the Derived Column transformation by clicking on the **+ icon** next to your **Filter** transformation in the canvas and choosing **Derived Column** under **Schema Modifier**.
 
     ![](Linked_Image_Files/lab6_33.jpg)
 
-1. Similar to the filter transformation, the derived column uses the Mapping Data Flow expression builder to specify the values of the new column.The value for the expression is **iif(locate("|",genres) > 1,left(genres, locate("|",genres)-1),genres)** (It will be better if you could type this expression). Also provide output stream name as **DerivedPrimaryGenre**.
+1. Similar to the filter transformation, the derived column uses the Mapping Data Flow expression builder to specify the values of the new column. Provide **Column** name as **PrimaryGenre** and the value for the **Expression** is **iif(locate("|",genres) > 1,left(genres, locate("|",genres)-1),genres)** (It will be better if you could type this expression). Also provide **Output stream name** as **DerivedPrimaryGenre**.
 
     ![Using the Derived Transformation to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/lab6_34.jpg)
 
-    In this scenario, you are trying to extract the first genre from the genres column which is formatted as 'genre1|genre2|...|genreN'. Use the **locate** function to get the first 1-based index of the '|' in the genres string. Using the **iif** function, if this index is greater than 1, the primary genre can be calculated via the **left** function which returns all characters in a string to the left of an index. Otherwise, the PrimaryGenre value is equal to the genres field. You can verify the output via the expression builder's Data preview pane.
+   - In this scenario, you are trying to extract the first genre from the genres column which is formatted as 'genre1|genre2|...|genreN'. Use the **locate** function to get the first 1-based index of the '|' in the genres string. Using the **iif** function, if this index is greater than 1, the primary genre can be calculated via the **left** function which returns all characters in a string to the left of an index. Otherwise, the PrimaryGenre value is equal to the genres field. You can verify the output via the expression builder's Data preview pane.
 
-1. **Rank movies via a Window Transformation** Say you are interested in how a movie ranks within its year for its specific genre. You can add a [Window transformation](https://docs.microsoft.com/azure/data-factory/data-flow-window) to define window-based aggregations by clicking on the **+ icon** next to your Derived Column transformation and clicking Window under Schema modifier.
+1. **Rank movies via a Window Transformation**: Say you are interested in how a movie ranks within its year for its specific genre. You can add a Window transformation to define window-based aggregations by clicking on the **+ icon** next to your Derived Column transformation in the canvas and clicking **Window** under **Schema modifier**.
 
     ![](Linked_Image_Files/lab6_35.jpg)
 
-1. To accomplish this, specify what you are windowing over, what you are sorting by, what the range is, and how to calculate your new window columns. In this example, we will window over PrimaryGenre and year with an unbounded range, sort by Rotten Tomato descending, a calculate a new column called RatingsRank which is equal to the rank each movie has within its specific genre-year.(If need help please refer below images)
+1. To accomplish this, specify what you are windowing over, what you are sorting by, what the range is, and how to calculate your new window columns. In this example, we will window **over** PrimaryGenre and year with an unbounded **range**, **sort** by Rotten Tomato descending, calculate a new column called **RatingsRank** which is equal to the rank() each movie has within its specific genre-year.(If need help please refer below images). Also provide **Output stream name** as **RankMoviesByRatings**.
 
     ![Window Sort](Linked_Image_Files/new-feb2021/lb6_ex3_task3_st8_img1.png)
 
@@ -309,34 +311,37 @@ The main tasks for this exercise are as follows:
 
     ![Window Rank](Linked_Image_Files/new-feb2021/lb6_ex3_task3_st8_img4.png)
 
-1. **Aggregate ratings with an Aggregate Transformation** Now that you have gathered and derived all your required data, we can add an [Aggregate transformation](https://docs.microsoft.com/azure/data-factory/data-flow-aggregate) to calculate metrics based on a desired group by clicking on the **+ icon** next to your Window transformation and clicking Aggregate under Schema modifier. 
+1. **Aggregate ratings with an Aggregate Transformation**: Now that you have gathered and derived all your required data, we can add an Aggregate transformation to calculate metrics based on a desired group by clicking on the **+ icon** next to your Window transformation in the canvas and clicking **Aggregate** under **Schema modifier**. 
 
     ![](Linked_Image_Files/lab6_36.jpg)
     
-1. As you did in the window transformation, lets group movies by PrimaryGenre and year
+1. As you did in the window transformation, lets group movies by PrimaryGenre and year. Also provide **Output stream name** as **AggregateRatings**.
 
     ![Using the Aggregate Transformation to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/M07-E03-T03-img10.png)
 
-    In the Aggregates tab, you can aggregations calculated over the specified group by columns. For every genre and year, lets get the average Rotten Tomatoes rating, the highest and lowest rated movie (utilizing the windowing function) and the number of movies that are in each group. Aggregation significantly reduces the amount of rows in your transformation stream and only propagates the group by and aggregate columns specified in the transformation. Provide the following values as shown in the image.
-    **Note:- while entering these names please enter the column names correctly and also check no spaces etc. are entered accidentally**
-    * AverageRating - avg(toInteger({Rotten Tomato}))
+1. In the Aggregates tab, you can aggregations calculated over the specified group by columns. For every genre and year, lets get the average Rotten Tomatoes rating, the highest and lowest rated movie (utilizing the windowing function) and the number of movies that are in each group. Aggregation significantly reduces the amount of rows in your transformation stream and only propagates the group by and aggregate columns specified in the transformation. Provide the following values as shown in the image.
+    **Note**: while entering these names please enter the column names correctly and also check no spaces etc. are entered accidentally**
+    
+    - AverageRating - avg(toInteger({Rotten Tomato}))
     
         ![](Linked_Image_Files/lab6_37.jpg)
-    Add the following columns also :-
-    * HighestRated  - first(title)
-    * LowestRated   - last(title)
-    * NumberOfMovies - count()
+
+      Add the following columns also :-
+      
+    - HighestRated  - first(title)
+    - LowestRated   - last(title)
+    - NumberOfMovies - count()
 
     ![Configuring the Aggregate Transformation to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/M07-E03-T03-img11.png)
 
-    * To see how the aggregate transformation changes your data, use the Data Preview tab
+    - To see how the aggregate transformation changes your data, use the Data Preview tab
    
 
-1. **Specify Upsert condition via an Alter Row Transformation** If you are writing to a tabular sink, you can specify insert, delete, update and upsert policies on rows using the [Alter Row transformation](https://docs.microsoft.com/azure/data-factory/data-flow-alter-row) by clicking on the + icon next to your Aggregate transformation and clicking Alter Row under Row modifier.
+1. **Specify Upsert condition via an Alter Row Transformation**: If you are writing to a tabular sink, you can specify insert, delete, update and upsert policies on rows using the Alter Row transformation by clicking on the **+ icon** next to your Aggregate transformation in the canvas and clicking **Alter Row** under **Row modifier**.
 
     ![](Linked_Image_Files/lab6_38.jpg)
 
-1. Since you are always inserting and updating, you can specify that all rows will always be upserted. in alter row conditions select Upsert If and set to true()
+1. Since you are always inserting and updating, you can specify that all rows will always be upserted. in alter row conditions select **Upsert If** and set to **true()**.
 
     ![Using the Alter Row Transformation to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/lab6_39.jpg)
     
@@ -345,7 +350,7 @@ The main tasks for this exercise are as follows:
 1. Navigate to your windows virtual machine desktop, click on the **Search**, and type **"SQL Server"** and then click on **Microsoft SQL Server Management Studio 18**
 
 1. In the **Connect to Server** dialog box, fill in the following details
-    - Server Name: **dwhservice-deploymentID.database.windows.net** (navigate to resource group awrgstud-deploymentId and click on sql server dwhservice-deployment and from the overview copy the server name)
+    - Server Name: **dwhservice-deploymentID.database.windows.net** (replace deploymentID from the environment details tab)
     - Authentication: **SQL Server Authentication**
     - Username: **sqladmin**
     - Password: **Pa55w.rd**
@@ -354,7 +359,7 @@ The main tasks for this exercise are as follows:
 
 1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservice-deploymentID.database.windows.net** and click on **New Query**. 
 
-1. In the query window, create a DataWarehouse database named **DWDB**, with a service objective of DW100 and a maximum size of 1024GB. Click on **Execute**.
+1. In the query window enter below query, this will create a DataWarehouse database named **DWDB**, with a service objective of DW100 and a maximum size of 1024GB. Click on **Execute**.
 
     ```SQL
     CREATE DATABASE DWDB COLLATE SQL_Latin1_General_CP1_CI_AS
@@ -367,7 +372,7 @@ The main tasks for this exercise are as follows:
 
     > **Note**: The creation of the database takes approximately 2 minutes.
 
-1. Create a **master key** against the **DWDB** database. Expand dwhservice-deploymentID.database.windows.net in Object explorer , click databases and then right click on DWDB , select **NEW QUERY**. In the query editor, type in the following code and Click on **Execute**.
+1. Create a **master key** against the **DWDB** database. Expand dwhservice-deploymentID.database.windows.net in Object explorer, click on databases and then right click on DWDB, select **NEW QUERY**. In the query editor, type in the following code and Click on **Execute**.
 
     > **Note:-** if a pop-up appears click **yes always**
 
@@ -379,20 +384,20 @@ The main tasks for this exercise are as follows:
 
 1. Navigate back to data factory tab.
 
-1. **Write to a Azure Synapse Analytics Sink** Now that you have finished all your transformation logic, you are ready to write to a Sink.
-    1. Add a **Sink** by clicking on the **+ icon** next to your Upsert transformation and clicking Sink under Destination.
+1. **Write to a Azure Synapse Analytics Sink**: Now that you have finished all your transformation logic, you are ready to write to a Sink.
+    1. Add a **Sink** by clicking on the **+ icon** next to your AlterRow transformation in the canvas and clicking **Sink** under **Destination**.
         ![](Linked_Image_Files/lab6_40.jpg)
-    1. In the Sink tab, create a new data warehouse dataset via the **+ New button**.
+    1. In the Sink tab, create a new data warehouse dataset via the **+ New** button.
         ![](Linked_Image_Files/lab6_41.jpg)
-    1. Select **Azure Synapse Analytics** from the tile list.
+    1. Select **Azure Synapse Analytics** from the tile list then click on **Continue**.
         ![](Linked_Image_Files/new-feb2021/lb6_42_new.png)
     1. Select a new linked service and configure your Azure Synapse Analytics connection to connect to the DWDB database created in the previous step. Click **Create** when finished.
-     i)    Name - **AzureSynapseAnalytics1**
-     ii)   ServerName - **dwhservice-xxxxxx**
-     iii)  DatabaseName - **DWDB**
-     iv)   Authentication type - **sql authentication**
-     v)    UserNAme - **sqladmin**
-     vi)   Password: **Pa55w.rd**
+     -    Name - **AzureSynapseAnalytics1**
+     -   ServerName - **dwhservice-xxxxxx**
+     -  DatabaseName - **DWDB**
+     -   Authentication type - **sql authentication**
+     -    UserNAme - **sqladmin**
+     -   Password: **Pa55w.rd**
     
       ![Creating an Azure Synapse Analytics connection in Azure Data Factory](Linked_Image_Files/new-feb2021/lb6_synp-linkedser.png)
     
@@ -400,7 +405,7 @@ The main tasks for this exercise are as follows:
 
         ![Creating an Azure Synapse Analytics table in Azure Data Factory](Linked_Image_Files/M07-E03-T04-img02.png)
     
-    1. Since an upsert condition was specified, you need to go to the Settings tab and select 'Allow upsert' based on key columns PrimaryGenre and year.
+    1. Since an upsert condition was specified, you need to go to the Settings tab and select **Allow upsert** based on key columns **PrimaryGenre** and **year**.
     
         ![Configuring Sink settings in Azure Data Factory](Linked_Image_Files/M07-E03-T04-img03.png)
     
@@ -414,11 +419,11 @@ At this point, You have finished building your 8 transformation Mapping Data Flo
 
    ![](Linked_Image_Files/data-flow-debug.jpg)
     
-1. Go to the pipeline1 tab in the canvas. Because Azure Synapse Analytics in Data Flow uses [PolyBase](https://docs.microsoft.com/sql/relational-databases/polybase/polybase-guide?view=sql-server-2017), you must specify a blob or ADLS staging folder. In the Execute Data Flow activity's settings tab, open up the PolyBase accordion and select your ADLS linked service and specify a staging folder path.
+1. Go to the pipeline1 tab in the canvas. you must specify a blob or ADLS staging folder. In the Execute Data Flow activity's settings tab, expand **staging** and select your ADLS linked service and specify a staging folder path(**data** and **dw-staging**) as shown in below image.
 
     ![PolyBase configuration in Azure Data Factory](Linked_Image_Files/M07-E03-T05-img01.png)
     
-1. **Note:-** If the validation shows error "PrimaryGenre does not exist in mapped columns" , please try to create the dataflow from scratch.
+    **Note**: If the validation shows error "PrimaryGenre does not exist in mapped columns" , please try to create the dataflow from scratch.
 
 1. Before you publish your pipeline, run another debug run by clicking on **Debug** button to confirm it's working as expected. Looking at the Output tab, you can monitor the status of both activities as they are running.
 
