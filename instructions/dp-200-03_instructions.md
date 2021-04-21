@@ -192,7 +192,7 @@ The main tasks for this exercise are as follows:
 
 1. In the **awdlsstudxxxxxx** screen, under settings, click on **Access keys**, and then click on the copy icon next to the **Storage account name** and paste it into Notepad.
 
-    ![Accessing Data Lake Storage account name in the Azure portal](Linked_Image_Files/M03-E03-T02-img01.png)
+    ![](Linked_Image_Files/storage-new.png)
 
 ### Task 3: Enable your Databricks instance to access the Data Lake Gen2 Store
 
@@ -212,15 +212,15 @@ The main tasks for this exercise are as follows:
 
 1. In the **DLAccessxxxxxx** registered app screen, click on **Certificates and Secrets**, and the click **+ New Client Secret**
 
-1. In the Add a client secret screen. type a **description** of **DL Access Key**, and a **duration** of **In 1 year** for the key. When done, click **Add**.
+1. In the Add a client secret screen. type a **description** of **DL Access Key**, and expiry for the key ,leave it as default value. When done, click **Add**.
 
-    ![Adding a client secret in the Azure portal](Linked_Image_Files/M03-E03-T03-img02.png)
+    ![](Linked_Image_Files/dlanew1.png)
 
     >**Important**: When you click on **Add**, the key will appear as shown in the graphic below. You only have one opportunity to copy this key value into Notepad
 
-    ![Location of the DLAccess Key](Linked_Image_Files/M03-E03-T03-img03.png)
+1. Copy the **Application key value** and paste it into Notepad.
 
-1. Copy the **Application key value** and paste it into Notepad
+    ![](Linked_Image_Files/dlanew2.png)
 
 1. Assign the Storage Blob Data Contributor permission to your resource group. In the Azure portal, click on the **Home** hyperlink, and then the **Resource groups** icon, click on the resource group **awrgstudxxxxxx**, where **xxxxxx** is the deployment-id.
 
