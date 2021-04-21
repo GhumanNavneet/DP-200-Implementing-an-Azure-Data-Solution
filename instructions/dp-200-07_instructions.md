@@ -113,7 +113,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Create a new HTTP dataset to use as a source
 
-1. Click on the **Copy data** activity tab, and below navigate to the **Source** tab of the Copy activity settings, click **+ New**
+1. Click on the **Copy data** activity tab, and below navigate to the **Source** tab, click **+ New**
 
     ![](Linked_Image_Files/lab6_8.jpg)
 
@@ -145,37 +145,40 @@ The main tasks for this exercise are as follows:
 
     ![](Linked_Image_Files/lab6_13.jpg)
            
-    - Click **OK** once completed.
+1. Click **OK** once completed.
    
-    a. To verify your dataset is configured correctly, click **Preview Data** in the Source tab of the copy activity to get a small snapshot of your data. Just click on refresh if data not loaded.
+1. To verify your dataset is configured correctly, click **Preview Data** in the **Source** tab of the copy activity to get a small snapshot of your data.
 
     ![](Linked_Image_Files/lab6_14.jpg)
 
 ### Task 3: Create a new ADLS Gen2 dataset sink
 
-1. Click on the **Sink tab**, and the click **+ New**
+1. Click on the **Copy data** activity tab, and below navigate to the **Sink** tab, click **+ New**
 
     ![](Linked_Image_Files/lab6_15.jpg)
 
-1. Select the **Azure Data Lake Storage Gen2** tile and click **Continue**.
+1. Search and select the **Azure Data Lake Storage Gen2** tile and click **Continue**.
 
     ![](Linked_Image_Files/lab6_16.jpg)
 
-1. Select the **DelimitedText** format tile and click **Continue**.
+1. In the **Select format** list, select the **DelimitedText** format tile and click **Continue**.
 
     ![](Linked_Image_Files/lab6_17.jpg)
 
-1. In Set Properties blade, give your dataset an understandable name such as **ADLSG2** and click on the **Linked Service** dropdown. If you have not created your ADLS Linked Service, select **New**.
+1. In the **Set Properties** blade, give your dataset an understandable name such as **ADLSG2** and click on the **Linked Service** dropdown select **New** to create ADLS Linked Service.
 
     ![](Linked_Image_Files/lab6_18.jpg)
 
-1. In the New linked service (Azure Data Lake Storage Gen2) blade, select your authentication method as **Account key**, select your **Azure Subscription** and select your Storage account name of **awdlsstudxxxxxx**. You will see a screen as follows:
+1. In the **New linked service (Azure Data Lake Storage Gen2)** blade, select following options:
+    - **Authentication method**: Account key
+    - **Azure Subscription**: Your subscription
+    - **Storage account name**: awdlsstudxxxxxx
 
     ![](Linked_Image_Files/lab6_19.jpg)
 
 1. Click on **Create**
 
-1. Once the linked service is configured, the page comes backs to the set properties blade. As you are writing to this dataset, you want to point the folder where you want moviesDB.csv copied to. In the example below, we will be writing to folder **output** (put this value in directory) in the **file system** as **data** (put this value in file system), refer below image, if have doubts. While the folder can be dynamically created, the file system must exist prior to writing to it. Set **First row as header** to be true. You can either Import schema from **sample file** (use the moviesDB.csv file from **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.7\SampleFiles**)  
+1. Once the linked service is configured, the page comes backs to the set properties blade. As you are writing to this dataset, you want to point the folder where you want moviesDB.csv copied to. In the example below, we will be writing to folder **output** (put this value in directory) in the **file system** as **data** (put this value in file system), refer below image. While the folder can be dynamically created, the file system must exist prior to writing to it. Set **First row as header** to be true. You can either Import schema from **sample file** (use the moviesDB.csv file from **C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200.7\SampleFiles**)  
 
     ![](Linked_Image_Files/lab6_20_1.jpg)
 
@@ -183,7 +186,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 4: Test the Copy Activity
 
-At this point, you have fully configured your copy activity. To test it out, click on the **Debug** button at the top of the pipeline canvas. This will start a pipeline debug run.
+1. At this point, you have fully configured your copy activity. To test it out, click on the **Debug** button at the top of the pipeline canvas. This will start a pipeline debug run.
 
    ![](Linked_Image_Files/lab6_21.jpg)
 
@@ -193,7 +196,7 @@ At this point, you have fully configured your copy activity. To test it out, cli
 
    ![](Linked_Image_Files/lab6_23_1.jpg)
 
-1. To verify the copy worked as expected, open up your **awdlsstuddxxxxxx** storage account and select containers and open data and then open output folder and view the .txt file and you can see the values same as that from the movies.csv file. 
+1. To verify the copy worked as expected, open up your **awdlsstuddxxxxxx** storage account in the **Azure Portal** and select **Containers** from left pane and open data and then open output folder and view the .txt file and you can see the values same as that from the movies.csv file. 
 
     ![](Linked_Image_Files/lab6_22.jpg)
 
