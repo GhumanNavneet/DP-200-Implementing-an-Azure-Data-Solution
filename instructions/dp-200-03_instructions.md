@@ -100,6 +100,8 @@ The main tasks for this exercise are as follows:
 
     - **Pricing Tier**: **Premium (+ Role-based access controls)**.
 
+    - Click on **Next : Networking**
+
     - **Deploy Azure Databricks workspace with Secure Cluster Connectivity**: **No**.
 
     - **Deploy Azure Databricks workspace in your Virtual Network**: **No**.
