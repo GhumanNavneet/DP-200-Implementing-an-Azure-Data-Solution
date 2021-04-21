@@ -196,7 +196,7 @@ The main tasks for this exercise are as follows:
 
    ![](Linked_Image_Files/lab6_23_1.jpg)
 
-1. To verify the copy worked as expected, open up your **awdlsstuddxxxxxx** storage account in the **Azure Portal** and select **Containers** from left pane and open data and then open output folder and view the .txt file and you can see the values same as that from the movies.csv file. 
+1. To verify the copy worked as expected, In the new browser tab open **Azure Portal**(https://portal.azure.com) and go to **Storage accounts** from top search bar and select **awdlsstuddxxxxxx** storage account. In the **awdlsstuddxxxxxx** storage account, select **Containers** from the left pane and open the data and then open output folder and view the .txt file and you can see the values same as that from the movies.csv file. 
 
     ![](Linked_Image_Files/lab6_22.jpg)
 
@@ -222,49 +222,43 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Preparing the environment
 
-1. **Turn on Data Flow Debug** Turn the **Data Flow Debug** slider located at the top of the authoring module on. 
-
-    > NOTE: Data Flow clusters take 5-7 minutes to warm up.
-
-    ![](Linked_Image_Files/lab6_24.jpg)
-
-1. Select for two hours and should look like below after turned-on.
-
-    ![](Linked_Image_Files/new-feb2021/lb6_ex3_task1_img3.png)
-    
-    ![](Linked_Image_Files/lab6_25.jpg)
-    
-1. **Add a Data Flow activity** In the Activities pane, open the Move and Transform accordion and drag the **Data Flow** activity onto the pipeline canvas. In the blade that pops up, click **Create new Data Flow** and select **Data Flow** and then click **OK**. Click on the  **pipeline1** tab and drag the green box from your Copy activity to the Data Flow Activity to create an on success condition. You will see the following in the canvass:
+1. **Add a Data Flow activity**: Now switch back to **Data Factory** tab in browser, In the Activities pane expand **Move & Transform** and drag the **Data Flow** activity onto the pipeline canvas right to **Copy data**. 
 
     ![](Linked_Image_Files/lab6_26.jpg)
     
     ![](Linked_Image_Files/lab6_26_1.jpg)
 
-1. Now the pipeline should look like the below image.
+1. **Turn on Data Flow Debug**: Turn the **Data Flow Debug** slider located at the top of the authoring module on. 
+
+    > NOTE: Data Flow clusters take 5-7 minutes to warm up.
+
+    ![](Linked_Image_Files/lab6_24.jpg)
+
+1. Select **two hours** and should look like below after turned-on.
+
+    ![](Linked_Image_Files/new-feb2021/lb6_ex3_task1_img3.png)
+    
+    ![](Linked_Image_Files/lab6_25.jpg)
+    
+1. Click on the  **pipeline1** tab and drag the green box from your **Copy data** to the **Data Flow** Activity to create an on success condition. Now the pipeline should look like the below image.
 
     ![](Linked_Image_Files/lab6_27_2.jpg)
 
 ### Task 2: Adding a Data Source
 
-1. Click on the dataflow tab to create a dataflow structure.
+1. To create a dataflow structure click on **Data flow**, in the below panel click on **Settings** and then click on **+New** next to dataflow.
 
-    ![](Linked_Image_Files/lab6_27_1.jpg)
-
-1. Click on **Settings** and then click on **+New** next to dataflow to create the dataflow structure.
     ![](Linked_Image_Files/new-feb2021/lb6_ex3_task2_st1.png)
+
 1. Click on the **Add Source** button.
 
     ![](Linked_Image_Files/lab6_28.jpg)
 
-1. **Add an ADLS source** Double click on the Mapping Data Flow object in the canvas. Click on the Add Source button in the Data Flow canvas. In the **Source dataset** dropdown, select your **ADLSG2** dataset used in your Copy activity
+1. **Add an ADLS source**: Click on **source1** object in the canvas, In the below panel select **Source settings** and then select **ADLSG2** in **Dataset** dropdown
 
     ![Adding a Source to a Mapping Data Flow in Azure Data Factory](Linked_Image_Files/lab6_28_1.jpg)
 
-1. If your dataset is pointing at a folder with other files, you may need to create another dataset or utilize parameterization to make sure only the moviesDB.csv file is read
-
-1. If you have not imported your schema in your ADLS, but have already ingested your data, go to the dataset's 'Schema' tab and click 'Import schema' so that your data flow knows the schema projection.
-
-1. Once your debug cluster is warmed up, verify your data is loaded correctly via the Data Preview tab. Once you click the refresh button, Mapping Data Flow will show calculate a snapshot of what your data looks like when it is at each transformation.
+1. Verify your data is loaded correctly via the **Data Preview** tab. Once you click the refresh button, Mapping Data Flow will show calculate a snapshot of what your data looks like when it is at each transformation.
   
 ### Task 3: Using Mapping Data Flow transformation
 
