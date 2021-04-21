@@ -192,7 +192,7 @@ The main tasks for this exercise are as follows:
 
 1. In the **awdlsstudxxxxxx** screen, under settings, click on **Access keys**, and then click on the copy icon next to the **Storage account name** and paste it into Notepad.
 
-    ![Accessing Data Lake Storage account name in the Azure portal](Linked_Image_Files/M03-E03-T02-img01.png)
+    ![](Linked_Image_Files/storage-new.png)
 
 ### Task 3: Enable your Databricks instance to access the Data Lake Gen2 Store
 
