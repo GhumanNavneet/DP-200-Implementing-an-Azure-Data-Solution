@@ -1,4 +1,4 @@
-﻿# DP 200 - Implementing a Data Platform Solution
+# DP 200 - Implementing a Data Platform Solution
 # Lab 6 - Orchestrating Data Movement with Azure Data Factory
 
 **Estimated Time**: 120 minutes
@@ -29,7 +29,7 @@ At the end of this lab, you will have:
 1. Used the Mapping Data Flow task to perform transformation
 1. Performed transformations using a compute resource
 
-> **IMPORTANT**: As you go through this lab, make a note of any issue(s) that you have encountered in any provisioning or configuration tasks and log it in the table in the document located at C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\Starter\DP-200-Issues-Doc.docx_. Document the Lab number, note the technology, Describe the issue, and what was the resolution. Save this document as you will refer back to it in a later module.
+> **IMPORTANT**: As you go through this lab, make a note of any issue(s) that you have encountered in any provisioning or configuration tasks and log it in the table in the document located at C:\AllFiles\DP-200-Implementing-an-Azure-Data-Solution-master\Labfiles\DP-200-Issues-Doc.docx. Document the Lab number, note the technology, Describe the issue, and what was the resolution. Save this document as you will refer back to it in a later module.
 
 ## Exercise 1: Setup Azure Data Factory
 
@@ -47,20 +47,20 @@ The main task for this exercise are as follows:
 
     ![](Linked_Image_Files/deployment-ID.png)
 
-1. Create your data factory: Use the [Azure Portal](https://portal.azure.com) to create your Data Factory. 
+1. **Create your data factory**: Use the Azure Portal(https://portal.azure.com) to create your Data Factory. 
 
 1. In Microsoft Edge, go to the Azure portal tab, click on the **+ Create a resource** icon, type **data factory**, and then click **Data Factory** from the resulting search, and then click **Create**.
 
-1. In the New Data Factory screen, create a new Data Factory with the following options, then click **Create**:
-    - **Name**: data-factory-xxxxxx, where xxxxxx is the deployment id 
-    - **Version**: V2
+1. In the New Data Factory screen, create a new Data Factory with the following options:
     - **Subscription**: Your subscription
     - **Resource group**: awrgstud-deploymentId
-    - **Location**: east us
-    - click on next : Git Configuration
+    - **Region**: east us
+    - **Name**: data-factory-xxxxxx, where xxxxxx is the deployment id 
+    - **Version**: V2
+    - click on next : **Git Configuration**
     - **Configure Git later**: checked
     - Leave other options to their default settings
-    - Click **Review+Create** and then Click Create
+    - Click **Review+Create** and then Click **Create**
 
         ![](Linked_Image_Files/lab6_1.jpg)
         
@@ -92,19 +92,19 @@ The main tasks for this exercise are as follows:
 
     ![](Linked_Image_Files/lab6_3.jpg)
 
-1. In the data-factory-deploymentId screen, in the middle of the screen, click on the button, **Author & Monitor**.
+1. On the data-factory-deploymentId screen, in the middle of the screen, click on the button, **Author & Monitor**. It will open **ADF homepage** in new browser tab.
 
     ![](Linked_Image_Files/lab6_4.jpg)
 
-1. **Open the authoring canvas** If coming from the ADF homepage, click on the **pencil icon** on the left sidebar or the **create pipeline button** to open the authoring canvas.
+1. **Open the authoring canvas**: In the ADF homepage, click on the **Pencil icon** on the left sidebar or the **Create pipeline** button to open the authoring canvas.
 
     ![](Linked_Image_Files/lab6_5.jpg)
 
-1. **Create the pipeline** Click on the **+** button in the Factory Resources pane and select Pipeline
+1. **Create the pipeline**: Click on the **+** button in the Factory Resources pane and select **Pipeline**
 
     ![](Linked_Image_Files/lab6_6.jpg)
 
-1. **Add a copy activity** In the Activities pane, expand the Move and Transform and drag the Copy Data activity onto the pipeline canvas(blank side).
+1. **Add a copy activity**: In the Activities pane, expand the Move and Transform and drag the **Copy Data** activity onto the pipeline canvas(blank side).
 
     ![](Linked_Image_Files/lab6_7.jpg)
 
@@ -113,33 +113,35 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Create a new HTTP dataset to use as a source
 
-1. Click on the copy data activity tab, and below navigate to the **Source** tab of the Copy activity settings, click **+ New**
+1. Click on the **Copy data** activity tab, and below navigate to the **Source** tab of the Copy activity settings, click **+ New**
 
     ![](Linked_Image_Files/lab6_8.jpg)
 
-1. In the **New dataset** blade, In search column of data store list, search for **HTTP** select the **HTTP** tile and click continue
+1. On the **New dataset** blade, In search column of data store list, search for **HTTP** select the **HTTP** tile and click **Continue**
 
     ![](Linked_Image_Files/lab6_9.jpg)
 
-1. In the file format list, select the **DelimitedText** format tile and click continue
+1. In the **Select format** list, select the **DelimitedText** format tile and click **Continue**
 
     ![](Linked_Image_Files/lab6_10.jpg)
 
-1. In Set Properties blade, give your dataset an understandable name such as **HTTPSource** and click on the **Linked Service** dropdown. If you have not created your HTTP Linked Service, select **New**.
+1. In **Set Properties** blade, give your dataset an understandable name such as **HTTPSource** and click on the **Linked Service** dropdown. Select **New** to create HTTP Linked Service.
 
     ![](Linked_Image_Files/lab6_11.jpg)
 
 1. In the New Linked Service (HTTP) screen, specify the url of the moviesDB csv file. You can access the data with no authentication required using the following endpoint:
 
-    https://raw.githubusercontent.com/djpmsft/adf-ready-demo/master/moviesDB.csv
+   ```
+   https://raw.githubusercontent.com/djpmsft/adf-ready-demo/master/moviesDB.csv
+   ```
+   
+1. Place above URL in the **Base URL** text box. Give **HttpServer1** in the **Name** field.
 
-1. Place this in the **Base URL** text box. 
-
-1. In the **Authentication type** drop down, select **Anonymous**. and click on **Create**.
+1. In the **Authentication type** drop down, select **Anonymous** then click on **Create**.
 
     ![](Linked_Image_Files/lab6_12.jpg)
 
-1. Once you have created and selected the linked service, specify the rest of your dataset settings. These settings specify how and where in your connection we want to pull the data. As the url is pointed at the file already, no relative endpoint is required. As the data has a header in the first row, set **First row as header** to be true and select Import schema from **connection/store** to pull the schema from the file itself. Select **Get** as the request method. You will see the following screen
+1. Once you have created and selected the linked service, specify the rest of your dataset settings. These settings specify how and where in your connection we want to pull the data. As the url is pointed at the file already, no relative endpoint is required. As the data has a header in the first row, set **First row as header** to be true and select **Import schema** as **From connection/store** to pull the schema from the file itself. Select **Get** as the **Request method**. You will see the following screen
 
     ![](Linked_Image_Files/lab6_13.jpg)
            
