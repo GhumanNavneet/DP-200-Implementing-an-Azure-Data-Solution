@@ -357,6 +357,8 @@ The main tasks for this exercise are as follows:
 
 1. In the **Connect to Server** dialog box, click **Connect** 
 
+    ![sqllogin](Linked_Image_Files/sqllogin.png)
+
 1. In **SQL Server Management Studio**, in Object Explorer, right click **dwhservice-deploymentID.database.windows.net** and click on **New Query**. 
 
 1. In the query window enter below query, this will create a DataWarehouse database named **DWDB**, with a service objective of DW100 and a maximum size of 1024GB. Click on **Execute**.
@@ -369,6 +371,8 @@ The main tasks for this exercise are as follows:
     ,   MAXSIZE             = 1024 GB
     );
     ```
+
+    ![sqllogin](Linked_Image_Files/newquery.png)
 
     > **Note**: The creation of the database takes approximately 2 minutes.
 
@@ -392,15 +396,15 @@ The main tasks for this exercise are as follows:
     1. Select **Azure Synapse Analytics** from the tile list then click on **Continue**.
         ![](Linked_Image_Files/new-feb2021/lb6_42_new.png)
     1. Select a new linked service and configure your Azure Synapse Analytics connection to connect to the DWDB database created in the previous step. Click **Create** when finished.
-     -    Name - **AzureSynapseAnalytics1**
-     -   ServerName - **dwhservice-xxxxxx**
-     -  DatabaseName - **DWDB**
-     -   Authentication type - **sql authentication**
-     -    UserNAme - **sqladmin**
-     -   Password: **Pa55w.rd**
-    
+       -    Name - **AzureSynapseAnalytics1**
+       -   ServerName - **dwhservice-xxxxxx**
+       -  DatabaseName - **DWDB**
+       -   Authentication type - **sql authentication**
+       -    UserNAme - **sqladmin**
+       -   Password: **Pa55w.rd**
+
       ![Creating an Azure Synapse Analytics connection in Azure Data Factory](Linked_Image_Files/new-feb2021/lb6_synp-linkedser.png)
-    
+
     1. In the dataset configuration, select **Create new table** and enter in schema **Dbo** (provide the same value mentioned here) and table name of **Ratings**. Click **OK** once completed.
 
         ![Creating an Azure Synapse Analytics table in Azure Data Factory](Linked_Image_Files/M07-E03-T04-img02.png)
@@ -423,23 +427,30 @@ At this point, You have finished building your 8 transformation Mapping Data Flo
 
     ![PolyBase configuration in Azure Data Factory](Linked_Image_Files/M07-E03-T05-img01.png)
     
-    **Note**: If the validation shows error "PrimaryGenre does not exist in mapped columns" , please try to create the dataflow from scratch.
-
 1. Before you publish your pipeline, run another debug run by clicking on **Debug** button to confirm it's working as expected. Looking at the Output tab, you can monitor the status of both activities as they are running.
+
+1. If the validation shows error "PrimaryGenre does not exist in mapped columns", Go to **dataflow1** then select **sink1** in the canvas then navigate to **Mapping** and turn off **Auto Mapping** toggle to verify **PrimaryGenre** is listed in the columns then turn on **Auto Mapping** toggle again.
 
 1. Once both activities succeeded, you can click on the eyeglasses icon next to the Data Flow activity to get a more in depth look at the Data Flow run.
 
-1. If you used the same logic described in this lab, your Data Flow should will written 737 rows to your SQL DW. You can go into [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) to verify the pipeline worked correctly and see what got written.Please follow next step to check.
+    ![validation-success](Linked_Image_Files/validation-success.png)
 
-1. Navigate to SQl Server Management Studio in your vm and expand the server and right click DWDB database and in new query enter the mentioned queries first enter - **select count(*) as TotalCount From Dbo.Ratings**.
+1. If you used the same logic described in this lab, your Data Flow should will written 737 rows to your SQL DW. You can go into SQL Server Management Studio to verify the pipeline worked correctly and see what got written.Please follow next step to check.
 
-1. Then press enter and in next line enter **select * from Dbo.Ratings**
+1. Navigate to SQl Server Management Studio in your LabVM and expand the server and right click DWDB database and in new query enter the following query
+
+    ```SQL
+    select count(*) as TotalCount From Dbo.Ratings
+    select * from Dbo.Ratings
+    ```
 
 1. Click Execute and same results should appear.
 
     ![Querying the results in SQL Server Management Studio](Linked_Image_Files/M07-E03-T05-img02.png)
 
-1. Publish the pipeline by clicking on **Publish All**.
+1. Switch to **Data Factory** tab and publish the pipeline by clicking on **Publish All**.
+
+    ![publish](Linked_Image_Files/publish.png)
 
 ## Exercise 4: Azure Data Factory and Databricks
   
@@ -477,7 +488,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Generate a Databricks Notebook
 
-1. Please ensure if the cluster is running. Click on **Clusters** from left navigation bar , select **awdbclstud** and click on start.
+1. **Please ensure if the cluster is running**: Click on **Clusters** from left navigation bar , select **awdbclstud** and click on start.
 
 1. On the left of the screen, click on the **Workspace** icon, then click on the arrow next to the word Workspace, and click on **Create** and then click on **Folder**. Name the folder **adftutorial**, and click on **Create Folder**. The adftutorial folder appears in the Workspace.
 
@@ -501,9 +512,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 3: Create Linked Services
 
-1. In Microsoft Edge, click on the tab for the portal In the Azure portal, and return to Azure Data Factory.
-
-1. In the **data-factory-deploymentId** screen, click on **Author & Monitor**. Another tab opens up to author an Azure Data Factory solution.
+1. Switch to **Azure Data Factory** tab in the browser, in the **data-factory-deploymentId** screen, click on **Author & Monitor**. Another tab opens up to author an Azure Data Factory solution.
 
 1. On the left hand side of the screen, click on the **Manage** icon. This opens Connections section.
 
@@ -511,7 +520,7 @@ The main tasks for this exercise are as follows:
 
 1. In the **New Linked Service**, at the top of the screen, click on **Compute**, and then click on **Azure Databricks**, and then click on **Continue**.
 
-1. In the **New Linked Service (Azure Databricks)** screen, fill in the following details and click on **Finish**
+1. In the **New Linked Service (Azure Databricks)** screen, fill in the following details and click on **create**
     - **Name**: dbls
     - **Databricks Workspace**: xxxxxx, where xxxxxx is the deployment id
     - **Select cluster**: Existing interactive cluster
@@ -520,11 +529,11 @@ The main tasks for this exercise are as follows:
     - **Choose from existing cluster**: awdbclstud
     - Leave other options to their default settings
 
-    > **Note**: When you click on finish, you are returned to the **Author & Monitor** screen where the dbls has been created, with the other linked services created in the previous exercize.
+    > **Note**: When you click on create, you are returned to the **Author & Monitor** screen where the dbls has been created, with the other linked services created in the previous exercize.
 
 ### Task 4: Create a pipeline that uses Databricks Notebook Activity.
 
-1. On the left hand side of the screen, under Factory Resources, click on the **+** icon, and then click on **Pipeline**. This opens up a tab with a Pipeline designer.
+1. In the **Azure Data Factory** tab on the left hand side of the screen, under Factory Resources, click on the **+** icon, and then click on **Pipeline**. This opens up a tab with a Pipeline designer.
 
 1. At the bottom of the pipeline designer, click on the parameters tab, and then click on **+ New**
 
@@ -537,7 +546,6 @@ The main tasks for this exercise are as follows:
 1. In the properties for the **Notebook1** window at the bottom, complete the following steps:
     - Switch to the **Azure Databricks** tab.
     - Select **dbls** which you created in the previous procedure.
-
     - Switch to the **Settings** tab, and put **/adftutorial/mynotebook** in Notebook path.
     - Expand **Base Parameters**, and then click on **+ New**
     - Create a parameter with the Name of **input**, with a value of **@pipeline().parameters.name**
