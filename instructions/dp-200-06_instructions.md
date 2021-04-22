@@ -271,9 +271,11 @@ The main tasks for this exercise are as follows:
     - **Event Hub Namespace**: phoneanalysis-ehn-xxxxxx
     - **Event Hub Name**: Use existing named phoneanalysis-eh-xxxxxx
     - **Event Hub Policy Name**: phoneanalysis-eh-sap-xxxxxx
+    - **Event Hub consumer group**: accept the default value
+    - **Authentication Mode**: Connection String
     - Leave the rest of the entries as default values. Finally, click **Save***.
 
-         ![](Linked_Image_Files/mod5_ex4_task2_step5.png)
+         ![](Linked_Image_Files/lab5/input.png)
 
 1. Once completed, the **PhoneStream** Input job will appear under the input window. Close the input widow to return to the Resource Group Page
 
@@ -293,9 +295,10 @@ The main tasks for this exercise are as follows:
     - **Subscription**: Your subscription name
     - **Storage account**:  Select **:awsastudxxxxxx**:, where xxxxxx is the deploymentID
     - **Container**: **Use existing** and select **phonecalls**
+    - **Authentication Mode**: Connection String
     - Leave the rest of the entries as default values. Finally, click **Save**.
 
-        ![](Linked_Image_Files/mod5_ex4_task3_step4.png)
+        ![](Linked_Image_Files/lab5/output.png)
 
 1. Close the output screen to return to the Resource Group page
 
