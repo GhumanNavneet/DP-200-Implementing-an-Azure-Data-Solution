@@ -426,7 +426,7 @@ The main tasks for this exercise are as follows:
 
 1. In the **awcdbstud-deploymentId - Data Explorer** window, in the blade,  click on **Replicate data globally**.
 
-    ![Global replication of Cosmos DB in the Azure portal](Linked_Image_Files/M04-E03-T01-img01.png)
+    ![Global replication of Cosmos DB in the Azure portal](Linked_Image_Files/lab3/3.png)
 
 1. On the world map, single click a data center location within the continent you reside, and click on **Save**.
 
@@ -440,7 +440,7 @@ The main tasks for this exercise are as follows:
 
 >**Note**  The Manual Failover will take approximately 3 minutes. The screen will look as follows. Note the icon colors have changed
 
-![Manual Failover of Cosmos DB in the Azure portal](Linked_Image_Files/M04-E03-T02-img1.png)
+![Manual Failover of Cosmos DB in the Azure portal](Linked_Image_Files/lab3/4.png)
 
 1. In the **awcdbstud-deploymentId - Replicate data globally** window, click on **Automatic Failover**
 
