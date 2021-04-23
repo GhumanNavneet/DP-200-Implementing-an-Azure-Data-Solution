@@ -114,7 +114,7 @@ The main tasks for this exercise are as follows:
 
     - **Database id**: **Products**
     
-    - **Throughput**:  **400**
+    - **Throughput**:  **4000**
 
     - **Container id**:  **Clothing**
 
