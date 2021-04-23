@@ -290,6 +290,8 @@ The main tasks for this exercise are as follows:
 
     ![Querying data in Cosmos DB using Data Explorer in the Azure portal](Linked_Image_Files/M04-E03-T02-img03.png)
 
+1. Click **Save** to save the query.
+
 ### Task 4: Run complex operations on your data
 
 1. In the Azure portal, in the **Items** screen, click on the button **New Stored Procedure**.
@@ -405,6 +407,9 @@ The following result is returned
         }
     ]
     ```
+
+1. Click **Save** to save the query.
+
 
 ## Exercise 3: Distribute your data globally with Azure Cosmos DB
 
