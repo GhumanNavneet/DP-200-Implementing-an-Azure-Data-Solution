@@ -135,7 +135,6 @@ The main tasks for this exercise are as follows:
         - **Select Data Lake Storage Gen2**: "from subscription"
         - **Account Name**: select **awdlsstudxxxxxx**, where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
         - **File System Name**: select **data**
-        - **Check** the "Assign myself the Storage Blob Data Contributor role on the Data Lake Storage Gen2 account 'awdlsstudxxxxxx" 
 
         ![Create Synapse Workspace](Linked_Image_Files/new-feb2021/ex2_tsk1_step5.png) 
 
