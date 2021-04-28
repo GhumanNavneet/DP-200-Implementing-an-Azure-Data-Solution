@@ -80,7 +80,7 @@ The main task for this exercise are as follows:
             - **Server admin login**: **sqladmin**
             - **Password**: **Pa55w.rd**
             - **Confirm Password**: **Pa55w.rd**
-            - **Location**: choose a **location** near to you.
+            - **Location**: choose the **location** where your resource group is deployed.
             - click on **OK**
             - Leave the remaining settings to their defaults, and then click on **OK**
 
@@ -131,7 +131,7 @@ The main tasks for this exercise are as follows:
     - In the workspace details section, create the workspace with the following settings:
         
         - **Workspace Name**: **wrkspcxxxxxx**, where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
-        - **Region**: choose the region nearest to you and where you deployed your resource group
+        - **Region**: choose the **region** where your resource group is deployed
         - **Select Data Lake Storage Gen2**: "from subscription"
         - **Account Name**: select **awdlsstudxxxxxx**, where **xxxxxx** is the deploymentId and you can find it from the environment details tab.
         - **File System Name**: select **data**
