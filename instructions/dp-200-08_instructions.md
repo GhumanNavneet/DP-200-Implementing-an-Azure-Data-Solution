@@ -184,7 +184,7 @@ The main tasks for this exercise are as follows:
 
 7. In **SQL Server Management Studio**, in Object Explorer, expand **AdventureWorksLT**, and then expand **Tables**.
 
-8. Right click [SalesLT].[Customers] and then click **Select Top 1000 Rows**
+8. Right click [SalesLT].[Customer] and then click **Select Top 1000 Rows**
 
     ![](Linked_Image_Files/lab7-ex3-task2-laststep.png)
 
